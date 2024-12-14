@@ -19,9 +19,6 @@ import { useState } from 'react';
 
 
 
-
-
-
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
@@ -52,7 +49,6 @@ const Search = styled('div')(({ theme }) => ({
     width: '100%',
     '& .MuiInputBase-input': {
       padding: theme.spacing(1, 1, 1, 1),
-      // vertical padding + font size from searchIcon
       paddingRight: `calc(1em + ${theme.spacing(4)})`,
       
       
@@ -92,7 +88,7 @@ export default function MenuAppBar() {
                   className={`PageButton ${activePage === page.path ? "active" : ""}`}
                   variant="button"
                   component="button"
-                  onClick={() => setActivePage(page.path)} // تحديث العنصر النشط
+                  onClick={() => setActivePage(page.path)}
                 >
                   <Link to={page.path}>{page.name}</Link>
                 </Typography>
