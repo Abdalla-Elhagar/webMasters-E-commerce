@@ -19,7 +19,10 @@ import { useState } from 'react';
 
 
 
+
+
 const Search = styled('div')(({ theme }) => ({
+  
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: alpha(theme.palette.common.white, 0.15),
@@ -57,20 +60,24 @@ const Search = styled('div')(({ theme }) => ({
 export default function MenuAppBar() {
   const [activePage, setActivePage] = useState("/");
   const pages = [
-    { name: "Home", path: "/" },
-    { name: "Contact", path: "/concat" },
-    { name: "About", path: "/about" },
-    { name: "Sign Up", path: "/register" },
+    {id:1, name: "Home", path: "/" },
+    {id:2, name: "Contact", path: "/concat" },
+    {id:3, name: "About", path: "/about" },
+    {id:4, name: "Sign Up", path: "/register" },
   ];
-
+  const [turn , setTurn] = useState(false);
   return (
     <Box sx={{ flexGrow: 1 }}>
       
       <AppBar position="relative" sx={{backgroundColor: "transparent", color: "black"}}>
         <Container className='container' maxWidth="xl">
+          {turn && <div onClick={()=>setTurn(false)} className=" fixed left-0 z-40 top-0 h-full w-full bg-black/40" >
+            <input type="text" onClick={e=>e.stopPropagation()} className="top-28 w-5/6 left-1/2 z-50 -translate-x-1/2 text-white bg-transparent border-white border-2 py-2 px-4 rounded-full focus:outline-none absolute" />
+            <button className='text-white absolute top-[120px] right-16'><SearchIcon /></button>
+        </div>}
         <Toolbar className='relative flex justify-between items-center'>
           <IconButton
-          
+
             size="large"
             edge="start"
             color="inherit"
@@ -84,7 +91,7 @@ export default function MenuAppBar() {
                 <Typography className='pages flex gap-10' component="div">
                 {pages.map((page) => (
                 <Typography
-                  key={page.path}
+                  key={page.id}
                   className={`PageButton ${activePage === page.path ? "active" : ""}`}
                   variant="button"
                   component="button"
@@ -95,9 +102,9 @@ export default function MenuAppBar() {
               ))}
             </Typography>
 
-            <Typography className='flex' component='div'>
+            <Typography className='flex items-center' component='div'>
                 <Typography component="div" className="responsiveSearch">
-                <IconButton sx={{color: "black"}} aria-label="search">
+                <IconButton sx={{color: "black",marginTop:"5px"}} onClick={()=>setTurn(true)} aria-label="search">
                     <SearchIcon />
                   
                 </IconButton>
