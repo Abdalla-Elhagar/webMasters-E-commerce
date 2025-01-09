@@ -9,7 +9,6 @@ import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import Container from '@mui/material/Container'
 import HomeIcon from '@mui/icons-material/Home';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import InfoIcon from '@mui/icons-material/Info';
@@ -70,7 +69,7 @@ export default function MenuAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       
       <AppBar position="relative" sx={{backgroundColor: "transparent", color: "black"}}>
-        <Container className='container' maxWidth="xl">
+        <div className='container'>
           {turn && <div onClick={()=>setTurn(false)} className=" fixed left-0 z-40 top-0 h-full w-full bg-black/40" >
             <input type="text" onClick={e=>e.stopPropagation()} className="top-28 w-5/6 left-1/2 z-50 -translate-x-1/2 text-white bg-transparent border-white border-2 py-2 px-4 rounded-full focus:outline-none absolute" />
             <button className='text-white absolute top-[120px] right-16'><SearchIcon /></button>
@@ -136,7 +135,7 @@ export default function MenuAppBar() {
         </Toolbar>
 
 
-        <Typography className=' hidden max-lg:flex justify-between px-5 py-2 rounded-lg max-sm:w-full max-sm:left-0 max-sm:translate-x-0 w-1/2 shadow-lg shadow-slate-600 fixed bottom-[-5px] border left-1/2 translate-x-[-50%]'>
+        <Typography className='bg-white z-50 max-sm:rounded-none hidden max-lg:flex justify-between px-5 py-2 rounded-lg max-sm:w-full max-sm:left-0 max-sm:translate-x-0 w-1/2 shadow-lg shadow-slate-600 fixed bottom-[-5px] border left-1/2 translate-x-[-50%]'>
             <IconButton onClick={() => setActivePage("/")} className={`RPageButton ${activePage === "/" ? "active" : ""}`} key="/" aria-label="home">
               <Link to="/"><HomeIcon /></Link>
               
@@ -158,7 +157,7 @@ export default function MenuAppBar() {
 
         </Typography>
         
-        </Container>
+        </div>
         
       </AppBar>
     </Box>

@@ -1,8 +1,8 @@
-import Layout from "../components/layout"
+import Layout from "../components/Hero"
 
 export default function Home() {
     return (
-        <div className="container">
+        <div className=" container">
             <Layout />
         </div>
     )
