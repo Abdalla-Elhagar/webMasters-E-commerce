@@ -1,9 +1,11 @@
-import Layout from "../components/Hero"
+import Hero from "../components/Hero"
+import Today from "../components/today"
 
 export default function Home() {
     return (
-        <div className=" container">
-            <Layout />
+        <div className="homeContainer">
+            <Hero />
+            <Today />
         </div>
     )
 }

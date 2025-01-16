@@ -1,12 +1,19 @@
+
+
 .container {
     padding: 0 50px;
     margin: 0 auto;
+    width: 100% !important;
 }
 
-
+.heroContainer {
+    padding: 0 50px;
+    margin: 0 auto;
+    max-width: 100% !important;
+}
 
 @media (width < 1024px) {
-    .container {
+    .heroContainer {
         padding: 0;
     }
 }

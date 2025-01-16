@@ -8,6 +8,7 @@ import Concat from './pages/concat'
 import Favorite from './pages/favorite'
 import LogIn from './pages/logIn'
 import Register from './pages/register'
+import AllProducts from './pages/allProducts'
 
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
         <Route path='/favorite' element={<Favorite />} /> 
         <Route path='/logIn' element={<LogIn />} /> 
         <Route path='/register' element={<Register />} /> 
+        <Route path='/allProducts' element={<AllProducts />} /> 
       </Routes>
     </>
   )
