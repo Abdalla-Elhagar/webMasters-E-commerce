@@ -2165,5 +2165,5 @@ const Products = [
 export  const UpdatedProducts = Products.map((product) => ({
   ...product,
   rate: Math.floor(Math.random() * 5) + 1 ,
-  sales: Math.floor(Math.random() * 300) +1 ,
+  sales: Math.floor(Math.random() * 3000) +1 ,
 }));

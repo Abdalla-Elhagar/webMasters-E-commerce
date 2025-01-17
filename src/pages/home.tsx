@@ -1,5 +1,8 @@
+import BestSelling from "../components/bestSellingSection"
 import Categories from "../components/categories"
+import Featured from "../components/Featured"
 import Hero from "../components/Hero"
+import OurProducts from "../components/ourProducts"
 import Today from "../components/today"
 
 export default function Home() {
@@ -8,6 +11,9 @@ export default function Home() {
             <Hero />
             <Today />
             <Categories />
+            <BestSelling />
+            <OurProducts />
+            <Featured />
         </div>
     )
 }

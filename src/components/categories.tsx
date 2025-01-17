@@ -57,7 +57,7 @@ const categories:any = [
 
 export default function Categories() {
     return(
-        <div className="container relative">
+        <div className="container border-b-2 relative">
             <div className="custom-prev top-[65px] max-sm:hidden absolute"><WestOutlinedIcon /></div>
             <div className="custom-next top-[65px] max-sm:hidden absolute"><EastOutlinedIcon /></div>
             <SectionHeader title="Categories" />
@@ -86,12 +86,16 @@ export default function Categories() {
                 slidesPerView: 4,
                 spaceBetween: 50,
                 },
+                1300: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                    },
             }}
             modules={[ Autoplay ,Navigation ]}
 
             >
                 {categories.map((category:any) => (
-                    <SwiperSlide  key={category.id} className="card w-60 hover:bg-mainColor flex flex-col  transition-all duration-300 hover:border-white text-center group border-2 border-black/30">
+                    <SwiperSlide  key={category.id} className="card w-60 rounded-md hover:bg-mainColor flex flex-col  transition-all duration-300 hover:border-white text-center group border-2 border-black/30">
                         <Link to={category.title} className="w-full">
                             <div className="icon group-hover:text-white transition-all duration-300 pt-10 text-black/90">{category.icon}</div>
                             <h3 className="text-2xl group-hover:text-white transition-all duration-300 pb-10 mt-4">{category.title}</h3>

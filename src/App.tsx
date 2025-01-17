@@ -15,6 +15,7 @@ import TV from './pages/tv'
 import Gaming from './pages/gaming'
 import Appliances from './pages/Appliances'
 import Laptops from './pages/laptops'
+import BestSellingPage from './pages/bestSellingPage'
 
 function App() {
   
@@ -36,6 +37,8 @@ function App() {
         <Route path='/Gaming' element={<Gaming />} /> 
         <Route path='/appliances' element={<Appliances />} />
         <Route path='/laptops' element={<Laptops />} />
+        <Route path='/bestSelling' element={<BestSellingPage />} /> 
+
       </Routes>
     </>
   )
