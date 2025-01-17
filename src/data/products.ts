@@ -752,6 +752,1414 @@ const Products = [
     category: "tv",
     discount: 9,
   },
+  {
+    id: 51,
+    title:
+      " Samsung 138 cm (55 Inches) 4K Ultra HD Smart QLED TV QA55Q80RAKXXL (Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694156194279-817zvskL7DL._SL1500_.jpg",
+    price: 2016,
+    description:
+      "Resolution: 4K Ultra HD (3840x2160) | Refresh Rate: 120 hertz\r\nConnectivity: 4 HDMI ports to connect set top box, Blu Ray players, gaming console | 3 USB ports to connect hard drives and other USB devices\r\nSound : 40 Watts Output\r\nSmart TV Features : Smart TV with free apps\r\nDisplay : QLED | LED Panel | Slim and stylish design\r\nWarranty Information: 1 year 1 Year Comprehensive + 1 Year Additional on Panel by Samsung from date of purchase\r\nInstallation: For requesting Samsung sanitized installation/wallmounting/demo of this product once delivered, please directly call Samsung support on [1800407267864/180057267864] and provide product's model name as well as seller's details mentioned on the invoice\r\nWall-Mount: Standard wall-mount (FREE) provided by engineer upon installation request",
+    brand: "samsung",
+    model: "QA55Q80RAKXXL",
+    color: "black",
+    category: "tv",
+    onSale: true,
+    discount: 19,
+  },
+  {
+    id: 52,
+    title:
+      " Samsung 125 cm (50 inches) 4K Ultra HD Smart Neo QLED TV QA50QN90CAKLXL (Carbon Silver)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694156372381-91kw0BYTftL._SL1500_.jpg",
+    price: 1707,
+    description:
+      "Smart TV Features : Built-in Voice Assistant, Far-Field Voice Interaction | Supported apps: Netflix, Prime Video, YouTube, etc., Screen mirroring, Universal Guide, Media Home, Tap View, Mobile Camera Support, Music Wall, AI Speaker, Easy Setup, App Casting, Wireless DeX, SmartThings, Smart Hub, IoT Sensor, Web Browser",
+    brand: "Samsung",
+    model: "QA50QN90CAKLXL",
+    color: "carbon silver",
+    category: "tv",
+    popular: true,
+    discount: 9,
+  },
+  {
+    id: 53,
+    title:
+      " LG 139 cm (55 inches) 4K Ultra HD Smart NanoCell TV 55NANO91TNA (Ceramic Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694156701862-71RgJ4bpoaL._SL1500_.jpg",
+    price: 962,
+    description:
+      "Resolution : 4K Ultra HD (3840 x 2160) | Refresh Rate: 100 hertz | 4K Upscaler\r\nConnectivity: 4 HDMI ports to connect set top box, Blu Ray players, gaming console | 3 USB ports to connect hard drives and other USB devices\r\nSound : 20 Watts Output | 2.0 Ch Speaker| Dolby Atmos | AI Sound | AI Acoustic Tuning\r\nSmart TV Features: webOS Smart TV|α7 Gen3 Processor 4K| AI ThinQ, Built-in Google Assistant & Alexa| Apple Airplay 2 & Homekit| Home Dashboard | Unlimited OTT App Support\r\nDisplay: Real 4K NanoCell Display Technology | Full Array Dimming\r\nWarranty Information: 1 Year LG India Comprehensive Warranty and additional 1 year Warranty is applicable on panel/module from the date of purchase",
+    brand: "LG",
+    model: "NANOCELL",
+    color: "Ceramic Black",
+    category: "tv",
+    popular: true,
+    discount: 9,
+  },
+  {
+    id: 54,
+    title:
+      " TCL 216 cm (85 inches) 4K Ultra HD Smart LED Google TV 85P745 (Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694156802350-61IYfIs7m9L._SL1500_.jpg",
+    price: 2405,
+    description:
+      "Resolution: 4K Ultra HD (3840 x 2160) | Refresh Rate: 60 Hertz\r\nConnectivity: 3 HDMI Ports to connect set top box, Blu Ray players, gaming console | 2 USB Ports | 1 Headphone output\r\nSound: 30 Watts Output | MS12Z wit Dolby Atmos\r\nSmart TV Features: Google TV | 2GB RAM/16 GB Falsh Memory | 64-bit Quad Core Processor | Wifi| Bluetooth | In-Built Apps: Netflix, Prime Video, Disney+Hotstar | Google Assistant | Game Master | 120 Hz Game Acclerator\r\nDisplay: A+ Grade Panel | 178 Degree Wide Viewing Angle | AI Picture Engine | HDR 10 | Wide Color Gamut | Dynamic Color Enhancement | Micro Dimming Technology | MEMC |Ai-CLARITY | Ai-COLOR | Ai-MOTION | Ai-HDR | Ai-CONTRAST | Bezel-Less Full Screen",
+    brand: "TCL",
+    model: "85P745",
+    color: "Black",
+    category: "tv",
+    discount: 15,
+  },
+  {
+    id: 55,
+    title:
+      "TOSHIBA 164 cm (65 inches) 4K Ultra HD Smart QLED Google TV 65M550LP (Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694157017146-8115NA1lFdL._SL1500_.jpg",
+    price: 841,
+    description:
+      "‎Google TV | Dolby Vision HDR | Google Assistant | Chromecast, Miracast, DLNA | Auto Low Latency Mode for VRR | Supported Apps : Netflix, Youtube, Prime Video, Hotstar, SonyLiv, Hungama, JioCinema, Zee5, Eros Now",
+    brand: "toshiba",
+    model: "65M550LP",
+    color: "black",
+    category: "tv",
+  },
+  {
+    id: 56,
+    title:
+      " OnePlus 163 cm (65 inches) Q Series 4K Ultra HD QLED Smart Google TV 65 Q2 Pro (Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694157239966-615l0lJ7HEL._SL1500_.jpg",
+    price: 1202,
+    description:
+      "QLED TV | Speak Now™ Hands-free voice control | Remote With Voice Assistant | Google TV | HDR 10+|Dolby Vision | DCI-P3 97% Wide Color Gamut | Supported Applications : Netflix, Disney+Hotstar, Youtube",
+    brand: "onePlus",
+    model: "‎65 Q2 Pro",
+    color: "black",
+    category: "tv",
+    popular: true,
+    onSale: true,
+    discount: 9,
+  },
+  {
+    id: 57,
+    title:
+      " SANSUI 190 cm (75 inches) 4K Ultra HD Smart LED Google TV JSW75GSUHDFF (Pebble Grey)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694157370648-71irUP57QVL._SL1500_.jpg",
+    price: 901,
+    description:
+      "Resolution: 4K Ultra HD (3840x2160) | Refresh Rate: 60 hertz | Wide Viewing Angle\r\nConnectivity: 3 HDMI ports to connect multiple devices | 2 USB ports to connect hard drives and other USB devices|1 AV In|RJ45|Optical out for sound|Wi-Fi|Bluetooth|Ethernet|Antenna\r\nSound: 20 Watts Output | Dolby Atmos | DTS-HD\r\nSmart TV Features: Google TV OS | In-Built WiFi | In-Built Chromecast | 2GB RAM | 32GB ROM | Supported Apps: Netflix, Prime Video, YouTube, Google Play, etc.| Hand free Voice Control, Google Assistant\r\nDisplay: 4K HDR | HDR10 | HLG |Vivid Picture Engine | A+ Grade Panel | Crystal Clear Display | Dynamic Contrast | Bezel-less Design",
+    brand: "SANSUI",
+    model: "JSW75GSUHDFF",
+    color: "Pebble Grey",
+    category: "tv",
+    discount: 7,
+  },
+  {
+    id: 58,
+    title:
+      "Acer 164 cm (65 inches) W Series 4K Ultra HD QLED Smart Android TV AR65AR2851QD (Metallic Grey)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694157446606-91UIOlIz-fL._SL1500_.jpg",
+    price: 962,
+    description:
+      "QLED, Android 11, DCI-P3 98%, Dolby Vision-Atmos, ALLM, Dual Band Wifi, Far Field Mic, Motion Sensor, Blue Light Reduction, MEMC, Dynamic Signal Calibration, Wide Colour Gamut+, 1.07 Billion Colours, HDR10+ with HLG, 4K Upscaling, Digital Noise Reduction, Micro Dimming | Apps : Netflix, Youtube, Prime Video, Hotstar, SonyLiv, Hungama, JioCinema, Zee5, Eros Now, Google Play Store",
+    brand: "Acer",
+    model: "AR65AR2851QD",
+    color: "Metallic Grey",
+    category: "tv",
+    popular: true,
+    discount: 6,
+  },
+  {
+    id: 59,
+    title:
+      "Mi 189.34cm (75 inches) Q1 Series 4K Ultra HD Smart QLED TV L75M6-ESG (Metallic Grey)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694157573546-71fZOKh0i1L._SL1500_.jpg",
+    price: 1563,
+    description:
+      "‎Remote with easy Access like Voice assistant | Ok Google | Quick Wake | Quick Mute | Quick Settings | Dedicated buttons for Netflix and Prime Video",
+    brand: "MI",
+    model: "‎L75M6-ESG",
+    color: "Metallic Grey",
+    category: "tv",
+    discount: 7,
+  },
+  {
+    id: 60,
+    title: " Amaze1 85 Inch WebOS 4KUHD LED TV (AZ85WOUSFL)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694158162881-61g5UoKICfL._SL1500_.jpg",
+    price: 2345,
+    description:
+      "SMART TV, A+ Grade Panel, 3 HDMI, 2 USB, Sound output:Dolby audio ATMOS | Alexa Build-in, ThinIQ, 4KUHD, MEMC, Magic Remote\r\nResolution: HD Ready (3840 x 2160) | Refresh Rate: 60 hertz | Viewing angle: 178 degree, Wireless connectivity, Miracast\r\n1 year warranty, Magic remote, table top stand\r\nWarranty card\r\nTable mount stand\r\n",
+    brand: "Amaze1",
+    model: "AZ85WOUSFL",
+    color: "black",
+    category: "tv",
+    discount: 25,
+  },
+  {
+    id: 61,
+    title: " Onida 124.46 cm (50 Inches) 4K UHD LED Smart TV 50UIB (Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694158321609-71pM0BQZLOL._SL1500_.jpg",
+    price: 987,
+    description:
+      "Resolution : 4K Ultra HD (3840x2160) | Refresh Rate: 60 hertz | Viewing Angle: 178 degrees\r\nSmart TV Features: Built-in WiFi | Air Mouse | Mira Cast\r\nConnectivity: 3 HDMI ports to connect set top box, Blu Ray players, gaming console | 2 USB ports to connect hard drives and other USB devices | 1 VGA port to connect the laptops\r\nSound : 200 Watts Output\r\nInstallation: For installation/wall mounting/demo of this product once delivered, directly contact Onida at 18001031000 and provide product's model name and seller's details mentioned on your invoice. The service center will allot you a convenient slot for the service\r\nWarranty: 1 year standard manufacturer warranty from Onida",
+    brand: "Onida",
+    model: "50UIB",
+    color: "black",
+    category: "tv",
+    discount: 9,
+  },
+  {
+    id: 62,
+    title:
+      " Hisense 164 cm (65 inches) 4K Ultra HD Smart IPS QLED TV 65U7H (Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694158452812-81QyE0wJFYL._SL1500_.jpg",
+    price: 926,
+    description:
+      "Resolution : 4K Ultra HD (3840x2160) | Refresh Rate : 120 Hertz | Full Array Local Dimming | Light Sensing | FreeSync & ALLM VRR Supported\r\nConnectivity: 4 HDMI ports (Ver 2.1) to connect set top box, Blu Ray players, gaming console (HDMI 1 eARC supported) | 1 USB 3.0 and 1 USB 2.0 ports to connect hard drives and other USB devices | Dual-band Wi-Fi | Bluetooth 5.1\r\nSound : 24 Watts Output | Dolby Atmos|Dolby Digital for remarkable sound quality\r\nSmart TV features: Hi View Engine | with Fire TV stick 4k | Auto Low Latency Mode for VRR | Light Sensing | FreeSync Premium | Apps : Netflix, Youtube, Prime Video etc.\r\nDisplay : 120Hz 10 bit Panel | Bezel-less Floating Display Design | ALLM |Dolby Vision, HDR10,HDR10+, HLG | 1 Billion Colours | MEMC",
+    brand: "Hisense",
+    model: "65U7H",
+    color: "black",
+    category: "tv",
+    popular: true,
+    discount: 7,
+  },
+  {
+    id: 63,
+    title:
+      "LG 108 cm (43 inches) 4K Ultra HD Smart LED TV 43UQ8020PSB (Dark Iron Gray)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694158891712-913RqBlzXmL._SL1500_.jpg",
+    price: 420,
+    description:
+      "Resolution: 4K Ultra HD (3840x2160) | Refresh Rate: 60 hertz\r\nConnectivity: Wi-Fi (Built-in) | 3 HDMI ports to connect set top box, Blu Ray players, gaming console | 2 USB ports to connect hard drives and other USB devices | eARC | Bluetooth 5.0 | Optical | Ethernet\r\nSound: 20 Watts Output | 2.0 Ch Speaker | AI Sound (Virtual Surround 5.1 up-mix) | Auto Volume Levelling | Bluetooth Surround Ready\r\nSmart TV Features: AI ThinQ & WebOS 22 with User Profiles | Built-in Google Assistant & Alexa | Apple Airplay 2 & Homekit | Game Optimizer & Dashboard | α5 Gen5 AI Processor 4K | Unlimited OTT App Support: Netflix, Prime Video, Disney+ Hotstar, Apple TV, SonyLIV, Discovery+, Zee5 | ALLM & HGiG Mode | HDR 10 Pro & Active HDR | Magic Remote with Hot Keys & Voice Commands",
+    brand: "LG",
+    model: "43UQ8020PSB",
+    color: "Dark Iron Gray",
+    category: "tv",
+    discount: 11,
+    onSale: true,
+  },
+  {
+    id: 64,
+    title:
+      "TCL 189 cm (75 inches) Bezel-Less Full Screen Series Ultra HD 4K Smart LED Google TV 75P635 Pro (Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694162974699-714uu8aZdeL._SL1500_.jpg",
+    price: 1325,
+    description:
+      "Google Assistant | 4K Google TV + HDR 10 | AI-IN | T-cast | Apps: Netflix, Youtube, Prime Video & 7000+ Apps | Maximum Content: 10,62,000 Hours | Pure Entertainment",
+    brand: "TCL",
+    model: "75P635 ",
+    color: "black",
+    category: "tv",
+    popular: true,
+    discount: 9,
+  },
+  {
+    id: 65,
+    title:
+      " TCL 163.8 cm (65 inches) X4 65X4US 4K QLED Certified Android Smart TV (Gray)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694163386207-71twiKmSQJL._SL1500_.jpg",
+    price: 1297,
+    description:
+      "The ultra HD (3840 x 2160) resolution is 4 times greater than full HD. You will be captivated by the perfect precisions of the images on our ultra HD TVs that displays an image with over 8 million pixels. The upscale technology could upgrade 2K image to 4K quality from USB, HDMI and online live content.",
+    brand: "TCL",
+    model: "X4 65X4US",
+    color: "grey",
+    category: "tv",
+    popular: true,
+    discount: 9,
+    onSale: true,
+  },
+  {
+    id: 66,
+    title: " Daktron 85 Inch 4K Ultra HD Smart Android LED TV",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694163546968-41LoWsH3o-L (1).jpg",
+    price: 768,
+    description:
+      "Resolution: 4K Ultra HD (3840 x 2160) | Refresh Rate: 120 hertz\r\nConnectivity: 4 HDMI ports to connect set top box, Blu Ray players, gaming console | 2 USB ports to connect hard drives and other USB devices\r\nDisplay : A+ Grade Panel | UHD | HDR | Slim Design\r\nWarranty Information: 1 year warranty",
+    brand: "Generic",
+    model: "Daktron 2022",
+    color: "black",
+    category: "tv",
+    discount: 7,
+  },
+  {
+    id: 67,
+    title:
+      " MI 80 cm (32 inches) 5A Series HD Ready Smart Android LED TV L32M7-5AIN (Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694165099348-81xT3no1+6L._SL1500_.jpg",
+    price: 150,
+    description:
+      "Resolution : HD Ready (1366 x 768) Resolution | Refresh Rate : 60 Hertz | 178 Degree wide viewing angle\r\nConnectivity: Dual Band Wi-Fi | 2 HDMI ports to connect latest gaming consoles, set top box, Blu-ray Players | 2 USB ports to connect hard drives and other USB devices | ALLM | ARC | Bluetooth 5.0 | Ethernet\r\nSound: 20 Watts Output | Dolby Audio, DTS Virtual: X, DTS-HD\r\nSmart TV Features : Android TV 11 | PatchWall | IMDb Integration | Universal Search | 300+ Free Live Channels | Kids Mode with Parental lock | Smart Recommendations | Language Universe – 15+ Languages | User Centre | Okay Google | Chromecast suporting Apps : Netflix, Prime Video, Disney+ Hotstar | 5000+ apps from Play Store |Quad core Cortex A35 | Chromecast built-in | Ok Google | Auto Low Latency Mode | 1GB RAM + 8GB Storage",
+    brand: "MI",
+    model: "‎L32M7-5AIN",
+    color: "black",
+    category: "tv",
+    discount: 9,
+  },
+  {
+    id: 68,
+    title:
+      " LG 80 cm (32 inches) HD Ready Smart LED TV 32LM563BPTC (Dark Iron Gray)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694165166892-71D6DfO-0nL._SL1500_.jpg",
+    price: 162,
+    description:
+      "Resolution: HD Ready (1366x768) | Refresh Rate: 60 hertz\r\nConnectivity: 2 HDMI ports to connect set top box, Blu Ray players, gaming console | 1 USB ports to connect hard drives and other USB devices\r\nSound output: 10 Watts Output I 2 Speakers | DTS Virtual:X | Sound Type : Down FiringSmart\r\nTV Features: Web OS Smart TV | Wi-Fi | Home Dashboard | Screen Mirroring | Mini TV Browser | Multi-Tasking | Office 365, Set WXHXD (with Stand ) mm - 739 x 472 x 168Display: Active HDR | Display Type: Flat | BackLight Module: Slim LED\r\nWarranty Information: 1 Year LG India Comprehensive Warranty and additional 1 year Warranty is applicable on panel/module from the date of purchase (Offer Valid till 31st August 2022)\r\nInstallation: For requesting installation/wall mounting/demo of this product once delivered, please directly call LG support on 1800 180 9999/1800 315 9999 and provide product's model name as well as seller's details mentioned on the invoiceEasy",
+    brand: "LG",
+    model: "32LM563BPTC",
+    color: "grey",
+    category: "tv",
+    discount: 3,
+  },
+  {
+    id: 69,
+    title:
+      "Acer 80 cm (32 inches) Advanced I Series HD Ready Smart LED Google TV AR32GR2841HDFL (Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694165291672-511DmhAgHAL._SL1073_.jpg",
+    price: 156,
+    description:
+      "Resolution: HD Ready (1366x768) | Refresh Rate: 60 Hertz | 178 Degree wide viewing angle\r\nConnectivity: Dual band Wifi | 2 way Bluetooth | HDMI ports 2.0 x 2 (HDMI 1 supports ARC) to connect personal computer, laptop, set top box, Blu-ray speakers or a gaming console | USB ports 2.0 x 2 to connect hard drives or other USB device\r\nSound: 30 Watts Output | High Fidelity Speakers with Dolby Audio | 5 Sound Modes - Stadium, Standard, Movie, Music, Speech\r\nSmart TV Features: Google TV | Content Recommendations | Watchlist | Personal Profile | Google Assistant | Built-in Chromecast | Voice enabled Smart Remote | Hotkeys for Quick Access - Netflix, Prime Video, YouTube, Disney+Hotstar | Quad Core Processor 1.5GB RAM | 16GB Storage\r\nDisplay : 16.7 Million Colours | Intelligent Frame Stabilization Engine | HDR10 | Super Brightness | Micro Dimming | Blue Light Reduction",
+    brand: "acer",
+    model: "AR32GR2841HDFL",
+    color: "black",
+    category: "tv",
+    discount: 5,
+  },
+  {
+    id: 70,
+    title:
+      " TOSHIBA 80 cm (32 inches) V Series HD Ready Smart Android LED TV 32V35MP (Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694165393188-917cT1r-aUL._SL1500_.jpg",
+    price: 150,
+    description:
+      "Official Android TV 11(R) | Built-in Assistant | RAM: 1GB | ROM 8 GB | Quad Core Processor | Supported Apps : Netflix, Prime Video, Disney+ Hotstar etc on Official Play Store",
+    brand: "toshiba",
+    model: "32V35MP",
+    color: "black",
+    category: "tv",
+    discount: 9,
+  },
+  {
+    id: 71,
+    title:
+      " LG 80 cm (32 inches) HD Ready Smart LED TV 32LQ576BPSA (Ceramic Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694165528390-71IBre-QupL._SL1500_.jpg",
+    price: 192,
+    description:
+      "Resolution: HD Ready (1366x768) | Refresh Rate: 60 hertz | Resolution Upscaler | 178 Degree wide viewing angle\r\nConnectivity: 2 HDMI ports to connect set top box, Blu Ray players, gaming console | 1 USB ports to connect hard drives and other USB devices | 2-Way Bluetooth\r\nSound: 10 Watts Output | Dolby Digital Plus Sound Configuration | AI Sound | Virtual Surround 5.1 | Bluetooth Surround Ready | AI Acoustic Tuning\r\nSmart TV Features: α5 Gen 5 AI Processor | Web OS Operating System | Wi-Fi | Magic Remote | Full Web Browser | Screen Share | Game Optimizer | Built-in Alexa | Google Assistant | AI Functions | Works with Apple AirPlay & Homekit | HDR 10 Pro | 8 GB Storage | Supported Apps: Prime Video, Netflix, Disney+ Hotstar, Sony Liv, Zee5, Apple TV and more\r\nDisplay: LED Panel | HD Ready Digital Video Format | Slim & Stylish Design\r\nWarranty Information: 1 Year LG India Comprehensive Warranty and additional 1 year Warranty is applicable on panel/module from the date of purchase\r\nInstallation : For requesting installation/wall mounting/demo of this product once delivered, please directly call LG support (Please visit LG Website for Toll Free Numebrs) and provide product's model name as well as seller's details mentioned on the invoice",
+    brand: "LG",
+    model: "32LQ576BPSA",
+    color: "ceremic black",
+    category: "tv",
+    discount: 3,
+  },
+  {
+    id: 72,
+    title:
+      " Kodak 80 cm (32 inches) HD Ready Certified Android LED TV 32HDX7XPRO (Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694165648075-81pOKCk2z1L._SL1500_.jpg",
+    price: 132,
+    description:
+      "‎Smart remote with Dedicated Hotkeys for quick and easy access | Google Voice Assistant",
+    brand: "Kodak",
+    model: "32HDX7XPRO",
+    color: "black",
+    category: "tv",
+    discount: 5,
+  },
+  {
+    id: 73,
+    title:
+      " SANSUI 80 cm (32 inches) HD Ready Smart A+ LED Google TV JSWY32GSHD (Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694165731813-717jM0kdi8L._SL1500_.jpg",
+    price: 150,
+    description:
+      "Smart TV Features: Google TV | Google Assistant | Built-in Chromecast | Voice Search Smart Remote | Supported Apps: Netflix, Youtube, Prime Video, Disney+ Hotstar, Google Play",
+    brand: "SANSUI",
+    model: "JSWY32GSHD",
+    color: "black",
+    category: "tv",
+    discount: 5,
+    onSale: true,
+  },
+  {
+    id: 74,
+    title:
+      " HYUNDAI 80 cm (32 inches) HD Ready Smart LED TV SMTHY32WSR6YI5 (Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694165821925-71hoDN+6NfL._SL1500_.jpg",
+    price: 132,
+    description:
+      "Resolution : HD Ready (1366x768) | Refresh Rate : 60 Hertz | 178 Degree wide viewing angle\r\nConnectivity: 3 HDMI ports to connect set top box, Blu-ray speakers or a gaming console | 2 USB ports to connect hard drives or other USB devices | Ethernet Port For Wired Network\r\nSound: 20 Watts Output | Box Speaker For Superior Sound | 6 Sound Modes | Dolby Ultra Surround\r\nSmart TV Features: Webos | Simplink (Hdmi Cec",
+    brand: "Hyundai",
+    model: "SMTHY32WSR6YI5",
+    color: "black",
+    category: "tv",
+    discount: 3,
+  },
+  {
+    id: 75,
+    title: " Jbl Professional Eon612 1000W Bluetooth, Wireless Speaker - Black",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694583169179-81z5499-+5L._SL1500_.jpg",
+    price: 624,
+    description:
+      "Omni Directional Party sound :Feel the beat of your track in Every Corner with Powerful Omni Directional Sound\r\nBattery Life : Now you can enjoy music non stop upto 25hrs of battery life\r\nIPX4 splash proof :With an IPX4 splash resistance rating, it can stand up to splashes and spills, so you can enjoy the party with no worries\r\nAmbient Lighting :Give your party a fresh, modern look with the indirect illumination lighting concept it perfectly fit for both parties and everyday use\r\nQuick Charge :Just 10 minutes of charging provides up to 3 hours of playback",
+    brand: "JBL",
+    model: "EON612",
+    color: "black",
+    category: "audio",
+    onSale: true,
+    discount: 9,
+  },
+  {
+    id: 76,
+    title:
+      "SONY SRS-XV900 X-Series Wireless Portable-Bluetooth Party-Speaker with 25 Hour-Battery, Built in Handle and Wheels (Omni Directional Sound and Light, USB, Bluetooth Connectivity)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694167851729-81Pcnh7GarL._SL1500_.jpg",
+    price: 963,
+    description:
+      "Omni Directional Party sound & Light :Feel the beat of your track in Every Corner with Powerful Omni Directional Sound\r\nX Balanced Speaker :It provide power, clarity, and distortion-free sound.\r\nTV Sound Booster: Lets you enjoy the enhanced sound of audio visual contents.\r\nBuilt in Battery: Now you can enjoy music non-stop up to 25hrs of battery life.\r\nQuick Charge: A quick 10-minute charge is all you need for up to 3 hours of music",
+    brand: "sony",
+    model: "SRSXV900",
+    color: "black",
+    category: "audio",
+    discount: 9,
+  },
+  {
+    id: 77,
+    title:
+      "JBL Go 3, Wireless Ultra Portable Bluetooth Speaker, Pro Sound, Vibrant Colors with Rugged Fabric Design, Waterproof, Type C (Without Mic, Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694168007631-71fzp1etPwL._SL1500_.jpg",
+    price: 36,
+    description:
+      "Ultimate JBL Pro Sound: Enjoy signature JBL bass without any distortion.\r\nPort-anywhere: Feather light, ultra-portable grab-and-go design.\r\nIP67 water-resistant and dust-resistant: Engineered to withstand splashes and sand.\r\nQuick-Connect: Experience your music and movies without any lagging with Bluetooth 5.1’s Insta-sync.\r\nMega Playtime: One single charge = upto 5 Hour battery backup under optimum audio settings.",
+    brand: "JBL",
+    model: "JBL Go3",
+    color: "black",
+    category: "audio",
+    onSale: true,
+    discount: 3,
+  },
+  {
+    id: 78,
+    title:
+      " realme narzo 50i Prime (Dark Blue 3 GB RAM +32 GB Storage) Octa-core Processor | 5000 mAh Battery",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694181591658-81WPIz1l5wL._SL1500_.jpg",
+    price: 90,
+    description:
+      "Powerful Unisoc T612 processor for smooth day to day performance |Superb performance with an AnTuTu Benchmark Score of 214, 150 | Power efficient 12nm Process with Octa-core CPU to make your daily tasks easier\r\nDisplay: 6.5 inch HD+ display with 400nits of brightness brings a full screen display and vibrant colors to make every ounce of the experience exciting\r\n8MP back camera for crisp and clear shots and 5MP front camera picture perfect selfies\r\n5000mAh Massive Battery with 10W fast charging support. The 10W fast charger is included in the box.\r\n3 GB RAM | 32 GB ROM | External storage is Expandable Up to 1TB",
+    brand: "realme",
+    model: "realme narzo 50i Prime",
+    color: "Blue",
+    category: "mobile",
+    discount: 9,
+  },
+  {
+    id: 79,
+    title:
+      "realme 11 Pro 5G (Oasis Green, 8GB RAM, 128GB Storage) | 120 Hz Curved Display | 100MP Prolight Camera | 7050 5G Dimensity | 67W SUPERVOOC | 12GB Dynamic RAM | Premier Vegan Leather Finish Design",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694181968262-51yJF5nnedL.jpg",
+    price: 283,
+    description:
+      "*[RAM, ROM AND Explandabe Memory] :- 8 GB RAM | 128 GB ROM | Not Expandable (Memory Card Slot Not Available)\r\n*[Display] :- Curved Vision Display, The realme Pro 5G smartphone has a 120 Hz curved vision display that ensures immersive display. It comes with an array of features like 2160 Hz PWM dimming, TUV Rheinland certified eye protection features, 1260 Hz Turbocharged Touch Sampling, and 16x HyperPrecise Touch for a smooth and hassle-free usage. The 2.33 Chin, 61-degree Precision Curvature, and Doubly reinforced Glass gives an aesthetic look and perfectly fits in your hands.\r\n*[Processor] :- Powerful Processor, The Dimensity 7050 5G chipset of this smartphone delivers fast and smooth performance. The realme Pro 5G smartphone has 5G compatibility along with TUV SUD rating for 48-month system fluency, Dash Memory Engine, 6 nm technology process, and an AnTuTu score above 550,000 which makes it a feature-packed smartphone.",
+    brand: "realme",
+    model: "realme 11 Pro",
+    color: "Green",
+    category: "mobile",
+    popular: true,
+    discount: 9,
+  },
+  {
+    id: 80,
+    title: "POCO M6 Pro 5G (Power Black, 128 GB) (6 GB RAM)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694182309030-51KXP7nN84L._SL1057_.jpg",
+    price: 162,
+    description:
+      "6 GB RAM | 128 GB ROM | Expandable Upto 1 TB\r\n17.25 cm (6.79 inch) Full HD+ Display\r\n50MP + 2MP | 8MP Front Camera\r\n5000 mAh Battery\r\nSnapdragon 4 Gen 2 Processor",
+    brand: "poco",
+    model: "M6 Pro 5G",
+    color: "black",
+    category: "mobile",
+    discount: 5,
+  },
+  {
+    id: 81,
+    title:
+      "Vivo Y100A 5G (Metal Black, 8GB RAM, 128GB Storage) with No Cost EMI/Additional Exchange Offers",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694182904592-613WuKC1KlL._SL1200_.jpg",
+    price: 289,
+    description:
+      'Triple 64MP+2MP+2MP Rear Camera | 16MP Selfie Camera\r\n16.20 cm (6.38" inch) FHD+ AMOLED Display\r\nMemory & SIM: 8GB RAM | 128GB internal memory\r\n44W fast charging with 4500mAh battery',
+    brand: "vivo",
+    model: "Y100A",
+    color: "grey",
+    category: "mobile",
+    popular: true,
+    discount: 9,
+  },
+  {
+    id: 82,
+    title:
+      "iQOO Z7s 5G by vivo (Pacific Night, 8GB RAM, 128GB Storage) | Ultra Bright AMOLED Display | Snapdragon 695 5G 6nm Processor | 64 MP OIS Ultra Stable Camera | 44WFlashCharge",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694183079648-51oW-QOqhaL._SL1200_.jpg",
+    price: 240,
+    description:
+      "Snapdragon 695 5G Mobile Processor with a 6nm energy efficient process which will consume less power and enhance the battery life\r\n6.38 inches FHD+ AMOLED display, 1300 nits peak local brightness, 90 Hz refresh rate, Schott Xensation UP glass protection, IP54 rated\r\n64MP OIS Ultra Stable Camera; 2MP Bokeh camera; Front (Selfie) Camera: 16MP\r\nCamera Features: Ultra Stabilization video recording, Micro Movie Mode, Dual View Video, Night Mode, Portrait mode, Double Exposure, Panorama Mode, Pro mode, 1080p video at 60 fps\r\n44W FlashCharge, 50% charge in just 23 minutes 11 seconds. Ultra Game Mode, Motion Control, and 1200Hz Instant touch sampling rate for immersive gaming",
+    brand: "iQOO",
+    model: "iQOO Z7s 5G",
+    color: "grey",
+    category: "mobile",
+    onSale: true,
+    discount: 5,
+  },
+  {
+    id: 83,
+    title:
+      "iQOO Neo 7 5G (Interstellar Black, 8GB RAM, 128GB Storage) | Dimensity 8200, only 4nm Processor in The Segment| 50% Charge in 10 mins| Motion Control & 90 FPS Gaming",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694183253866-61IiuWQcVjL._SL1200_.jpg",
+    price: 337,
+    description:
+      "MediaTek Dimensity 8200 5G Mobile platform adopts TSMC 4nm process and has excellent Power Efficiency Performance. Also, Equipped with the LPDDR5 RAM & UFS 3.1 Storage.\r\nThe 120W FlashCharge charges from 1% to 50% in just 10 minutes (25 minutes for a full charge)\r\nMotion Control powered by Gyroscope & Acceleration Sensors to give 6 additional Phone movement-based control options while Gaming\r\n6.78” 120Hz AMOLED Display with HDR 10+ Certification, Netflix HDR Support & 1300 Nits Peak Brightness\r\n64MP OIS Camera, Dual Stereo Speakers, X-Axis Linear Motor and Extended RAM 3.0 (8GB+8GB)\r\n",
+    brand: "iQOO",
+    model: "iQOO Neo 7 5G",
+    color: "grey",
+    category: "mobile",
+    onSale: true,
+    discount: 11,
+  },
+  {
+    id: 84,
+    title:
+      "Acer Nitro VG240YS 23.8 Inch (60.45 Cm) IPS Full HD 1920 X 1080 Pixels, Gaming LCD Monitor with LED Backlight I AMD Freesync I 0.5 MS Response time I 165Hz Refresh Rate I Dp, 2 X Hdmi, Black",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694239882227-81bGoTqXEKL._SL1500_.jpg",
+    price: 137,
+    description:
+      "Full HD: The Full HD resolution (1920 x 1080) ensures a sharp and smooth gameplay experience, even at the highest settings.VESA Mount Compatible. Viewing Angle (H/V) 178°(H)/178°(V). Brightness 250 nits (cd/m2)\r\n165 Hz refresh rate: The incredible 165 Hz refresh rate means that even when the action heats up, your gameplay will be smooth and lag-free, Visual Response Boost for blur free gaming\r\nIntegrated AMD FreeSync Premium technology eliminate screen tearing, while minimizing lag and latency and delivers very smooth gaming experiences.\r\nConnectivity Options : 2 X HDMI (2.0) 1 X Display (1.2) Ports with Inbox DP Cable I Audio Out I Integrated Stereo Speakers\r\nEye Care with Bluelight Shield, Flickerless, Low Dimming, Acer Vision Care I Acer Display Widget for Easy modification of monitor settings I Different game modes for Better viewing experience",
+    brand: "Acer",
+    model: "VG240YS",
+    color: "black",
+    category: "gaming",
+    popular: true,
+    discount: 5,
+  },
+  {
+    id: 85,
+    title:
+      "Samsung 24-inch(60cm) Gaming, FHD, 165 Hz, 1 Ms, Flat Monitor, HAS, 3-Sided Borderless Display, Eye-Saver Mode, AMD FreeSync Premium, (LS24AG320NWXXL, Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694240000483-91f6SmYBPLL._SL1500_.jpg",
+    price: 156,
+    description:
+      "24 Inch Samsung Monitor - 1,920 x 1,080 Resolution\r\nAspect Ratio: 16:9 | 178° Horizontal and Vertical Viewing Angle\r\n3 Years Warranty From Manufacturer || Eye Saver Mode + Flicker Free - Flicker Free technology continuously removes tiring and irritating screen flicker so you can focus longer with less distraction or eye strain.",
+    brand: "samsung",
+    model: "LS24AG320NWXXL",
+    color: "black",
+    category: "gaming",
+    discount: 9,
+  },
+  {
+    id: 86,
+    title:
+      "ASUS Tuf - Vg259Qr Gaming 25 Inch (63.5 Cm) 1920 x 1080 Pixels LCD Monitor - Full Hd, 165Hz, 1Ms, Extreme Low Motion, Speaker, Shadow Boost, Vesa Mountable, Displayport, Hdmi Black",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694240120607-91DXCaPOpaL._SL1500_.jpg",
+    price: 270,
+    description:
+      "62.23cm (24.5 inch) Full HD (1920 x 1080) gaming monitor with ultrafast 165Hz refresh rate designed for professional gamers and immersive gameplay\r\nASUS Extreme Low Motion Blur (ELMB ) technology enables a 1ms response time (MPRT), eliminating ghosting for sharp gaming visuals\r\nShadow Boost enhances image details in dark areas, brightening scenes without over-exposing bright areas\r\nFeatures an ergonomically designed stand to offer extensive swivel, tilt, pivot and height adjustments",
+    brand: "asus",
+    model: "VG259QR",
+    color: "black",
+    category: "gaming",
+    popular: true,
+    discount: 3,
+  },
+  {
+    id: 87,
+    title:
+      "Samsung 27-Inch(68.46Cm) 1920 x 1080 Pixels Gaming, 240Hz, 1ms, IPS, Flat Monitor, FHD, HAS, HDR10, Nvidia G-Sync Compatible, Ultrawide Game View (LS27BG400EWXXL, Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694240213033-81z4qLkLBnL._SL1500_.jpg",
+    price: 285,
+    description:
+      "Display 27 Inches Samsung Monitor - 1,920 x 1,080 Resolution IPS Smart Monitor\r\nIncrediby vibrant and darker blacks with 16.7 Million colors & 1000:1 contrast ratio, Refresh Rate: 240 Hz, Response Time: 1(GTG) ms\r\nFHD resolution & IPS panel\r\nEnergy-saving display: Eco Saving Plus achieves power-consumption reductions of up to 10% while still maintaining picture quality.\r\n3 Years Warranty From Manufacturer || Eye Saver Mode + Flicker Free - Flicker Free technology continuously removes tiring and irritating screen flicker so you can focus longer with less distraction or eye strain.",
+    brand: "samsung",
+    model: "LS27BG400EWXXL",
+    color: "black",
+    category: "gaming",
+    onSale: true,
+    discount: 9,
+  },
+  {
+    id: 88,
+    title:
+      "Samsung 43-inch(108cm) Odyssey Neo G7 UHD, 144Hz, 1 ms, Flat Gaming Monitor, Smart TV, Gaming Hub, Quantum Mini LED, HDR600, Game Bar, AMD FreeSync Premium Pro, (LS43CG700NWXXL, Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694240302644-81t+PmgnnDL._SL1500_.jpg",
+    price: 854,
+    description:
+      "UHD RESOLUTION: Astonishing picture quality for work and play (3840 x 2160)\r\nCoreSync & Core lighting design - With core lighting, add personality to your setup with multiple color modes that leap off the screen and into your reality and with core lighting, add personality to your setup with multiple color modes that leap off the screen and into your reality.\r\nFollow the fastest action with 144Hz refresh rate\r\nFreeSync - For exceptionally smooth, fast-action gaming.",
+    brand: "samsung",
+    model: "LS43CG700NWXXL",
+    color: "black",
+    category: "gaming",
+    popular: true,
+    discount: 11,
+  },
+  {
+    id: 89,
+    title:
+      'GIGABYTE M32U 32" 144Hz 4K FreeSync Compatible Gaming Monitor, SS IPS, 3840 x 2160 Pixels Display, 1ms Response Time (MPRT), Display Port 1.4, 2X HDMI 2.1, 3X USB 3.0, USB Type C, Black',
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694240444311-615QigQMWUL._SL1000_.jpg",
+    price: 899,
+    description:
+      "Panel Size (diagonal) : 31.5” SS IPS, True Resolution : 3840 x 2160 (UHD)\r\nResponse Time : 1ms MPRT, Refresh Rate : 144Hz, 120Hz for Console Game*\r\nColor Saturation : 90% DCI-P3/ 123% sRGB\r\nBrightness : 350 cd/m2 (TYP), Contrast Ratio : 1000:1\r\nDisplay Colors : 10-bit (8-bit + FRC),\r\nHDR : VESA Display HDR400, HBR3 : Yes\r\nConnectivity : HDMI 2.1 (support 4K 144Hz 4:4:4 @ DSC enabled or 4K 144Hz 4:2:0) x2, Display port 1.4 (DSC) x1, USB Type-C x1\r\nUSB port(s) : USB 3.0 x3, Speaker : 3W x2, Earphone Jack : Yes\r\nUnique Features : OSD Sidekick**, Aim Stabilizer Sync, Black Equalizer, Dashboard, Crosshair, Timer, Counter, PiP/PbP, Auto-Update, KVM, 6 axis Color Control, Smart OD",
+    brand: "GIGABYTE",
+    model: "M32U",
+    color: "black",
+    category: "gaming",
+    discount: 7,
+  },
+  {
+    id: 90,
+    title: "Xbox Series S – 1TB (Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694240581635-61R0x6VMpdL._SL1500_.jpg",
+    price: 493,
+    description:
+      "Experience next-gen speed and performance with Xbox Series S in Carbon Black, featuring a 1 TB SSD.\r\nMake the most of every gaming minute with Quick Resume, lightning-fast load times, and gameplay of up to 120 FPS – all powered by Xbox Velocity Architecture\r\nEnjoy digital games from four generations of Xbox, with hundreds of optimized titles that look and play better than ever\r\nGet the most out of your Xbox Series S with Xbox Game Pass Ultimate (membership sold separately) and be the first to play new games like Starfield and Forza Motorsport on day one. Plus, enjoy hundreds of games like Minecraft Legends, Halo Infinite, and Forza Horizon 5 with friends on console, PC, and cloud.\r\nWith games added all the time, there’s always something new to play.",
+    brand: "microsoft",
+    model: "xbox 5",
+    color: "black",
+    category: "gaming",
+    discount: 19,
+  },
+  {
+    id: 91,
+    title:
+      "ASUS RGB Gaming Wired On Ear Headset ROG Delta with Detachable Mic, Hi-Res ESS Quad-DAC, Circular RBG Lighting Effect, USB-C Connector for Pcs, Consoles, and Mobile Gaming (White)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694240693670-51XXYvbE5NL._SL1000_.jpg",
+    price: 371,
+    description:
+      "ASUS ROG Delta RGB Gaming headphone with Hi-Res ESS Quad-DAC delivers an impressive 127-db SNR for impeccably detailed & true-to-life audio that gives serious gamers a competitive edge by immersing them in powerful sound unmatched by other gaming headsets\r\nCLEAR HIGHS & PUNCHY BASS - The Delta ROG Gaming Headset feature exclusive ASUS Essence drivers with Audio Signal Diversion Technology and airtight chamber so you hear every detail with utmost precision\r\nON POINT STYLE - ROG Delta wired headphones with mic feature a classy circular rainbow RGB lighting effect that lets you set your unique style. Includes a detachable, unidirectional boom microphone with an indicative flashlight at the tip\r\nCROSS-PLATFORM COMPATIBILITY - Featuring a USB-C connector and a USB-C to USB 2.0 adapter for PC, Mac",
+    brand: "asus",
+    model: "ROG Delta White",
+    color: "white",
+    category: "gaming",
+    onSale: true,
+    discount: 9,
+  },
+  {
+    id: 92,
+    title: "DualSense Edge Wireless Controller (PlayStation 5)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694240841410-51qcJKGmDXL._SL1000_.jpg",
+    price: 198,
+    description:
+      "Changeable stick caps, remappable inputs and custom settings make your DualSense Edge wireless controller uniquely yours. Fine tune your aim by adjusting stick sensitivity and dead zones, set the travel distance of your triggers for faster inputs, and quickly swap between control profiles so you’re always ready for your next game.\r\nSwappable back buttons can be configured to any other button input, so you’ve always got game-changing actions and essential controls at your fingertips. Plus, with two different styles of button to choose from, you can pick an input type that feels just right for your playstyle.",
+    brand: "microsoft",
+    model: "PS5 Controller",
+    color: "white",
+    category: "gaming",
+    discount: 3,
+  },
+  {
+    id: 93,
+    title: "Xbox Elite Wireless Controller Series 2 Core – White",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694240980154-51icnF-k03L._SL1000_.jpg",
+    price: 126,
+    description:
+      "Experience the Xbox Elite Wireless Controller Series 2 featuring adjustable-tension thumbsticks, wrap-around rubberized grip, and shorter hair trigger locks.\r\nEnjoy limitless customization with interchangeable components and exclusive button mapping options in the Xbox Accessories app.*\r\nSave up to 3 custom profiles on the controller and switch between them on the fly.; Swap thumbstick toppers, D-pads, and paddles to tailor your controller to your preferred gaming style.\r\nStay in the game with up to 40 hours of rechargeable battery life and refined components that are built to last.*\r\nWarranty Description: 90 Days Manufacturer Warranty For Manufacturer Defects; Item Length: 19.0; Power Source Type: Battery Powered; Item Height: 19.0; Item Width: 8.0",
+    brand: "microsoft",
+    model: "B0BG7F83SK",
+    color: "white",
+    category: "gaming",
+    popular: true,
+    discount: 9,
+  },
+  {
+    id: 94,
+    title:
+      "MSI Optix MPG321UR-QD 31.5 Inch (80.01 CM), 3840 x 2160 Pixels, 4K UHD, Gaming LCD, Monitor - Quantum Dot, IPS, 144Hz, KVM, USB, DP, HDMI, G-Sync, Gaming Intelligence, Black",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694241085976-815WGHE6DVL._SL1500_.jpg",
+    price: 986,
+    description:
+      "QUALITY DISPLAY: 32-inch gaming monitor with a high resolution of 3840 x 2160 px, delivering stunning 4K UHD visuals for immersive gaming & entertainment experiences. Quantum Dot technology enhances colour accuracy & vibrancy, providing a wider colour gamut & allowing for more lifelike visuals.\r\nSEAMLESS MOVEMENT: The monitor features an IPS panel for wide viewing angles and a 144Hz refresh rate, ensuring smooth and fluid motion during fast-paced gaming sessions and unlocking the full potential of premium GPU & memory hardware.\r\nG-SYNC TECHNOLOGY: This synchronises the monitor's refresh rate with compatible NVIDIA graphics cards, eliminating screen tearing and minimising stutter and input lag for a more seamless and fluid gaming experience.",
+    brand: "MSI",
+    model: "MPG321UR-QD",
+    color: "black",
+    category: "gaming",
+    onSale: true,
+    discount: 19,
+  },
+  {
+    id: 95,
+    title:
+      "Nitho Drive Pro V16 Racing Wheel & Pedal Set MLT-DP16-K, Compatible with PC/PS3/PS4/Xbox1/Switch",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694241181380-61IxvegxZKL._SL1500_.jpg",
+    price: 144,
+    description:
+      "The curved base can easily sit on your knees, or fix on flat table using suckers or included c-clamps if surface is not air-tight\r\nMulti-platform gaming steering wheel & pedal compatible with PC/PS3/PS4/XBOX1/Switch, for PS4 & XBOX1 you will need a data cable to link controller with the wheel\r\nRealistic full-size 26cm wheel, 27 degree turning with vibration motors, sensitivity adjustment and programming the buttons; Integrated stick shifter forward and back for immersive physical movement, F1 style paddle shifters behind the wheel for more professional driver move",
+    brand: "Nitho",
+    model: "MLT-DP16-K",
+    color: "black",
+    category: "gaming",
+    discount: 3,
+  },
+  {
+    id: 96,
+    title:
+      "VGRASSP Handheld Video Game Console, Retro Mini Game with 400 Classic Sup Game TV Compatible for Kids, Rechargeable 8 Bit Classic – Colour and Design as per Stock",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694241320686-51qC3djhLQL.jpg",
+    price: 8,
+    description:
+      "Built-in 400 Classical Games: It's a good gift for your children, friends, both boys and girls will like it. Adapted AV Cable: Applicable to TV system, so that you can easily enjoy vivid and exciting games on a big screen.\r\nPerfect gift for children, retro game lovers, collectors, etc\r\nPlay Longer: 600 mAh rechargeable lithium battery, supports up to 3-4 hours of continuous game play\r\nEasy to use: Just switch on and play. Cable to connect with TV included.",
+    brand: "VGRASSP",
+    model: "‎VGRASSP_400SUPG_MFN",
+    color: "black",
+    category: "gaming",
+    popular: true,
+    discount: 3,
+  },
+  {
+    id: 97,
+    title: "Xbox Series X",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694241552001-61-jjE67uqL._SL1500_.jpg",
+    price: 648,
+    description:
+      "Introducing Xbox series X, the fastest, most powerful Xbox ever. Play thousands of titles from four generations of consoles—all games look and play best on Xbox series X\r\nExperience next-gen speed and performance with the Xbox velocity architecture, powered by a custom SSD and integrated software",
+    brand: "microsoft",
+    model: "B08J7QX1N1",
+    color: "black",
+    category: "gaming",
+    discount: 19,
+  },
+  {
+    id: 98,
+    title:
+      "ASUS Tuf Gaming Vg28Uql1A, 28 Inch (71.12 Cm) 4K Hdmi 2.1 Gaming Led Monitor 28 Inch Uhd 4K 3840 X 2160 Pixels, Fast IPS, 144Hz, Hdmi 2.1, Dsc, Free-Sync Premium, G-Sync (Black)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694241699060-71wa5QUIfRL._SL1500_.jpg",
+    price: 923,
+    description:
+      "28-inch UHD (3840 x 2160) Fast IPS gaming monitor with 144 Hz refresh rate and 1 ms (GTG) response time, designed for professional gamers\r\nHDMI 2.1 supports native 4K 120 Hz gaming without chroma subsampling (4:4:4) on PlayStation 5 and Xbox Series X\r\nASUS Extreme Low Motion Blur Sync (ELMB Sync) technology enables ELMB and variable-refresh-rate technologies to work simultaneously to eliminate ghosting and tearing for sharp gaming visuals with high frame rates\r\nNVIDIA G-SYNC Compatible, AMD FreeSync Premium, and exclusive Variable Overdrive technology ensure seamless, tear-free gaming",
+    brand: "asus",
+    model: "Vg28Uql1A",
+    color: "black",
+    category: "gaming",
+    onSale: true,
+    discount: 15,
+  },
+  {
+    id: 99,
+    title: "Hyperkin MegaRetroN HD Gaming Console for Genesis/ Mega Drive",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694241817565-61HR+O-uUeL._SL1000_.jpg",
+    price: 221,
+    description:
+      'Compatible with NTSC AND PAL Genesis/Mega Drive cartridges (via bottom case switch), as well as original controllers\r\n16:9/4:3 Aspect Ratio Switch and HD audio and video (720p)\r\nOne (1) "Squire" premium classic-style controller (10 ft. cable)\r\n6 ft. Micro cable with USB AC adapter* (we strongly advise you use a 5 Volt 1 Amp USB wall AC adapter)\r\n3 ft. HD cable and Also includes AV ports with AV cable',
+    brand: "Hyperkin",
+    model: "B07JC66GKX",
+    color: "black",
+    category: "gaming",
+    popular: true,
+    discount: 17,
+  },
+  {
+    id: 100,
+    title:
+      "Logitech G PRO X Gaming Headset, Over-Ear/DTS Headphones for Esports Gaming, PC/PS/Xbox/VR/Nintendo Switch with Blue Microphones Yeti USB Mic for Recording and Streaming-Black",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694241938462-71TGdBS0oJL._SL1500_.jpg",
+    price: 336,
+    description:
+      "Blue VO!CE microphone technology* – Detachable pro-grade microphone filters tune your voice in real time to sound richer, cleaner and more professional. Reduces background noise and eliminates pops and hisses for clear, consistent, in-game comms and streaming. Requires included USB external sound card, Windows PC, and Logitech G HUB software.\r\nCustom three-capsule array: This professional USB mic produces clear, powerful, broadcast-quality sound for YouTube videos, Twitch game streaming, podcasting, Zoom meetings, music recording and more.;Blue VO!CE software: Elevate your streamings and recordings with clear broadcast vocal sound and entertain your audience with enhanced effects, advanced modulation and HD audio samples.",
+    brand: "Logitech G",
+    model: "G PRO X",
+    color: "black",
+    category: "gaming",
+    discount: 9,
+  },
+  {
+    id: 101,
+    title:
+      "Logitech G102 USB Light Sync Gaming Mouse with Customizable RGB Lighting, 6 Programmable Buttons, Gaming Grade Sensor, 8K DPI Tracking, 16.8mn Color, Light Weight - Black",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694242072596-logitech 2.jpg",
+    price: 19,
+    description:
+      "COLORFUL LIGHTSYNC RGB : Play in colour with our most vibrant LIGHTSYNC RGB featuring colour wave effects that are customisable across 16.8 million colours. 8,000 DPI sensor.\r\nCLASSIC,GAMER TESTED DESIGN : Play comfortably and with total control. The simple 6-button layout and classic gaming shape form a comfortable, time-tested and loved design\r\nMECHANICAL SPRING BUTTON TENSIONING: Primary buttons are mechanical and tensioned with durable metal springs for reliability, performance and an excellent feel",
+    brand: "Logitech G",
+    model: "G102 Lightsync",
+    color: "black",
+    category: "gaming",
+    popular: true,
+    discount: 3,
+  },
+  {
+    id: 102,
+    title:
+      "Ant Esports GM320 RGB Optical Wired Gaming Mouse | 8 Programmable Buttons | 12800 DPI I Ergonomic Design with Braided Cable - Black",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694242208718-51eFgb4stIL._SL1080_.jpg",
+    price: 7,
+    description:
+      "8 programmable buttons & Fire Button - support Macro editing, 8 mouse buttons can be programmed with Ant Esports easy-to-program gaming software. The rapid Fire button gives you the edge during intensive FPS battles. Great value FPS gaming mouse, also excellent for MOBA/ RTS games.\r\nRGB backlit for extreme gaming experience- Multicolour RGB lighting, Easily turn on and off the backlit or change the color mode with the convenient switch at the bottom of the mouse. Plus, adopts impressive optical gaming sensor, ensure quickly switch for different games\r\nExcellent gaming performance with 12800 DPI and 4 polling rate- GM320 gaming mouse with default 4 DPI levels available from 1000 to 12800 DPI. Easily adjust to instantly match mouse speed to different games. polling rate is adjustable: 500Hz-1000Hz, polling rate ensures smooth and high-speed movement",
+    brand: "Ant Esports",
+    model: "GM320 RGB",
+    color: "black",
+    category: "gaming",
+    onSale: true,
+    discount: 3,
+  },
+  {
+    id: 103,
+    title:
+      "HP Victus Gaming Laptop, 12th Gen Intel Core i5-12450H, NVIDIA RTX 3050 GPU, 15.6-inch (39.6 cm), FHD, IPS, 144Hz, 9 ms Response time, 16GB DDR4, 512GB SSD, Backlit KB (MSO, Blue, 2.29 kg) fa0666TX",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694242482686-81V5P1x+LSL._SL1500_.jpg",
+    price: 866,
+    description:
+      "8-core 12th Gen Intel Core i5-12450H 12 threads and 12MB L3 cache enable you to dominate virtual battles and juggle multiple tasks without overheating, all with updated thermals.\r\n【NVIDIA GeForce RTX 3050 Laptop GPU】Experience immersive, lifelike gameplay with stunning graphics and accelerate heavy workflows with high-speed data processing, video editing, and rendering.\r\n【Upgraded memory and storage】Make room for all your games with 512GB PCIe Gen4 NVMe TLC M.2 SSD. Plus, get 16GB DDR4 RAM that lets you take on any opponent with improved system responsiveness.\r\n【Popular games】Play all your favourite games like League of Legends, Valorant, Fortnite, Call of Duty: Warzone, Apex Legends, Overwatch 2, Fall Guys, and more.\r\n",
+    brand: "Hp Victus",
+    model: "15-fa0666TX",
+    color: "blue",
+    category: "laptop",
+    discount: 9,
+  },
+  {
+    id: 104,
+    title:
+      "HP Laptop 15s, Intel Celeron N4500, 15.6 inch(39.6cm) HD Laptop (8GB RAM,512GB SSD,Intel UHD Graphics,Dual Speakers,Numeric Keypad,Alexa,Win 11,MSO 21,Natural Silver,1.69 Kgs) 15s-fq3071TU",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694242680684-811aBK9bUFL._SL1500_.jpg",
+    price: 348,
+    description:
+      'Processor: Intel Celeron N4500(up to 2.8 GHz burst frequency(2c),4 MB L3 cache, 2 cores, 2 threads)|Memory: 8 GB DDR4-2933 MHz RAM (1 x 8 GB)|Storage: 512 GB PCIe NVMe TLC M.2 SSD\r\nOperating System & Preinstalled Software: Windows 11 Home 64 Single Language – HP recommends Windows 11 Pro for business |Microsoft Office Home & Student 2021\r\nDisplay & Graphics: 39.6 cm (15.6") diagonal, HD, micro-edge, BrightView,Brightness: 250 nits, 101 ppi Color Gamut: 45%NTSC,Screen Resolution: 1366 x 768|Graphics: Intel UHD Graphics\r\nPorts:1 USB Type-C 5Gbps signaling rate, 2 USB Type-A 5Gbps signaling rate 1 headphone/microphone combo 1 AC smart pin, 1 HDMI 1.4b| Battery: 3-cell, 41 Wh Li-ion, Support battery fast charge',
+    brand: "hp",
+    model: "15s-fq3071TU",
+    color: "silver",
+    category: "laptop",
+    popular: true,
+    discount: 9,
+  },
+  {
+    id: 105,
+    title:
+      'Acer Aspire Lite AMD Ryzen 5 5500U Premium Thin and Light Laptop (16 GB RAM/512 GB SSD/Windows 11 Home) AL15-51, 39.62 cm (15.6") Full HD Display, Metal Body, Steel Gray, 1.59 KG',
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694242832586-71czGb00k5L._SL1500_.jpg",
+    price: 457,
+    description:
+      'Processor : AMD Ryzen 5 5500U Hexa-Core Mobile Processor with AMD Radeon Graphics.Maximum Power Supply Wattage 45 W\r\nVisibly Stunning: Experience sharp details and crisp colors on the 15.6" Full HD display, 16:9 aspect ratio, ultra-slim design and narrow bezels.\r\nInternal Specifications: RAM - 16 GB of Dual-channel DDR4, 2 SODIMM sockets; Storage - 512 GB SSD NVMe solid-state drive storage (expandable up to 1TB) to store your files and media\r\nPorts: 1 x USB 3.2 Gen 1 (Type A), 2 x USB 2.0 (Type A), 1 x USB 3.2 Gen 2 (Type C), 1 x DC-in jack\r\nKeyboard: 100-/101-/104-key keyboard with independent numeric keypad, international language support\r\nPremium Metal sleek body on both A & D Cover for lightweight experience',
+    brand: "acer",
+    model: "‎Aspire Lite",
+    color: "steel grey",
+    category: "laptop",
+    onSale: true,
+    discount: 9,
+  },
+  {
+    id: 106,
+    title:
+      "Realme Book (Slim) Intel Core I3 11Th Gen - (8 Gb/256 Gb Ssd/Windows 10 Home) Rmnb1001 Thin And Light Laptop (14 Inches, Real Blue, 1.38 Kg, With Ms Office) ",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694243104727-51bvTf58poL.jpg",
+    price: 493,
+    description:
+      "PROCESSOR : INTEL CORE I3-11TH GENERATION 1115G4 (3.0GHz with Turbo Boost Upto 4.1GHz)\r\nRAM & STORAGE : 8GB RAM DDR4 & 256GB SSD\r\nPORTS : TypeC x 2 USB 3.2 Gen 2; TypeA x 1 USB 3.2 Gen 1\r\nDISPLAY : 2K QHD, IPS LCD Display ( 400nits peak brightness, 100% sRGB,3:2 aspect ratio, Full Vision Display); KEYBOARD : Backlit Keyboard\r\nWireless Communication Technology: Wi-Fi; Hard Disk Interface: Solid State; Display Resolution Maximum: 1920 X 1080; Software Included: Microsoft Office 365; Native Resolution: 1920 X 1080 Pixels",
+    brand: "realme",
+    model: "RMNB1001",
+    color: "blue",
+    category: "laptop",
+    popular: true,
+    discount: 9,
+  },
+  {
+    id: 107,
+    title:
+      "Mi Notebook Ultra 3K Resolution Display Intel Core I5-11300H 11Th Gen",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694243191827-81fPDLbiWfL._SL1500_.jpg",
+    price: 499,
+    description:
+      "This Renewed product is tested to work and look like new with minimal to no signs of wear & tear; the product comes with relevant accessories and is backed by a minimum six month seller warranty; box may be generic\r\nProcessor: 11th Gen Intel Tiger Lake Core i5-11300H processor| Speed: 3.1 GHz(base) - 4.4 GHz(max) | 4 cores | 8 Threads | 8 MB Cache\r\nDisplay: 15.6 inch IPS 3.2K resolution (3200x2000) | 16:10 aspect ratio, 100% sRGB, 90Hz refresh rate, 241 PPI, 1500:1 contrast ratio | Anti glare | TUV Low blue light\r\nMemory & Storage: 16GB DDR4 3200 MHz | 512GB PCIe NVMe M.2 SSD; Operating System & Software: Windows 10 Home | Microsoft Office Home and Student 2019",
+    brand: "MI",
+    model: "Mi Notebook Ultra",
+    color: "silver",
+    category: "laptop",
+    onSale: true,
+    discount: 3,
+  },
+  {
+    id: 108,
+    title:
+      'ASUS VivoBook K15 OLED (2021), 15.6" (39.62 cms) FHD OLED, Intel Core i3-1115G4 11th Gen, Thin and Light Laptop (8GB/512GB SSD/Integrated Graphics/Office 2021/Windows 11/Silver/1.8 Kg) K513EA-L313WS',
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694243247385-71vTtY1qJXL._SL1500_.jpg",
+    price: 499,
+    description:
+      "Processor: Intel Core i3-1115G4, 3.0 GHz Base Speed, Up to 4.1 GHz Max Turbo Speed, 2 cores, 4 Threads, 6MB Cache\r\nMemory: 8GB (4GB onboard + 4GB SO-DIMM) DDR4 3200MHz, Upgradeable up to 12GB | Storage: 512GB M.2 NVMe PCIe 3.0 SSD with 1x 2.5-inch SATA slot for HDD/SSD Storage upgrade up to 1TB\r\nGraphics: Integrated Intel UHD Graphics\r\nDisplay: 15.6-inch (39.62 cms) FHD (1920 x 1080) 16:9, OLED 600nits, Glossy IPS-level Panel, 100% DCI-P3 Color Gamut, Pantone Validated, 85% Screen-to-body ratio\r\nOperating System: Windows 11 Home with Lifetime Validity | Software Included: Office Home and Student 2021\r\nDesign & battery: Up to 1.79 cm Thin | NanoEdge Bezels | Thin and Light Laptop | Laptop weight: 1.8 kg | 42WHrs, 3-cell Li-ion battery | Up to 8 hours battery life ;Note: Battery life depends on conditions of usage",
+    brand: "asus",
+    model: "K513EA-L313WS",
+    color: "white",
+    category: "laptop",
+    popular: true,
+    discount: 3,
+  },
+  {
+    id: 109,
+    title:
+      'ASUS Vivobook Pro 15,AMD Ryzen 5 5600H,15.6" (39.62Cm) Fhd,Thin&Light Laptop (16Gb/512Gb Ssd/4Gb Nvidia Geforce RTX 3050/Windows 11/Office 2021/Backlit/Fingerprint/Blue/1.80 Kg),M6500Qc-Hn541Ws',
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694244375691-61eTPcEsC+L._SL1500_.jpg",
+    price: 793,
+    description:
+      "Backlit Keyboard\r\nFingerprint Reader\r\nMemory Card Slot\r\nHD Audio",
+    brand: "asus",
+    model: "‎M6500QC-HN541WS",
+    color: "blue",
+    category: "laptop",
+    popular: true,
+    discount: 3,
+  },
+  {
+    id: 110,
+    title:
+      "Acer Nitro 5 Gaming Laptop AMD Ryzen™ 5 7535HS Hexa-Core Processor- (8GB/ 512 GB SSD/NVIDIA GeForce RTX 3050 4GB Graphics/Windows 11 Home) AN515-47 with 39.6 Cm (15.6 Inch) IPS Display",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694244472714-81gQvl-qT8L._SL1500_.jpg",
+    price: 781,
+    description:
+      'Latest High Speed Gaming Performance : Encounter high speed processing with the latest AMD Ryzen5 7535HS Hexa-Core Processor that ensure smooth gaming experience\r\nInternal Specifications: Dual-channel DDR5 SDRAM support: 8 GB of DDR5 system memory, Upgradable up to 32GB system memory (Memory Frequency: up to 4800 MT/s)\r\nPowerful Graphics: NVIDIA GeForce RTX 3050 with 4 GB of dedicated GDDR6 VRAM\r\nDisplay: 15.6" display with IPS (In-Plane Switching) technology, Full HD 1920 x 1080, Acer ComfyView LED-backlit TFT LCD, 16:9 aspect ratio, supporting 144 Hz refresh rate, Wide viewing angle up to 170 degrees, Ultra-slim design, Mercury free, environment friendly',
+    brand: "acer",
+    model: "Nitro 5",
+    color: "black",
+    category: "laptop",
+    onSale: true,
+    discount: 9,
+  },
+  {
+    id: 111,
+    title:
+      'ASUS Vivobook Go 15 OLED (2023), AMD Ryzen 5 7520U, 15.6" (39.62 cms) FHD OLED, Thin and Light Laptop (16GB/512GB SSD/Windows 11/Office 2021/Backlit KB/Black/1.63 kg), E1504FA-LK545WS',
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694244606071-71nAEVpqXuL._SL1500_.jpg",
+    price: 661,
+    description:
+      "Processor: AMD Ryzen 5 7520U Mobile Processor (4-core/8-thread, 4MB cache, up to 4.3 GHz max boost)\r\nMemory: 16GB LPDDR5 5500MHz on board with | Storage: 512GB M.2 NVMe PCIe 3.0 SSD\r\nDisplay: 15.6-inch (39.62 cm) FHD (1920 x 1080) OLED 16:9 aspect ratio, 60Hz refresh rate Display, 0.2ms response time 600nits HDR peak brightness VESA CERTIFIED Display HDR True Black 500 100% DCI-P3 color gamut PANTONE Validated Glossy display\r\nGraphics: Integrated AMD Radeon Graphics\r\nOperating System: Windows 11 Home with lifetime validity | Software Included: Pre-Installed Office Home and Student 2021 | 1-Year McAfee Anti-Virus\r\nDesign: 1.79 ~ 1.79 cm Thin | Thin & Light Laptop | 1.63 kg | 50WHrs Battery Capacity Up to 6 hours Battery life, Note: Battery life depends on conditions of usage",
+    brand: "asus",
+    model: "E1504FA-LK545WS",
+    color: "black",
+    category: "laptop",
+    onSale: true,
+    discount: 3,
+  },
+  {
+    id: 112,
+    title:
+      "HP Omen 16,AMD Ryzen 7 6800H,16.1 inch(40.9cm)QHD Gaming Laptop(16GB RAM/1TB SSD",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694245935392-71ZNIUH6HeL._SL1500_.jpg",
+    price: 1298,
+    description:
+      'This Renewed product is tested to work and look like new with minimal to no signs of wear & tear; the product comes with relevant accessories and is backed by a minimum six month seller warranty; box may be generic\r\nProcessor: AMD Ryzen 7 6800H (up to 4.7 GHz max boost clock (2i), 16 MB L3 cache, 8 cores, 16 threads)|Memory: 16 GB DDR5-4800 MHz RAM (2 x 8 GB)| Storage: 1 TB PCIe Gen4 NVMe TLC SSD\r\nOperating System & Preinstalled Software: Windows 11 Home 64 Plus Single Language | Microsoft Office Home & Student 2021| McAfee LiveSafe (12 Months free trial as default) |Pre-installed Alexa built-in- Your life simplified with Alexa. Just ask Alexa to check your calendar, create to-do lists, shopping lists, play music, set reminders, get latest news and control smart home.\r\nDisplay & Graphics: 40.9 cm (16.1") diagonal, QHD (2560 x 1440), 165 Hz, 3 ms response time, IPS, micro-edge, anti-glare, Low Blue Light Brightness: 300 nits, 182 ppi, colour gamut: 100% sRGB, Screen Resolution: 2560x1440|Graphics: NVIDIA GeForce RTX 3070 Ti Laptop GPU (8 GB GDDR6 dedicated) NVIDIA Max-Q technology',
+    brand: "HP",
+    model: "16-n0123AX",
+    color: "grey",
+    category: "laptop",
+    onSale: true,
+    discount: 9,
+  },
+  {
+    id: 113,
+    title:
+      "MSI Gaming GF63 Thin, Intel Core i7-11800H, 40CM FHD 144Hz Gaming Laptop (8GB/512GB NVMe SSD/Windows 10 Home/Nvidia GTX1650 4GB GDDR6/ Black/1.86Kg), 11SC-852IN",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694246023112-719sMfG+11L._SL1500_.jpg",
+    price: 673,
+    description:
+      'Processor: 11th Generation Intel Core i7-11800H Up To 4.60 GHz\r\nOperating System: Pre-loaded Windows 10 Home with lifetime validity (Free Upgrade to Windows 11 Home when Available) |Preinstalled Software: Nvidia GeForce Experience Nahimic 3 MSI Center Gaming Mode MSI App player | In the box: Laptop, Adapter\r\nDisplay: 40CM FHD (1920*1080), 144Hz 45%NTSC IPS-Level Panel\r\nMemory & Storage: 8GB DDR4 3200MHz RAM, expandable to 64 GB | Storage: 512GB NVMe PCIe Gen3x4 SSD\r\nDedicated Graphics: NVIDIA GeForce GTX1650 Max Q GDDR6 4GB\r\n"Ultra Thin and light design | Laptop weight: 1.86 kg "\r\nKeyboard: Backlight Keyboard (Single-Color, Red)\r\nCamera: HD type (30fps@720p) | Microphone: Built-in microphone',
+    brand: "MSI",
+    model: "11SC-852IN",
+    color: "black",
+    category: "laptop",
+    popular: true,
+    discount: 3,
+  },
+  {
+    id: 114,
+    title:
+      "ASUS TUF Gaming F17, Intel Core i5-11400H 11th Gen, 17.3-inch (43.94 cm) FHD 144Hz, Gaming Laptop (8GB/512GB SSD/4GB NVIDIA GeForce RTX 2050/Win 11/ RGB Backlit KB/Black/2.60 kg), FX706HF-HX018W",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694246104371-51zBem2syzL.jpg",
+    price: 697,
+    description:
+      "Processor: Intel Core i5-11400H Processor 2.7 GHz (12M Cache, up to 4.5 GHz, 6 Cores)\r\nPlay over 100 high-quality PC games, plus new and upcoming blockbusters on day one like Halo Infinite, Forza Horizon 5, and Age of Empires IV with your new FX506HC-HN089WS and one month of Game Pass-including EA Play\r\nWith new games added. Age of Empires IV, Back 4 Blood, Battlefield V, Forza Horizon 5, Halo Infinite*, Knockout City, Microsoft Flight Simulator, Minecraft PC Bundle, Need for Speed Heat, Psychonauts2, The Sims 4, Titanfall 2, 12 Minutes\r\nMemory: 8GB SO-DIMM DDR4 3200MHz Support Up to 32GB 2x SO-DIMM slots | Storage: 512GB PCIe 3.0 NVMe M.2 SSD with additional 1x M.2 Slot for SSD Storage expansion",
+    brand: "asus",
+    model: "FX706HF-HX018W",
+    color: "black",
+    category: "laptop",
+    onSale: true,
+    discount: 7,
+  },
+  {
+    id: 115,
+    title:
+      'Acer Aspire 5 Gaming Laptop Intel Core i5 13th Gen (16 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX 2050) A514-56GM,14" WUXGA Display, 1.56 KG',
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694246173668-61s-dofl3DL._SL1080_.jpg",
+    price: 745,
+    description:
+      'New Intel Processor: Intel Core i5-1335U Processor\r\nInternal Specifications: Dual-channel LPDDR4 SDRAM support 16GB of DDR4 system memory, Upgradable to 32 GB using two soDIMM modules. Storage: 512 GB, PCIe Gen4, 16 Gb/s, NVMe\r\nDisplay: 14.0" display with IPS (In-Plane Switching) technology, WUXGA 1920 x 1200, Acer ComfyView LED-backlit TFT LCD, 16:10 aspect ratio, color gamut NTSC 45%, Wide viewing angle up to 170 degrees, Mercury free, environment friendly\r\nGraphics: NVIDIA GeForce RTX2050\r\nOther Features: Elevated Design, Thunderbolt-4. Acer TNR Solution',
+    brand: "acer",
+    model: "A514-56GM",
+    color: "steel grey",
+    category: "laptop",
+    discount: 13,
+  },
+  {
+    id: 116,
+    title:
+      'Lenovo Legion 5 AMD Ryzen 7 5800H 15.6" (39.62cm) WQHD IPS Gaming Laptop (16GB/1TB SSD/6GB NVIDIA RTX 3060/165Hz/Windows 11/Office 2021/RGB Backlit/3months Game Pass/Phantom Blue/2.4Kg), 82JU00SYIN',
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694246235569-61Er61SxBhL._SL1500_.jpg",
+    price: 1251,
+    description:
+      'Processor: 5th Gen AMD Ryzen 7 - 5800H | Speed: 3.2 GHz (Base) - 4.4 GHz (Max) | 8 Cores | 16 Threads | 4MB L2 / 16MB L3 Cache\r\nDisplay: 15.6" WQHD (2560x1440) Dolby Vision | IPS Technology | 165 Hz Refresh Rate | 300Nits Brightness | 100% sRGB || Memory: 16GB RAM DDR4-3200, Upgradable Up to 32GB || Storage: 1TB SSD SSD || Connectivity : Wifi 6 11ax (2x2), Bluetooth 5.1\r\nGraphics: NVIDIA GeForce RTX 3060 6GB GDDR6 Dedicated Graphics with max TGP 130W | Boost Clock 1425/1702MHz | Free-Sync and G-Sync || Cooling: Legion Coldfront 3.0 with Quad Channel Exhaust System with Copper Fins\r\nAI Engine : Upto 15% more FPS and Best performance with Auto Detect Mode (Top 16 AAA Titles) and Auto Optimisation Mode | Q Control 4.0 to select between Quiet (Blue), Intelligent (White) and Performance (Red) Modes',
+    brand: "Leveno",
+    model: "82JU00SYIN",
+    color: "black",
+    category: "laptop",
+    popular: true,
+    discount: 9,
+  },
+  {
+    id: 117,
+    title:
+      " JioBook 11 (2023) NB1112MM(BLU) (Mediatek 8788 Octa-core 2 GHz/ARM Mali G72 MP3 @800 MHz/29.5cms 60 Hz/Thin and Light Laptop/ 4 GB LPDDR4/ 64 GB eMMC/JioOS...",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694167004544-51cNQIk3q9L._SL1000_.jpg",
+    price: 198,
+    description:
+      "Always-on internet with 4G LTE and Dual band Wi-Fi (2.4GHz and 5.0 GHz)\r\nProcessor: Mediatek MT 8788 Octa Core/2.0 GHz/ ARM V8-A 64 bit / Memory: 4GB LPDDR4 RAM, Storage: 64 GB, Expandable upto 256GB via SD card. Octa-Core performance empowers you to multi-task between applications & do more\r\n990gms light & ultra compact makes it easy to carry anywhere\r\nBuilt like a PC with JioOS having 75+ shortcuts, native apps, extended display, touchpad gestures etc.\r\n8+ hrs of strong battery backup for your on-the-go lifestyle\r\nAnti-glare HD Display & Stereo Speakers helps you to work outdoors\r\nInfinity Keyboard & large touchpad ensures convenient, seamless & efficient workflow",
+    brand: "jio",
+    model: "‎JioBook",
+    color: "Blue",
+    category: "laptop",
+    discount: 3,
+  },
+  {
+    id: 118,
+    title:
+      "Acer Predator Helios 500 Gaming Laptop (11Th Gen Intel Core I9/17.3 Inches 4K Uhd Display/64Gb Ddr4 Ram/2Tb Ssd/1Tb HDD/RTX 3080 Graphics/Windows 10 Home/Per Key RGB Backlit Keyboard) Ph517-52",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694247259155-81oz+NZ4QLL._SL1500_.jpg",
+    price: 5324,
+    description:
+      "Processor: 12th Generation Intel EVOTM Core i7-1255U Processor(1.7 GHz up to 4.7 GHz, 12 MB L3 Cache) | Memory: 16 GB LPDDR4x Memory (On BD 16 GB) | Storage: 512 GB NVMe SSD\r\nOperating System: Windows 11 Home | Preinstalled Software: MS Office Home & Student 2021, Live Message, Live Wallpaper, McAfee Live Safe (Trial), Screen Recorder, Samsung Gallery, Quick Search, Samsung Flow, Samsung Notes, Samsung Recovery, Samsung Settings, Studio Plus, Samsung Update, Samsung Security, Quick Share, Galaxy Book Smart Switch\r\nDisplay: 13.3 inch (33.7 cm), FHD AMOLED Display (1920 x 1080) | Touchscreen | Intel Iris Xe Graphics | Design: Aluminum body with 12.9mm thinness and 1.6kg\r\nPorts: 1 HDMI, 1 Thunderbolt 4, 1 USB Type-C, 1 USB3.2, MicroSD Multi-media Card Reader, 1 Headphone out/Mic-in Combo, | Without CD-drive | Battery = 61.1 Wh, 65 W USB Type-C Adapter\r\nCamera: 720p HD, Intelligent Video Call Solution with Intel Collaboration | Microphone: 1 Headphone out/Mic-in Combo | Keyboard: Pro Keyboard (Backlit) | FingerPrint Reader, Accelerometer Sensor, Gyro Sensor",
+    brand: "acer",
+    model: "Predator Helios 500",
+    color: "black",
+    category: "laptop",
+    popular: true,
+    discount: 23,
+  },
+  {
+    id: 119,
+    title:
+      'Samsung Galaxy Book2 360 Intel 12th Gen i7 EvoTM 33.78cm (13.3") AMOLED 2 in 1 Touch Screen Laptop (16 GB/512 GB SSD/Windows 11/MS Office/Backlit KB/Fingerprint Sensor/Graphite/1.16Kg), NP730QED-KA1IN',
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694247334116-61vfSiIaCpL._SL1500_.jpg",
+    price: 1275,
+    description:
+      "Processor: 12th Generation Intel EVOTM Core i7-1255U Processor(1.7 GHz up to 4.7 GHz, 12 MB L3 Cache) | Memory: 16 GB LPDDR4x Memory (On BD 16 GB) | Storage: 512 GB NVMe SSD\r\nOperating System: Windows 11 Home | Preinstalled Software: MS Office Home & Student 2021, Live Message, Live Wallpaper, McAfee Live Safe (Trial), Screen Recorder, Samsung Gallery, Quick Search, Samsung Flow, Samsung Notes, Samsung Recovery, Samsung Settings, Studio Plus, Samsung Update, Samsung Security, Quick Share, Galaxy Book Smart Switch\r\nDisplay: 13.3 inch (33.7 cm), FHD AMOLED Display (1920 x 1080) | Touchscreen | Intel Iris Xe Graphics | Design: Aluminum body with 12.9mm thinness and 1.6kg\r\nPorts: 1 HDMI, 1 Thunderbolt 4, 1 USB Type-C, 1 USB3.2, MicroSD Multi-media Card Reader, 1 Headphone out/Mic-in Combo, | Without CD-drive | Battery = 61.1 Wh, 65 W USB Type-C Adapter",
+    brand: "samsung",
+    model: "Galaxy Book2 360",
+    color: "grey",
+    category: "laptop",
+    discount: 9,
+  },
+  {
+    id: 120,
+    title:
+      "Apple 2023 MacBook Pro Laptop M2 Pro chip with 12‑core CPU and 19‑core GPU: 33.74 cm (16.2-inch), 16GB Unified Memory, 512GB SSD Storage. Works with iPhone/iPad; Silver",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694247398792-618M+ksuptL._SL1500_.jpg",
+    price: 2766,
+    description:
+      "SUPERCHARGED BY M2 PRO OR M2 MAX — Take on demanding projects with the M2 Pro or M2 Max chip. M2 Pro has 12 CPU cores, 19 GPU cores and up to 32GB unified memory. M2 Max has 12 CPU cores, up to 38 GPU cores and up to 96GB unified memory.\r\nUP TO 22 HOURS OF BATTERY LIFE — Go all day thanks to the power-efficient design of the M2 Pro or M2 Max chip. And MacBook Pro delivers exceptional performance whether it’s running on battery or plugged in.\r\nFULLY COMPATIBLE — All your pro apps run lightning-fast — including Adobe Creative Cloud, Xcode, Affinity Designer, Microsoft 365, and many of your favourite iPhone and iPad apps.\r\nBEAUTIFUL PRO DISPLAY — The 16.2-inch Liquid Retina XDR display features Extreme Dynamic Range, over 1,000 nits of brightness for stunning HDR content and pro reference modes for doing your best work on the go.",
+    brand: "apple",
+    model: "MacBook Pro",
+    color: "silver",
+    category: "laptop",
+    popular: true,
+    discount: 9,
+  },
+  {
+    id: 121,
+    title:
+      'ASUS TUF Gaming F15 (2023) 90WHr Battery, Intel Core i7-12700H 12th Gen, 15.6" FHD 144Hz, 8GB RTX 4060, Gaming Laptop (16GB/512GB SSD/Windows 11//1-Zone RGB/Gray/2.20 Kg), FX507ZV-LP094W',
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694247712323-71ZxVXxFhAL._SL1500_.jpg",
+    price: 1371,
+    description:
+      "Processor: 12th Gen Intel Core i7-12700H Processor 2.3 GHz (24M Cache, up to 4.7 GHz, 14 cores: 6 P-cores and 8 E-cores)\r\nMemory: 16GB (8GB SO-DIMM *2) DDR4 3200 MHz Support Up to 32GB 2x SO-DIMM slots | Storage: 512GB PCIe 4.0 NVMe M.2 SSD\r\nPlay over 100 high-quality PC games, plus new and upcoming blockbusters on day one like Halo Infinite, Forza Horizon 5, and Age of Empires and one month of Game Pass-including EA Play.\r\nWith new games added all the time, there’s always something new to play. Age of Empires IV, Back 4 Blood, Battlefield V, Forza Horizon 5, Halo Infinite*, Knockout City, Microsoft Flight Simulator, Minecraft PC Bundle, Need for Speed Heat, Psychonauts2, The Sims 4, Titanfall 2, 12 Minutes\r\nGraphics: NVIDIA GeForce RTX 4060 Laptop GPU with MUX Switch + NVIDIA Advanced Optimus 8GB GDDR6 VRAM 2420MHz* at 140W (2370MHz Boost Clock+50MHz OC, 115W+25W Dynamic Boost)",
+    brand: "asus",
+    model: "FX507ZV-LP094W",
+    color: "black",
+    category: "laptop",
+    onSale: true,
+    discount: 9,
+  },
+  {
+    id: 122,
+    title:
+      "Apple 2023 MacBook Air laptop with M2 chip: 38.91cm (15.3 inch) Liquid Retina display, 8GB RAM 512GB SSD storage, backlit keyboard, 1080p FaceTime HD camera,Touch ID Works with iPhone/iPad; Space Gray",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694247795300-81xW62KXNhL._SL1500_.jpg",
+    price: 1753,
+    description:
+      "IMPRESSIVELY BIG, IMPOSSIBLY THIN — The 15‑inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display. The durable 100% recycled aluminium enclosure is strikingly thin and light.\r\nSUPERCHARGED BY M2 — Get more done faster with a powerful 8-core CPU, 10-core GPU and up to 24GB of unified memory.\r\nUP TO 18 HOURS OF BATTERY LIFE — Go all day with the power-efficient performance of the Apple M2 chip. (Battery life varies by use and configuration. See our website for more information.)\r\nSPACIOUS, BEAUTIFUL DISPLAY — The high-resolution, 38.91-centimetre (15.3-inch) Liquid Retina display features 500 nits of brightness, P3 wide colour and support for one billion colours for vibrant images and incredible detail. (The display on the 15-inch MacBook Air has rounded corners at the top. When measured as a standard rectangular shape, the screen is 38.91 centimetres (15.3 inches) diagonally (actual viewable area is less.)",
+    brand: "apple",
+    model: "MacBook Air",
+    color: "silver",
+    category: "laptop",
+    onSale: true,
+    discount: 9,
+  },
+  {
+    id: 123,
+    title:
+      'ASUS ROG Strix G15 (2022), 15.6"(39.62 cms) FHD 300Hz/3ms, AMD Ryzen 7 6800H, RTX 3060 6GB Graphics, Gaming Laptop (16GB/1TB SSD/90WHrs Battery/Windows 11/Office 2021/Gray/2.3 kg), G513RM-HF272WS',
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694247885948-71+d4hy0unL._SL1500_.jpg",
+    price: 1353,
+    description:
+      "Processor: AMD Ryzen 7 6800H Mobile Processor (8-core/16-thread, 20MB cache, up to 4.7 GHz max boost)\r\nPlay over 100 high-quality PC games, plus new and upcoming blockbusters on day one like Halo Infinite, Forza Horizon 5, and Age of Empires IV with your new G513RM-HF272WS and one month of Game Pass-including EA Play\r\nWith new games added. Age of Empires IV, Back 4 Blood, Battlefield V, Forza Horizon 5, Halo Infinite*, Knockout City, Microsoft Flight Simulator, Minecraft PC Bundle, Need for Speed Heat, Psychonauts2, The Sims 4, Titanfall 2, 12 Minutes\r\nMemory: 16GB (8GB SO-DIMM *2) DDR5 4800 MHz Support Up to 32GB 2x SO-DIMM slots with | Storage: 1TB PCIe 4.0 NVMe M.2 SSD with additional 2x M.2 Slot for SSD Storage expansion\r\nDisplay: 15.6 inch (39.62 cms) FHD (1920 x 1080) 16:9 250nits, 300Hz Refresh Rate, vIPS-level Anti-glare display, Contrast Ratio: 1:1000 with Adaptive-Sync\r\nGraphics: NVIDIA GeForce RTX 3060 6GB GDDR6 VRAM MUX Switch Optimus with ROG Boost: 1752MHz* at 140W (1702MHz Boost Clock 50MHz OC, 115W 25W Dynamic Boost)",
+    brand: "asus",
+    model: "ROG Strix G15 (2022)",
+    color: "black",
+    category: "laptop",
+    popular: true,
+    discount: 3,
+  },
+  {
+    id: 124,
+    title:
+      'ASUS VivoBook K15 OLED (2021), 15.6" (39.62 cms) FHD OLED, Intel Core i3-1115G4 11th Gen, Thin and Light Laptop (8GB/512GB SSD/Integrated Graphics/Office 2021/Windows 11/Black/1.8 Kg) K513EA-L312WS',
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694248570991-71ArdlMYTvL._SL1500_.jpg",
+    price: 479,
+    description:
+      "Processor: Intel Core i3-1115G4, 3.0 GHz Base Speed, Up to 4.1 GHz Max Turbo Speed, 2 cores, 4 Threads, 6MB Cache\r\nMemory: 8GB (4GB onboard + 4GB SO-DIMM) DDR4 3200MHz, Upgradeable up to 12GB | Storage: 512GB M.2 NVMe PCIe 3.0 SSD with 1x 2.5-inch SATA slot for HDD/SSD Storage upgrade up to 1TB\r\nGraphics: Integrated Intel UHD Graphics\r\nDisplay: 15.6-inch (39.62 cms) FHD (1920 x 1080) 16:9, OLED 600nits, Glossy IPS-level Panel, 100% DCI-P3 Color Gamut, Pantone Validated, 85% Screen-to-body ratio\r\nOperating System: Windows 11 Home with Lifetime Validity | Software Included: Office Home and Student 2021\r\nDesign & battery: Up to 1.79 cm Thin | NanoEdge Bezels | Thin and Light Laptop | Laptop weight: 1.8 kg | 42WHrs, 3-cell Li-ion battery | Up to 8 hours battery life ;Note: Battery life depends on conditions of usage\r\nKeyboard: Backlit Chiclet Keyboard with Num-key | 1.4mm Key Travel",
+    brand: "asus",
+    model: " K513EA-L312WS",
+    color: "black",
+    category: "laptop",
+    discount: 3,
+  },
+  {
+    id: 125,
+    title: "Anchor by Panasonic GrestarÂ Personal Fan (Grey, 225 mm)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694285403914-81DdzACPgrL._SL1500_.jpg",
+    price: 21,
+    description:
+      "Power-50W\r\nSweep-225mm\r\nAir Delivery-28 CMM\r\nSpeed-2500rpm\r\nHigh-quality motor",
+    brand: "Anchor",
+    model: "14085GY",
+    color: "grey",
+    category: "appliances",
+    onSale: true,
+    discount: 3,
+  },
+  {
+    id: 126,
+    title:
+      "Panasonic 20L Solo Microwave Oven (NN-ST26JMFDG, Silver, 51 Auto Menus)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694265714003-61RULRKtBmL._SL1500_.jpg",
+    price: 73,
+    description:
+      "20L capacity: Suitable for bachelors & small families; power + innovation 800 watts of high power for fast, Even cooking and delicious results\r\nRe-Heat & Defrost: Auto programmed reheat and defrost modes ensure even heating or defrosting of food without compromising on the textures of flavour.\r\nAuto Cook 51 Menu: Choose from 51 preset recipes ranging from snacks to desserts to make every day meal a gourmet delight.\r\nVapor Clean: Keep oven odor free and stain free with the touch of a button\r\n0\r\nCompact design: This countertop microwave with Glass turntable is compact, allowing you to devote less space to electronics and more to interior capacity;\r\nOther Features: Touch Keypad, Digital Display",
+    brand: "Panasonic",
+    model: "NN-ST26JMFDG",
+    color: "white",
+    category: "appliances",
+    discount: 3,
+  },
+  {
+    id: 127,
+    title:
+      "Godrej 564 L Multi Air Flow System, With Advanced Controls Frost Free Side-By-Side Refrigerator(RS EONVELVET 579 RFD PL ST, Platinum Steel)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694265840544-51pgJ6e5TrL._SL1500_.jpg",
+    price: 659,
+    description:
+      "Frost Free Refrigerator : Auto defrost function to prevent ice-build up\r\nCapacity 564 L : Suitable for families with 5 or more members\r\nMulti Air Flow: The unit boasts an intelligent and evenly distributed Airflow system that is inbuilt in both the fridge and the freezer section. This helps maintain a constant temperature throughout, keeping food fresher for longer\r\nManufacturer Warranty: 10 Years Compressor Warranty, 1 Year Comprehensive Warranty\r\nCustomized Temperature Setting: Get cooling as per your taste with an option to customize Freezer temperature from -24 to -14 and Fridge temperature from 2 to 8\r\nStorage Description : Fresh food capacity : 348 L | Freezer capacity : 216 L | Shelf type : Toughened glass shelf | Large aqua space for 2 L bottles",
+    brand: "Godrej",
+    model: "‎RS EONVELVET 579 RFD PL ST",
+    color: "Platinum Steel",
+    category: "appliances",
+    popular: true,
+    discount: 9,
+  },
+  {
+    id: 128,
+    title:
+      "Eureka Forbes Quick Clean DX Vacuum Cleaner with 1200 Watts Powerful Suction Control, 3 Free Reusable dust Bag worth Rs 500, comes with multiple accessories, dust bag full indicator (Red), standerd",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694265977843-71JS5wMHfnL._SL1500_.jpg",
+    price: 39,
+    description:
+      "Post Purchase virtual Demo is provided on this product .A dedicated customer service executive is assigned to give live demo of the product over a video call\r\nQuick Clean DX is a canister vaccum cleaner for daily cleaning needs to get rid of deep embedded dirt & dust\r\n1200 Watts  powerful suction provides deep cleaning\r\nThe product has 3 Free Reusable dust Bag worth Rs 500\r\nThe product has easy to use foot operated power on-off & auto cord winder switch that automatically winds the cord to protectr the wire from damage\r\nThis vacuum cleaner has dust bag full indicator to indicate when the dust bag is full for timely dirt disposal",
+    brand: "Eureka Forbes",
+    model: "‎B00F3ABSXU",
+    color: "red",
+    category: "appliances",
+    popular: true,
+    discount: 3,
+  },
+  {
+    id: 129,
+    title:
+      "Voltas 2 Ton 3 Star, Hot & Cold Inverter Split AC(Copper, 4-in-1 Adjustable Mode, Anti-dust Filter, 2023 Model, 243VH VERTIS ELEGANT, White)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694266281827-51afkFiwpcL._SL1500_.jpg",
+    price: 650,
+    description:
+      "Split AC with inverter compressor: Variable speed compressor which adjusts power depending on heat load. Convertible/adjustable with 4 cooling modes through remote control to operate in different tonnages for different cooling needs.\r\nCapacity: 2 ton Suitable for large sized rooms (151 sq.ft to 200 sq.ft) & Ambient Temperature: 52 degree Celsius\r\nWarranty : 1 year warranty on product, 10 years warranty on Inverter Compressor\r\nEnergy Rating: 3 Star. Annual Energy Consumption: 6000 units. ISEER Value: 3.81\r\nCopper Condenser Coil: Better cooling and requires low maintenance, Prevents from rust & corrosion; Increase durability; Uninterrupted cooling\r\nKey Features: Stabilizer free operation within 230 voltage range; Digital Temperature Display ; Noise Level: IDU - 47 (db)\r\nSpecial Features: Anti Dust, Antimicrobial Protection, Anti-Corrosive Coating, LED Display, Self Diagnosis, Sleep Mode, Turbo, Adjustable Cooling, Ultra Silent, Ice wash, Filter Clean Indicator",
+    brand: "Voltas",
+    model: "‎243VH VERTIS ELEGANT",
+    color: "white",
+    category: "appliances",
+    onSale: true,
+    discount: 9,
+  },
+  {
+    id: 130,
+    title:
+      "Philips CX 5535/11 High Performance Bladeless Technology Tower Fan with Touchscreen Panel and Remote Control, Quiet Operation, Low Power Consumption and Lightweight Portable Body.",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694266361231-41B+K7X-AyL._SL1000_.jpg",
+    price: 110,
+    description:
+      "LARGE AIRFLOW COVERAGE : Our air outlet is designed to be both wide and high, providing large coverage and a quick cooling effect. Combined with its 60° OSCILLATION, you feel a refreshing breeze in all corners of the room\r\nMULTIPLE SPEED MODES: Fully adapt your fan’s performance to your needs, whether it be a gentle breeze or a more powerful blast of air. With three versatile modes : Normal, Natural Wind, or Quiet Sleep and 3 Speed settings you can really get that perfect cooling effect as per your mood\r\nAROMATHERAPY ADD-ON: Infuse the cool breeze with your favorite essential oils for a soothing and rejuvenating sensory experience. The optional aroma-diffuser add-on helps you create a perfect atmosphere for relaxation and well-being. *Essential oils not part of package\r\nLIGHTWEIGHT & PORTABLE DESIGN : A minimalistic, eye-catching design that goes well with any decor. The lightweight and portable body makes it perfect fit for use in any area of the house be it the bedroom, kitchen, and other areas where a personal cooling experience is required.",
+    brand: "Philips",
+    model: "‎CX5535/11",
+    color: "black",
+    category: "appliances",
+    popular: true,
+    discount: 3,
+  },
+  {
+    id: 131,
+    title:
+      'Bajaj Frore EE/12S1 1200 mm (48") Ceiling Fans for Home |BEE Star Rated Energy Efficient Ceiling Fan |Rust Free Coating for Long Life |High Air Delivery |2-Yr Warranty White',
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694266451514-418-9+TCHUL._SL1500_.jpg",
+    price: 18,
+    description:
+      "PRODUCT: Bajaj Frore EE 1200 mm White Ceiling Fan with 3 blades; SERIES: Frore; SWEEP SIZE: 1200 mm; COLOUR: White; POWER: 52 Watts; RPM: 340\r\nENERGY EFFICIENT WITH BEE 1-STAR RATED: Low Power Consumption fan designed to save on your electricity bill. Bajaj Frore Ceiling Fan with high speed of RPM 340 consumes lesser power consumption on 52 watts to deliver quick & instant air feel. Bajaj Fan is designed with wider tip blades, to ensure maximum comfort, better air spread & quick air delivery\r\nENHANCED AESTHETICS & 100% COPPER MOTOR: High speed ceiling fan with new shades and ribbed blades for enhancing aesthetics. Bajaj Frore Fan has a rust-proof coating, which prevents rusting and ensures longer life of the product\r\nPRODUCT WARRANTY: 2-year product warranty. Domestic Warranty only. Terms & Conditions Applied, CUSTOMER SUPPORT - Reach out to Bajaj Consumer Care for any warranty/installation service",
+    brand: "Bajaj",
+    model: "‎251162EE",
+    color: "white",
+    category: "appliances",
+    discount: 3,
+  },
+  {
+    id: 132,
+    title: "Havells Koolaire-W 51L 220W Desert Cooler, Ghracaaw050",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694266521030-51ODIOciwfL._SL1500_.jpg",
+    price: 101,
+    description:
+      "Inverter Compatible; 3 Side Woodwool Pads.\r\nKing Size Tank Capacity.\r\nCastors Wheels With Brakes.\r\n5 Leaf Plastic Blades Ensure Powerful Air Delivery.\r\nForm Factor: Desert Air Cooler; Included Components: Remote",
+    brand: "Havells",
+    model: "‎GHRACAAW050",
+    color: "white",
+    category: "appliances",
+    popular: true,
+    discount: 9,
+  },
+  {
+    id: 133,
+    title:
+      "Bosch 8 kg Fully Automatic Condenser Tumble Dryer WTG8640SIN, Silver, Inbuilt Heater)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694285138948-81lR2W-O88L._SL1500_.jpg",
+    price: 541,
+    description:
+      "Fully Automatic Condenser Dryer\r\n8 kg capacity\r\nSensitiveDrying System: gentledrying without wrinkling thanks its unique drum design and movements.\r\nAllergyPlus: specially developed for the needs of allergy sufferers and sensitive skin.\r\n15 wash programs: Cottons Cupboard Dry Plus, Cottons Cupboard Dry, Cottons Iron Dry, Sportswear, AllergyPlus, Mix Load, Timed Programme Warm, Timed Programme Cold, Delicates, Woollens Finish, Super Quick 40â€, Super 15â€, Shirts 15â€, Synthetics Cupboard Iron Dry, Synthetics Cupboard Dry, Synthetics Cupboard Dry Plus\r\nWarranty: 2 years on product, 2 years on motor\r\nMoisture Sensor technology\r\nSensitive Drying system,\r\nAllegryPlus\r\nAnti-vibration design",
+    brand: "Bosch",
+    model: "WTG8640SIN",
+    color: "white",
+    category: "appliances",
+    discount: 9,
+  },
+  {
+    id: 134,
+    title:
+      "Tilted Nation Rgb Gaming Headset Stand - 3 In 1 Design With Mouse Bungee And 2 Port Usb 3.0 Hub The Ultimate Addition To Your Gaming Station - Dynamic Rgb Head Stand With Usb Charger - White Tabletop",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694286670895-516qT+ItO5L._SL1500_.jpg",
+    price: 111,
+    description:
+      "FUNCTIONAL 3 IN 1 DESIGN: The RGB gaming headset stand features a built-in mouse bungee and a 2-port USB 3.0 hub - just plug and play.\r\nWEIGHTED BASE | WON'T FALL OVER: Gaming gets intense. Whether celebrating after a W or rage quitting, our white headset stand has a weighted base with non slip grip pads to keep your headphones safe during wild gaming moments. It serves as the perfect gift for gamers.\r\nCOMPLETE YOUR GAMING STATION WITH RGB LIGHTING: Give your gaming station an edgy touch with dynamic or static RGB lighting. It also fits all headphones.\r\nFAST USB 3.0 HUB (2 PORT): With 2 USB 3.0 ports and 5GB data transfer speeds, you can seamlessly connect and charge all your gaming accessories",
+    brand: "Tilted Nation",
+    model: "TNSHADOWW",
+    color: "white",
+    category: "audio",
+    onSale: true,
+    discount: 3,
+  },
+  {
+    id: 135,
+    title:
+      "Faber 60 cm 1100 m³/hr Auto-Clean Curved Glass Kitchen Chimney [HOOD ALPHA IN HC PB FL BK 60], Filterless technology, Push Button, Black]",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694286775120-61T2Jo3Xp0L._SL1500_.jpg",
+    price: 118,
+    description:
+      "Type: Curved glass, Wall mounted, Heat Auto-Clean Chamber | Black finish with Curved Glass\r\nSize: 60 cm [2-4 burner stove for wall mounted chimneys] | Filter Surface Area: 52 x 30 cmsq\r\nControl Type: Push Button | Power: 240W | Noise Level: 58 dB | Lamp - 1 LED of 1.5W\r\nSuction Capacity: 1100m3/hr [For kitchen size from 100 to 200 sqft and heavy frying/grilling] || Heat Auto-Clean Technology with Oil Collector\r\nFor installation: 1800-209-3484 || Warranty: 8 years on motor and 2 years comprehensive on product",
+    brand: "Faber",
+    model: "‎325.0700.007",
+    color: "black",
+    category: "appliances",
+    popular: true,
+    discount: 9,
+  },
+  {
+    id: 136,
+    title: "Sujata Powermatic Plus 900 Watts Juicer Mixer Grinder",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694286874878-71u4k4-PFNL._SL1500_.jpg",
+    price: 64,
+    description:
+      "Centrifugal Juicer\r\n1 Year Warranty\r\nMost powerful 900 watts motor with double ball bearings for efficiency, low maintenance and trouble free running for years\r\nJuicer with unique honeycomb filter mesh for finer juice with higher yield\r\n22000 rpm operation- retains original flavor and aroma of juices and food\r\n90 mins. continuous running- suitable for longer usage\r\nTransparent and unbreakable mixer jar\r\nHigh strength stainless steel blade that cut finer and faster\r\nLow maintenance, trouble free running\r\nTotally shock-proof and safe",
+    brand: "Sujata",
+    model: "‎PowermaticPlus_SUJATA",
+    color: "white",
+    category: "appliances",
+    onSale: true,
+    discount: 3,
+  },
+  {
+    id: 137,
+    title: "Eveready 9W b22d LED Inverter Bulb (White)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694286975789-41pZSmlP2PL._SL1500_.jpg",
+    price: 3,
+    description:
+      "Includes:1 Led Inverter Bulb\r\nBulb Base:B22, Shape:Standard\r\nItem Dimensions:14x7 (LxW) Shape:Standard\r\n1 Year Warranty",
+    brand: "Eveready",
+    model: "‎B22-9W",
+    color: "white",
+    category: "appliances",
+    popular: true,
+    discount: 1,
+  },
+  {
+    id: 138,
+    title:
+      "Sarth Enterprise Twin Bell Copper Table Alarm Clock with Night LED Light for Student for Kids Bedroom",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694287149542-61O3C6PRmSS._SL1100_.jpg",
+    price: 4,
+    description:
+      "Sarth Enterprise Vintage look Table alarm Clock With Led Light Perfect For Home And Office Desk\r\nGlow in the dark hour markers and hands and Easy-to-read Arabic numerals\r\nSpring wound mechanical brass movement. Mechanism features solid brass plates, brass gears, and steel shafts and pivots\r\nItem Dimensions LxWxH :11.9 x 3.8 x 16.5 Centimeters",
+    brand: "Sarth Enterprise",
+    model: "‎SE-CTC",
+    color: "golden",
+    category: "appliances",
+    discount: 1,
+  },
+  {
+    id: 139,
+    title:
+      "wipro Orion 6w Rechargeable LED Table Lamp- 3 Grade Dimming and Night Light |Li-Ion Battery(Acrylonitrile Butadiene Styrene, White, Pack of 1)",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694287314447-61L1WtnLLeL._SL1500_.jpg",
+    price: 9,
+    description:
+      "Wattage: 6W\r\n3-Step Dimming Technology: Wipro Orion comes with 3-Step dimming feature with night light, saving power and creating ambience as per your convenience\r\nLong Lasting Power: Wipro Orion comes with a 1200 mAh Lithium ion battery, ensuring long lasting light\r\nLong Operation Time: Long lasting light upto 5 hrs. Now, stay hasslefree even during emergencies\r\nDurable Body: Made with high quality ABS material for durability and strength\r\nSoft Glare-free Design: The lamp is designed to ensure that the light is bright while also being soft and glare-free, to protect your eyes\r\nTouch Control: Convenient Operation with Easy Touch Control for dimming and Adjustable arm Design.",
+    brand: "wipro",
+    model: "E20003",
+    color: "white",
+    category: "appliances",
+    discount: 3,
+  },
+  {
+    id: 140,
+    title:
+      "Bajaj ATX 4 750-Watt 2-Slice Pop-up Toaster | Dust Cover & Slide Out Crumb Tray | 6-Level Browning Controls | Mid-Cycle Cancel Feature | 2-Yr Warranty by Bajaj | White Electric Toaster",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694287458575-61fgJs4zIqL._SL1500_.jpg",
+    price: 17,
+    description:
+      "TYPE: Bajaj Toaster 2 Slices; SERIES: ATX 4 Pop up Toaster; WATTAGE: 750W; Bread Toaster 2 Slice; COLOUR: White.\r\nADJUSTABLE BROWNING CONTROL KNOB: ATX-4 is designed to deliver 6-LEVEL OF BREAD BROWNING CONTROL for convenient & desirable bread toast.\r\nDUST COVER: Included dust cover which prevent dust or any insects into the bread slots for better hygiene.\r\nSLIDE OUT CRUMB TRAY: It comes with easy Slide Out Crumb Tray for easy cleaning & maintenance.\r\nMID-CYCLE CANCEL FUNCTION: This pop up toaster is designed with MID-CYCLE CANCEL Function to avoid unwanted over bread toasting.\r\nEXTRA WIDE SLOT for accommodating different size of breads.\r\nCOMPONENT INCLUDED: 1N Pop up Toaster, 1N Dust Cover, User manual, Warranty card.\r\nPRODUCT WARRANTY: 2-year product warranty by Bajaj Electricals Ltd; Domestic Warranty only. Terms & Conditions Applied.\r\nCONSUMER SUPPORT - Reach out to Bajaj Consumer Care for any warranty/installation service.",
+    brand: "Bajaj",
+    model: "270030",
+    color: "white",
+    category: "appliances",
+    popular: true,
+    discount: 3,
+  },
+  {
+    id: 141,
+    title:
+      "Morphy Richards Icon Superb 750W Mixer Grinder, 4 Jars, Silver and Black",
+    image:
+      "https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1694287531412-61Z+vqDhnvL._SL1500_.jpg",
+    price: 39,
+    description:
+      "Wattage: 750 W; Voltage: 220-240V; Revolution: 20000; 4 Jars with Juicer Jar. Juicer Type : Centrifugal Juicer. Locking System : Yes\r\nDon't worry if you experience burning smell when you run your mixer grinder for the 1st time, it's due to the varnish. If the issue persists subsequesntly, kindly contact the customer care\r\nSince your mixer grinder runs on a powerful motor, there will be some noise. If the noise level seems abnormal, please contact Brand Service Centre\r\nJuicer Jar: 1.7 Litres, Liquidising Jar: 1.5 Litres, Dry/Wet Grinding Jar: 1 Litre, Chutney Jar: 0.4 Litres, Non-slip Feet - Yes\r\n  Powerful UltronMax for efficient juicing and grinding\r\n4 hardened stainless steel blade for multiple functions\r\n3 Speed control with incher facility\r\nShock proof insulated\r\nWarranty: 1 year warranty",
+    brand: "Morphy Richards",
+    model: "‎640112",
+    color: "silver",
+    category: "appliances",
+    discount: 3,
+  },
 ];
 
 export  const UpdatedProducts = Products.map((product) => ({

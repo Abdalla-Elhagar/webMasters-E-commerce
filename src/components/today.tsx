@@ -16,7 +16,7 @@ export default function Today() {
             </div>
 
             <TodaySlider />
-            <Link to='/allProducts' className="w-56 py-3 text-center mx-auto block bg-mainColor text-white">View All Products</Link>
+            <Link to='/allProducts' className="w-56 py-3 mt-16 text-center mx-auto block bg-mainColor text-white">View All Products</Link>
         </div>
     </div>
   );

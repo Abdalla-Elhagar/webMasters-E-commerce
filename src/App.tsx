@@ -9,6 +9,12 @@ import Favorite from './pages/favorite'
 import LogIn from './pages/logIn'
 import Register from './pages/register'
 import AllProducts from './pages/allProducts'
+import Audio from './pages/audio'
+import Phones from './pages/phones'
+import TV from './pages/tv'
+import Gaming from './pages/gaming'
+import Appliances from './pages/Appliances'
+import Laptops from './pages/laptops'
 
 function App() {
   
@@ -24,6 +30,12 @@ function App() {
         <Route path='/logIn' element={<LogIn />} /> 
         <Route path='/register' element={<Register />} /> 
         <Route path='/allProducts' element={<AllProducts />} /> 
+        <Route path='/phones' element={<Phones />} /> 
+        <Route path='/audio' element={<Audio />} /> 
+        <Route path='/TV' element={<TV />} /> 
+        <Route path='/Gaming' element={<Gaming />} /> 
+        <Route path='/appliances' element={<Appliances />} />
+        <Route path='/laptops' element={<Laptops />} />
       </Routes>
     </>
   )

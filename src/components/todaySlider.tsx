@@ -1,5 +1,5 @@
 import { SwiperSlide ,Swiper } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import 'swiper/css/navigation'
 import { UpdatedProducts as Products } from "../data/products";
 import Card from '@mui/material/Card';
@@ -17,10 +17,14 @@ export default function TodaySlider() {
     return (
         <div className="relative">
 
-      <div className="custom-prev absolute"><WestOutlinedIcon /></div>
-      <div className="custom-next absolute"><EastOutlinedIcon /></div>
+      <div className="custom-prev -top-[100px] max-lg:-top-[40px] absolute"><WestOutlinedIcon /></div>
+      <div className="custom-next -top-[100px] max-lg:-top-[40px] absolute"><EastOutlinedIcon /></div>
         <Swiper className="mt-10 mx-auto" slidesPerView={1} spaceBetween={10}
-
+        loop={true}
+        autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+        }}
         navigation = {{
             nextEl: ".custom-next",
             prevEl: ".custom-prev",
@@ -39,7 +43,7 @@ export default function TodaySlider() {
               spaceBetween: 50,
             },
           }}
-        modules={[Navigation]}
+        modules={[Navigation , Autoplay]}
         
         >
             {

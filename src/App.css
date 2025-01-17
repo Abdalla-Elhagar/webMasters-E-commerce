@@ -12,6 +12,10 @@
     max-width: 100% !important;
 }
 
+.categoriesEles .icon .myIcon {
+    font-size: 6rem;
+}
+
 @media (width < 1024px) {
     .heroContainer {
         padding: 0;

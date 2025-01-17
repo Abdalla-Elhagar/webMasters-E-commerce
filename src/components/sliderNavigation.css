@@ -1,7 +1,7 @@
 .custom-prev,
 .custom-next {
   position: absolute;
-  top: -100px;
+  
   z-index: 10;
   cursor: pointer;
   color: #000;
@@ -24,12 +24,7 @@
     color: rgb(219 68 68)
 }
 
-@media (width < 1024px) {
-    .custom-prev,
-    .custom-next {
-        top: -40px;
-    }
-}
+
 @media (width < 768px) {
     .custom-prev,
     .custom-next {
