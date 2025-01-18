@@ -36,7 +36,7 @@ export default function AllProducts() {
                     
                         
                         {product.discount ? 
-                        <Typography gutterBottom variant="h6" component="div"> 
+                        <Typography className=" block" gutterBottom component="div"> 
                             <span className="mr-10 text-mainColor">
                                 ${ Math.floor(product.price-((product.discount/100)*product.price))}
                             </span> 
@@ -44,16 +44,16 @@ export default function AllProducts() {
                                 ${product.price}
                             </span> 
                         </Typography>:
-                        <Typography gutterBottom variant="h6" component="div"> 
+                        <Typography className=" block" gutterBottom component="div"> 
                             <span>${product.price}</span></Typography>
                         }
 
                         <div className="rate">
-                            {Array(product.rate).fill(null).map(()=>(
-                                <StarIcon sx={{color: "#FFAD33"}} />
+                            {Array(product.rate).fill(null).map((_,index: number)=>(
+                                <StarIcon key={index} sx={{color: "#FFAD33"}} />
                             ))}
-                            {Array(5-product.rate).fill(null).map(()=>(
-                                <StarIcon sx={{color: "#999"}} />
+                            {Array(5-product.rate).fill(null).map((_,index: number)=>(
+                                <StarIcon key={index} sx={{color: "#999"}} />
                             ))}
                             <span className="sales ml-6 text-[#999] font-semibold">({product.sales})</span>
                             

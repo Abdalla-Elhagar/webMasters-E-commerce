@@ -57,7 +57,7 @@ const Search = styled('div')(({ theme }) => ({
     },
   }));
 export default function MenuAppBar() {
-  const [activePage, setActivePage] = useState("/");
+  const [activePage, setActivePage] = useState('/');
   const pages = [
     {id:1, name: "Home", path: "/" },
     {id:2, name: "Contact", path: "/concat" },
@@ -90,8 +90,9 @@ export default function MenuAppBar() {
                 <Typography className='pages flex gap-10' component="div">
                 {pages.map((page) => (
                 <Typography
+                
                   key={page.id}
-                  className={`PageButton ${activePage === page.path ? "active" : ""}`}
+                  className={`block PageButton ${activePage === page.path ? "active" : ""}`}
                   variant="button"
                   component="button"
                   onClick={() => setActivePage(page.path)}
@@ -102,7 +103,7 @@ export default function MenuAppBar() {
             </Typography>
 
             <Typography className='flex items-center' component='div'>
-                <Typography component="div" className="responsiveSearch">
+                <Typography component="div" className="responsiveSearch block">
                 <IconButton sx={{color: "black",marginTop:"5px"}} onClick={()=>setTurn(true)} aria-label="search">
                     <SearchIcon />
                   
@@ -136,17 +137,17 @@ export default function MenuAppBar() {
 
 
         <Typography className='bg-white z-50 max-sm:rounded-none hidden max-lg:flex justify-between px-5 py-2 rounded-lg max-sm:w-full max-sm:left-0 max-sm:translate-x-0 w-1/2 shadow-lg shadow-slate-600 fixed bottom-[-5px] border left-1/2 translate-x-[-50%]'>
-            <IconButton onClick={() => setActivePage("/")} className={`RPageButton ${activePage === "/" ? "active" : ""}`} key="/" aria-label="home">
+            <IconButton onClick={() => setActivePage("/")} className={`RPageButton ${activePage === "/" ? "active" : ""}`} key='1' aria-label="home">
               <Link to="/"><HomeIcon /></Link>
               
             </IconButton>
 
-            <IconButton onClick={() => setActivePage("/concat")} className={`RPageButton ${activePage === "/concat" ? "active" : ""}`} key="/concat" aria-label="concat">
+            <IconButton onClick={() => setActivePage("/concat")} className={`RPageButton ${activePage === "/concat" ? "active" : ""}`} key='2' aria-label="concat">
               <Link to="/concat"><LocalPhoneIcon /></Link>
               
             </IconButton>
 
-            <IconButton onClick={() => setActivePage("/about")} className={`RPageButton ${activePage === "/about" ? "active" : ""}`} key="/concat" aria-label="About">
+            <IconButton onClick={() => setActivePage("/about")} className={`RPageButton ${activePage === "/about" ? "active" : ""}`} key='3' aria-label="About">
               <Link to="/about"><InfoIcon /></Link>
               
             </IconButton>

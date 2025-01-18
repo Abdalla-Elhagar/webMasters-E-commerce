@@ -22,7 +22,7 @@ export default function OurProductsSlider() {
       <div className="custom-prev -top-[100px] max-lg:-top-[40px] absolute"><WestOutlinedIcon /></div>
       <div className="custom-next -top-[100px] max-lg:-top-[40px] absolute"><EastOutlinedIcon /></div>
         <Swiper className="mySwiper flex-nowrap mt-10 mx-auto" slidesPerView={1} spaceBetween={10}
-        loop={true}
+        
         grid={{
             rows: 2,
             fill: "row",
@@ -74,7 +74,7 @@ export default function OurProductsSlider() {
                             
                                 
                                 {product.discount ? 
-                                <Typography gutterBottom variant="h6" component="div"> 
+                                <Typography gutterBottom className=" block" component="div"> 
                                     <span className="mr-10 text-mainColor">
                                         ${ Math.floor(product.price-((product.discount/100)*product.price))}
                                     </span> 
@@ -82,16 +82,16 @@ export default function OurProductsSlider() {
                                         ${product.price}
                                     </span> 
                                 </Typography>:
-                                <Typography gutterBottom variant="h6" component="div"> 
+                                <Typography gutterBottom className=" block" component="div"> 
                                     <span>${product.price}</span></Typography>
                                 }
 
                                 <div className="rate">
-                                    {Array(product.rate).fill(null).map(()=>(
-                                        <StarIcon sx={{color: "#FFAD33"}} />
+                                    {Array(product.rate).fill(null).map((_,index:number)=>(
+                                        <StarIcon key={index} sx={{color: "#FFAD33"}} />
                                     ))}
-                                    {Array(5-product.rate).fill(null).map(()=>(
-                                        <StarIcon sx={{color: "#999"}} />
+                                    {Array(5-product.rate).fill(null).map((_,index:number)=>(
+                                        <StarIcon key={index} sx={{color: "#999"}} />
                                     ))}
                                     <span className="sales ml-6 text-[#999] font-semibold">({product.sales})</span>
                                     
