@@ -16,11 +16,12 @@ import Gaming from './pages/gaming'
 import Appliances from './pages/Appliances'
 import Laptops from './pages/laptops'
 import BestSellingPage from './pages/bestSellingPage'
+import Footer from './components/footer'
 
 function App() {
   
   return (
-    <>
+    <div className=' overflow-hidden'>
       <Header />
       <Routes>
         <Route path='/' element={<Home />} /> 
@@ -40,7 +41,8 @@ function App() {
         <Route path='/bestSelling' element={<BestSellingPage />} /> 
 
       </Routes>
-    </>
+      <Footer />
+    </div>
   )
 }
 

@@ -3,6 +3,9 @@ import ps5 from "../images/ps5.png";
 import woman from "../images/womanWithHat.png";
 import speaker from "../images/speaker.png";
 import perfume from "../images/perfume.png";
+import AirportShuttleOutlinedIcon from '@mui/icons-material/AirportShuttleOutlined';
+import HeadsetMicOutlinedIcon from '@mui/icons-material/HeadsetMicOutlined';
+import BeenhereOutlinedIcon from '@mui/icons-material/BeenhereOutlined';
 
 
 
@@ -47,6 +50,25 @@ export default function Featured() {
                         <img src={perfume} alt="perfume" />
                     </div>
                 </div>
+                <div className="bottom my-32 text-center justify-evenly flex-wrap gap-5 gap-y-20 flex">
+                <div>
+                        <div className="icon mx-auto flex justify-center items-center rounded-full bg-[#2F2E30]/30 size-[95px]"><AirportShuttleOutlinedIcon sx={{width: '60px' ,height: "60px" , fontSize: "16px"}} className="text-white rounded-full p-2 bg-black" /></div>
+                        <h3 className="my-6 text-2xl font-bold">FREE AND FAST DELIVERY</h3>
+                        <p>Free delivery for all orders over $140</p>
+                    </div>
+                    <div>
+                        <div className="icon mx-auto flex justify-center items-center rounded-full bg-[#2F2E30]/30 size-[95px]"><HeadsetMicOutlinedIcon sx={{width: '60px' ,height: "60px" , fontSize: "16px"}} className="text-white rounded-full p-2 bg-black" /></div>
+                        <h3 className="my-6 text-2xl font-bold">24/7 CUSTOMER SERVICE</h3>
+                        <p>Friendly 24/7 customer support</p>
+                    </div>
+                    <div>
+                        <div className="icon mx-auto flex justify-center items-center rounded-full bg-[#2F2E30]/30 size-[95px]"><BeenhereOutlinedIcon sx={{width: '60px' ,height: "60px" , fontSize: "16px"}} className="text-white rounded-full p-2 bg-black" /></div>
+                        <h3 className="my-6 text-2xl font-bold">MONEY BACK GUARANTEE</h3>
+                        <p>We reurn money within 30 days</p>
+                    </div>
+                    
+                </div>
+                
             </div>
             
         </div>
