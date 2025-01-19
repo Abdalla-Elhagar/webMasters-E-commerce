@@ -1,5 +1,5 @@
-import iphone from "../images/hero_endframe.png";
-import appleLogo from "../images/Apple_gray_logo.png"
+import iphone from "../images/homeImages/hero_endframe.png";
+import appleLogo from "../images/homeImages/Apple_gray_logo.png"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination , Autoplay } from "swiper/modules";
 import EastIcon from '@mui/icons-material/East';

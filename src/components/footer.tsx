@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import SendIcon from "../images/icon-send.png";
-import QRCode from "../images/Qrcode.png";
-import PlayStore from "../images/playStore.png";
-import AppStore from "../images/appstore.png";
-import FaceBook from "../images/Icon-Facebook.png";
-import Twitter from "../images/Icon-Twitter.png";
-import Instagram from "../images/icon-instagram.png";
-import Linkedin from "../images/Icon-Linkedin.png";
-import Copyright from "../images/icon-copyright.png";
+import SendIcon from "../images/homeImages/icon-send.png";
+import QRCode from "../images/homeImages/Qrcode.png";
+import PlayStore from "../images/homeImages/playStore.png";
+import AppStore from "../images/homeImages/appstore.png";
+import FaceBook from "../images/homeImages/Icon-Facebook.png";
+import Twitter from "../images/homeImages/Icon-Twitter.png";
+import Instagram from "../images/homeImages/icon-instagram.png";
+import Linkedin from "../images/homeImages/Icon-Linkedin.png";
+import Copyright from "../images/homeImages/icon-copyright.png";
 
 
 export default function Footer() {

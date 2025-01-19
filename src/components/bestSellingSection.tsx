@@ -8,7 +8,7 @@ import StarIcon from '@mui/icons-material/Star';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import { useState, useEffect } from "react";
-import Image from '../images/JBL.png'
+import Image from '../images/homeImages/JBL.png'
 
 
 
