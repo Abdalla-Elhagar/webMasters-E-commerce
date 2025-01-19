@@ -1,27 +1,52 @@
 import image from "../images/signUpAndLogIn.png";
 import google from "../images/Icon-Google.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 
 export default function Register() {
+    type user = {
+        name: string;
+        phone: string;
+        password: string;
+    }
 
-
+    const [user , setUser] = useState({name: "" , phone: "" , password: ""});
+    const [error , setError] = useState(false);
     
+    const [users, setUsers] = useState<user[]>([]);
+    function saveNewUser() {
+        setError(true);
+        if (user.phone.length > 10 && user.password.length > 5 && user.name.length > 2 ) {
+            setUsers([...users , user])
+            
+        }
+        
+    }
     return (
-        <div className="register my-20 items-center flex justify-between">
-            <img src={image} alt="registerImage" />
-            <div className="content mx-auto w-[500px] max-px-36">
+        <div className="register my-20 items-center flex w-full justify-between">
+            <img className="w-4/6 max-lg:hidden" src={image} alt="registerImage" />
+            <div className="content mx-auto max-w-[500px] max-px-36">
                 <div className="container">
                     <div className="headerOfSignUp">
-                        <h2 className="text-4xl mb-5">Create an account</h2>
+                        <h2 className="text-4xl font-semibold mb-5">Create an account</h2>
                         <p>Enter your details below</p>
                     </div>
-                    <form className="mt-14">
-                        <input className="w-full outline-none py-3 text-black/50 focus:placeholder:text-black/60 focus:border-black/40 border-b-2" placeholder="Name" type="text" id="name" />
-                        <input className="w-full outline-none py-3 text-black/50 focus:placeholder:text-black/60 focus:border-black/40 border-b-2" placeholder="phone" type="number" id="phone" />
-                        <input className="w-full outline-none py-3 text-black/50 focus:placeholder:text-black/60 focus:border-black/40 border-b-2" placeholder="Password" type="password" id="password" />
+                    <form onSubmit={e=>e.preventDefault()} className="mt-14">
+                        <input value={user.name} onChange={e=>setUser({...user,name:e.target.value})} className="w-full outline-none py-3 text-black/50 focus:placeholder:text-black/60 focus:border-black/40 border-b-2" placeholder="Name" type="text" id="name" />
+                        {error && user.name.length < 1 ? <p className="text-sm text-red-500">the name is required</p> : null}
+                        {error && user.name.length < 3 && user.name.length !=0  ? <p className="text-sm text-red-500">Enter a correct name</p> : null}
 
-                        <button className="bg-mainColor w-full py-4 text-white rounded-md mt-10">Create Account</button>
+                        <input value={user.phone} onChange={e=>setUser({...user,phone:e.target.value})} className="w-full outline-none py-3 text-black/50 focus:placeholder:text-black/60 focus:border-black/40 border-b-2" placeholder="phone" type="number" id="phone" />
+                        {error && user.phone.length < 1 ? <p className="text-sm text-red-500">the phone number is required</p> : null}
+                        {error && user.phone.length < 11 && user.phone.length !=0  ? <p className="text-sm text-red-500">Enter a correct phone number </p> : null}
+
+                        <input value={user.password} onChange={e=>setUser({...user,password:e.target.value})} className="w-full outline-none py-3 text-black/50 focus:placeholder:text-black/60 focus:border-black/40 border-b-2" placeholder="Password" type="password" id="password" />
+                        {error && user.password.length < 6 && user.password.length !=0  ? <p className="text-sm text-red-500">Password must contain more than 5 litters </p> : null}
+                        {error && user.password.length < 1 ? <p className="text-sm text-red-500">the password is required</p> : null}
+
+                        <button onClick={saveNewUser} className="bg-mainColor w-full py-4 text-white rounded-md mt-10">Create Account</button>
+
                     </form>
                         <button className="google w-full border-2 rounded-md flex gap-3 justify-center items-center py-4 mt-5">
                             <img className="size-5" src={google} alt="google-icon" />
