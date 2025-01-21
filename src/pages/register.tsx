@@ -2,6 +2,10 @@ import image from "../images/signUpAndLogIn.png";
 import google from "../images/Icon-Google.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { myUsers } from "../slices/saveNewUser";
+import { useDispatch , useSelector } from "react-redux";
+
+
 
 
 export default function Register() {
@@ -10,15 +14,25 @@ export default function Register() {
         phone: string;
         password: string;
     }
+    const usersData:any = useSelector((state:any) => state.ArrayOfUsers.data)
 
+    const dispatch = useDispatch();
     const [user , setUser] = useState({name: "" , phone: "" , password: ""});
     const [error , setError] = useState(false);
     
+    const filteredPhone = usersData.filter((e:any)=>e.phone === user.phone);
+
     const [users, setUsers] = useState<user[]>([]);
     function saveNewUser() {
         setError(true);
-        if (user.phone.length > 10 && user.password.length > 5 && user.name.length > 2 ) {
-            setUsers([...users , user])
+        if (user.phone.length > 10 && user.password.length > 5 && user.name.length > 2 && user.phone != filteredPhone[0]  ) {
+            let updatedData:any = [...users , user]
+            setUsers(updatedData)
+            
+            console.log(usersData)
+            
+            dispatch(myUsers(updatedData))
+            
             
         }
         
@@ -40,6 +54,8 @@ export default function Register() {
                         <input value={user.phone} onChange={e=>setUser({...user,phone:e.target.value})} className="w-full outline-none py-3 text-black/50 focus:placeholder:text-black/60 focus:border-black/40 border-b-2" placeholder="phone" type="number" id="phone" />
                         {error && user.phone.length < 1 ? <p className="text-sm text-red-500">the phone number is required</p> : null}
                         {error && user.phone.length < 11 && user.phone.length !=0  ? <p className="text-sm text-red-500">Enter a correct phone number </p> : null}
+                        {error && user.phone == filteredPhone[0] ? <p className="text-sm text-red-500">this phone used before </p> : null}
+                        
 
                         <input value={user.password} onChange={e=>setUser({...user,password:e.target.value})} className="w-full outline-none py-3 text-black/50 focus:placeholder:text-black/60 focus:border-black/40 border-b-2" placeholder="Password" type="password" id="password" />
                         {error && user.password.length < 6 && user.password.length !=0  ? <p className="text-sm text-red-500">Password must contain more than 5 litters </p> : null}

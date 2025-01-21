@@ -1,6 +1,15 @@
 import image from "../images/signUpAndLogIn.png";
+import { useSelector } from "react-redux";
+import { useState } from "react";
 
 export default function LogIn() {
+        const [user , setUser] = useState({phone: "" , password: ""});
+    
+    const usersData:any = useSelector((state:any) => state.ArrayOfUsers.data)
+    function logIn() {
+        // const f = usersData.filter((e:any)=>e.phone == user.phone || e.password == user.password)
+        console.log(usersData)
+    }
     
     return (
         <div className="register my-20 items-center flex w-full justify-between">
@@ -11,11 +20,11 @@ export default function LogIn() {
                     <h2 className="text-4xl font-semibold mb-5">Create an account</h2>
                     <p>Enter your details below</p>
                     </div>
-                    <form className="mt-14">
-                        <input className="w-full outline-none py-3 text-black/50 focus:placeholder:text-black/60 focus:border-black/40 border-b-2" placeholder="phone" type="number" id="phone" />
-                        <input className="w-full outline-none py-3 text-black/50 focus:placeholder:text-black/60 focus:border-black/40 border-b-2" placeholder="Password" type="password" id="password" />
-                        <div className="buttons flex justify-between mt-10 items-center">
-                            <button className="bg-mainColor px-10 py-4 text-white rounded-md ">Log In</button>
+                    <form onSubmit={e=>e.preventDefault()} className="mt-14">
+                    <input value={user.phone} onChange={e=>setUser({...user,phone:e.target.value})} className="w-full outline-none py-3 text-black/50 focus:placeholder:text-black/60 focus:border-black/40 border-b-2" placeholder="phone" type="number" id="phone" />
+                    <input value={user.password} onChange={e=>setUser({...user,password:e.target.value})} className="w-full outline-none py-3 text-black/50 focus:placeholder:text-black/60 focus:border-black/40 border-b-2" placeholder="Password" type="password" id="password" />
+                    <div className="buttons flex justify-between mt-10 items-center">
+                            <button onClick={logIn} className="bg-mainColor px-10 py-4 text-white rounded-md ">Log In</button>
                             <button className="text-mainColor">Forget Password?</button>
                         </div>
                         

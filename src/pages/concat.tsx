@@ -1,9 +1,3 @@
-
-
 export default function Concat() {
-    return (
-        <div>
-            Concat
-        </div>
-    )
+  return <div>Concat</div>;
 }

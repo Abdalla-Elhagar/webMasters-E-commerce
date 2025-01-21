@@ -1,48 +1,43 @@
-
-
 .PageButton {
-    position: relative;
-    padding: 10px 0;
-    font-size: 16px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    margin: 0 20px;
-  }
-  
-  .PageButton.active::after {
-    content: "";
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: rgb(83, 83, 83);
-  }
-  .RPageButton.active {
-    color: #DB4444;
-  }
-  
-  .PageButton:hover {
-    opacity: 0.8;
-  }
-  
+  position: relative;
+  padding: 10px 0;
+  font-size: 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0 20px;
+}
 
+.PageButton.active::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(83, 83, 83);
+}
+.RPageButton.active {
+  color: #db4444;
+}
+
+.PageButton:hover {
+  opacity: 0.8;
+}
 
 @media (width < 1024px) {
-    .PageButton {
-        display: none;
-    }
+  .PageButton {
+    display: none;
+  }
 }
 
 @media (width < 640px) {
-    .searchInput {
-        display: none;
-    }
+  .searchInput {
+    display: none;
+  }
 }
 @media (width > 640px) {
-    .responsiveSearch {
-        display: none;
-    }
+  .responsiveSearch {
+    display: none;
+  }
 }
-
