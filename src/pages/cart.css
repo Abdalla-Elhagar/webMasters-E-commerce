@@ -1,53 +1,21 @@
+.cart  .container {
+  padding: 0 200px !important;
+}
 
 
+@media (width < 1280px) {
+  .cart  .container {
+    padding: 0 80px !important;
+  }
+}
 
-
-.custom-input {
-    -moz-appearance: textfield;
+@media (width < 500px) {
+  .cart  .container {
+    padding: 0 40px !important;
   }
-  
-.custom-input::-webkit-inner-spin-button,
-.custom-input::-webkit-outer-spin-button {
-    opacity: 1;
-    display: block;
+}
+@media (width < 360px) {
+  .cart  .container {
+    padding: 0 10px !important;
   }
-
-  .custom-number {
-    position: relative;
-    width: 100px;
-  }
-  
-  .custom-input {
-    width: 100%;
-    text-align: center;
-    padding-right: 20px; /* لإفساح مجال للأسهم */
-    -moz-appearance: textfield; /* إزالة الأسهم الافتراضية في Firefox */
-  }
-  
-  .custom-input::-webkit-inner-spin-button,
-  .custom-input::-webkit-outer-spin-button {
-    appearance: none; /* إزالة الأسهم الافتراضية في Chrome و Edge */
-  }
-  
-  .custom-number::before,
-  .custom-number::after {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border: solid black;
-    border-width: 2px 2px 0 0;
-    right: 5px;
-    cursor: pointer;
-  }
-  
-  .custom-number::before {
-    top: 5px;
-    transform: rotate(-45deg); /* سهم لأعلى */
-  }
-  
-  .custom-number::after {
-    bottom: 5px;
-    transform: rotate(135deg); /* سهم لأسفل */
-  }
-  
+}
