@@ -17,6 +17,8 @@ import Appliances from "./pages/Appliances";
 import Laptops from "./pages/laptops";
 import BestSellingPage from "./pages/bestSellingPage";
 import Footer from "./components/footer";
+import Profile from "./pages/myProfile";
+import ProductData from "./pages/productData";
 
 function App() {
   return (
@@ -37,7 +39,9 @@ function App() {
         <Route path="/Gaming" element={<Gaming />} />
         <Route path="/appliances" element={<Appliances />} />
         <Route path="/laptops" element={<Laptops />} />
+        <Route path="/MyAccount" element={<Profile />} />
         <Route path="/bestSelling" element={<BestSellingPage />} />
+        <Route path="/productData" element={<ProductData />} />
       </Routes>
       <Footer />
     </div>

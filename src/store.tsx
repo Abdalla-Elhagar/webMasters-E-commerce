@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import sendDataReducer from "./slices/sendData";
-import ArrayOfUsersReduser from "./slices/saveNewUser";
+import ArrayOfUsersReducer from "./slices/saveNewUser";
+import productDataReducer from "./slices/productData"
 
 export const myStore = configureStore({
   reducer: {
     sendData: sendDataReducer,
-    ArrayOfUsers: ArrayOfUsersReduser,
+    ArrayOfUsers: ArrayOfUsersReducer,
+    productData: productDataReducer
   },
 });

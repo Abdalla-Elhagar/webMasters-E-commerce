@@ -6,7 +6,7 @@ const sendData = createSlice({
   reducers: {
     close: (state, action) => {
       state.close = action.payload;
-    },
+    }
   },
 });
 

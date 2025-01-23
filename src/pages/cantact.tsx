@@ -30,9 +30,6 @@ export default function Cantact() {
               <p>Emails: support@exclusive.com</p>
             </div>
           </div>
-
-
-
           <div className=" col-span-3 max-xl:col-span-2 flex-col flex border shadow-lg mb-40 max-lg:mb-10 py-10 px-7">
             <div className="inputs flex gap-5 max-sm:flex-col">
               <input
@@ -54,8 +51,13 @@ export default function Cantact() {
                 type="number"
               />
             </div>
-            <textarea className="bg-black/5 py-4 px-4 mt-5 h-[250px] w-full placeholder:text-lg" placeholder="Your Massage"></textarea>
-            <button className="py-4 h-14 max-sm:w-full w-48 self-end bg-mainColor text-white rounded-md mt-5">Send Massage</button>
+            <textarea
+              className="bg-black/5 py-4 px-4 mt-5 h-[250px] w-full placeholder:text-lg"
+              placeholder="Your Massage"
+            ></textarea>
+            <button className="py-4 h-14 max-sm:w-full w-48 self-end bg-mainColor text-white rounded-md mt-5">
+              Send Massage
+            </button>
           </div>
         </div>
       </div>

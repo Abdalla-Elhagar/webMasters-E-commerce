@@ -79,11 +79,13 @@ export default function Appliances() {
                   .map((_, index: number) => (
                     <StarIcon key={index} sx={{ color: "#FFAD33" }} />
                   ))}
-                {Array(5 - product.rate)
-                  .fill(null)
-                  .map((_, index: number) => (
-                    <StarIcon key={index} sx={{ color: "#999" }} />
-                  ))}
+                {5 - product.rate <= 0
+                  ? null
+                  : Array(5 - product.rate)
+                      .fill(null)
+                      .map((_, index: number) => (
+                        <StarIcon key={index} sx={{ color: "#999" }} />
+                      ))}
                 <span className="sales ml-6 text-[#999] font-semibold">
                   ({product.sales})
                 </span>

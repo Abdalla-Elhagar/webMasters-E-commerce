@@ -12,8 +12,15 @@ import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import "swiper/css";
 import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
 import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { product1 } from "../slices/productData";
 
 export default function TodaySlider() {
+  const dispach = useDispatch();
+  function sendDataToProductPage(myProduct: any) {
+    dispach(product1(myProduct));
+  }
   return (
     <div className="relative">
       <div className="custom-prev -top-[100px] max-lg:-top-[40px] absolute">
@@ -62,9 +69,13 @@ export default function TodaySlider() {
                 <button className="absolute hover:text-mainColor text-center rounded-full w-9 h-9 transition-all duration-300 p-[3px] right-5 top-5 bg-[#eee]">
                   <FavoriteBorderIcon />
                 </button>
-                <button className="absolute hover:text-mainColor text-center rounded-full w-9 h-9 transition-all duration-300 p-1 right-5 top-16 bg-[#eee]">
+                <Link
+                  onClick={() => sendDataToProductPage(product)}
+                  to="/productData"
+                  className="absolute hover:text-mainColor text-center rounded-full w-9 h-9 transition-all duration-300 p-1 right-5 top-16 bg-[#eee]"
+                >
                   <RemoveRedEyeOutlinedIcon />
-                </button>
+                </Link>
                 {product.discount ? (
                   <div className="absolute bg-mainColor text-white px-5 py-1 top-3 rounded-md left-4">
                     -{product.discount}%
@@ -115,11 +126,13 @@ export default function TodaySlider() {
                     .map((_, index: number) => (
                       <StarIcon key={index} sx={{ color: "#FFAD33" }} />
                     ))}
-                  {Array(5 - product.rate)
-                    .fill(null)
-                    .map((_, index: number) => (
-                      <StarIcon key={index} sx={{ color: "#999" }} />
-                    ))}
+                  {5 - product.rate <= 0
+                    ? null
+                    : Array(5 - product.rate)
+                        .fill(null)
+                        .map((_, index: number) => (
+                          <StarIcon key={index} sx={{ color: "#999" }} />
+                        ))}
                   <span className="sales ml-6 text-[#999] font-semibold">
                     ({product.sales})
                   </span>
