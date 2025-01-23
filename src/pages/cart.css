@@ -1,21 +1,20 @@
-.cart  .container {
+.cart .container {
   padding: 0 200px !important;
 }
 
-
 @media (width < 1280px) {
-  .cart  .container {
+  .cart .container {
     padding: 0 80px !important;
   }
 }
 
 @media (width < 500px) {
-  .cart  .container {
+  .cart .container {
     padding: 0 40px !important;
   }
 }
 @media (width < 360px) {
-  .cart  .container {
+  .cart .container {
     padding: 0 10px !important;
   }
 }

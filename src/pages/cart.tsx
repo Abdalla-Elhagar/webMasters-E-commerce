@@ -14,6 +14,9 @@ export default function Cart() {
   return (
     <div className="cart">
       <div className="container">
+        <div className="my-20 text-black/20">
+          Home / <span className="text-black">Cart</span>
+        </div>
         <div className="content">
           <div className="myTable">
             <div className="tableHeader font-semibold py-5 border-2 max-sm:grid-cols-3 border-black/5 my-5 grid grid-cols-4 px-5">
