@@ -4,7 +4,7 @@ import Header from "./components/header";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Cart from "./pages/cart";
-import Concat from "./pages/concat";
+import Cantact from "./pages/cantact";
 import Favorite from "./pages/favorite";
 import LogIn from "./pages/logIn";
 import Register from "./pages/register";
@@ -26,7 +26,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/concat" element={<Concat />} />
+        <Route path="/concat" element={<Cantact />} />
         <Route path="/favorite" element={<Favorite />} />
         <Route path="/logIn" element={<LogIn />} />
         <Route path="/register" element={<Register />} />

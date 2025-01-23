@@ -53,7 +53,7 @@ export default function MenuAppBar() {
   const [activePage, setActivePage] = useState("/");
   const pages = [
     { id: 1, name: "Home", path: "/" },
-    { id: 2, name: "Contact", path: "/concat" },
+    { id: 2, name: "Cantact", path: "/concat" },
     { id: 3, name: "About", path: "/about" },
     { id: 4, name: "Sign Up", path: "/register" },
   ];

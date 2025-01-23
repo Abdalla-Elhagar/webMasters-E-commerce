@@ -132,10 +132,7 @@ export default function About() {
           className="mySwiper my-20"
         >
           {people.map((ele) => (
-            <SwiperSlide
-              key={ele.id}
-              className="flex justify-center"
-            >
+            <SwiperSlide key={ele.id} className="flex justify-center">
               <div className="card max-sm:w-full mx-auto">
                 <div className="image max-sm:w-full w-[370px] h-[430px] relative bg-[#F5F5F5]">
                   <img

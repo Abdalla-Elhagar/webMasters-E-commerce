@@ -1,19 +1,18 @@
 .swiper {
-    width: 100%;
-    height: 100%;
-
-  }
-.about .mySwiper {
-    position: relative;
-    height: 700px;
+  width: 100%;
+  height: 100%;
 }
-  
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .swiper-pagination-bullet {
+.about .mySwiper {
+  position: relative;
+  height: 700px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination-bullet {
   width: 10px !important;
   height: 10px !important;
   opacity: 1;
@@ -21,7 +20,7 @@
 }
 
 .swiper-pagination-bullet-active {
-    width: 10px !important;
+  width: 10px !important;
   height: 10px !important;
   border: 2px solid white !important;
   outline: 2px solid #d5d5d5;
