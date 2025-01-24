@@ -7,8 +7,9 @@ import { useDispatch , useSelector } from "react-redux";
 
 
 
-
 export default function Register() {
+    
+    
     type user = {
         name: string;
         phone: string;
@@ -37,6 +38,7 @@ export default function Register() {
         }
         
     }
+    
     return (
         <div className="register my-20 items-center flex w-full justify-between">
             <img className="w-4/6 max-lg:hidden" src={image} alt="registerImage" />

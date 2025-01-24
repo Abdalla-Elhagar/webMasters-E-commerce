@@ -19,6 +19,7 @@ import BestSellingPage from "./pages/bestSellingPage";
 import Footer from "./components/footer";
 import Profile from "./pages/myProfile";
 import ProductData from "./pages/productData";
+import CheckOut from "./pages/checkOut";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route path="/MyAccount" element={<Profile />} />
         <Route path="/bestSelling" element={<BestSellingPage />} />
         <Route path="/productData" element={<ProductData />} />
+        <Route path="/checkOut" element={<CheckOut />} />
       </Routes>
       <Footer />
     </div>

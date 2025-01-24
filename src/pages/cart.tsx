@@ -3,6 +3,7 @@ import "./cart.css";
 import { useState } from "react";
 import ExpandLessOutlinedIcon from "@mui/icons-material/ExpandLessOutlined";
 import ExpandMoreOutlinedIcon from "@mui/icons-material/ExpandMoreOutlined";
+import { Link } from "react-router-dom";
 
 export default function Cart() {
   const [count, setCount] = useState(1);
@@ -93,9 +94,9 @@ export default function Cart() {
                   <p>$1750</p>
                 </div>
                 <div className="w-full flex justify-center">
-                  <button className=" mt-5 py-4 px-10 bg-mainColor text-white rounded-md">
+                  <Link to='/checkOut' className=" mt-5 py-4 px-10 bg-mainColor text-white rounded-md">
                     Procees to checkout
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
