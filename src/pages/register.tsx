@@ -24,7 +24,6 @@ export default function Register() {
       ? usersData.filter((e: any) => e.phone === user.phone)
       : [];
 
-  console.log(usersData.length);
   function saveNewUser() {
     setError(true);
     if (

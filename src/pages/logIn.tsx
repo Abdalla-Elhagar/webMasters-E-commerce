@@ -19,6 +19,7 @@ export default function LogIn() {
       setError(false);
       dispatch(sUser(loginUser[0]));
       navigate("/");
+      window.location.reload();
     } else {
       setError(true);
     }

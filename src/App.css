@@ -9,7 +9,10 @@
   margin: 0 auto;
   max-width: 100% !important;
 }
-
+.profile li {
+  margin: 10px 0 10px 10px;
+  
+}
 .categoriesEles .icon .myIcon {
   font-size: 6rem;
 }

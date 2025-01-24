@@ -11,7 +11,7 @@ const SelectedUser = createSlice({
     sUser: (state, action) => {
       state.selectedData = action.payload;
 
-      window.localStorage.setItem("myUsers", JSON.stringify(state.selectedData));
+      window.localStorage.setItem("selectedUser", JSON.stringify(state.selectedData));
     },
   },
 });

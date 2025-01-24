@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 const LocalUser: any = localStorage.getItem("myUsers")
   ? JSON.parse(localStorage.getItem("myUsers"))
   : [];
@@ -12,8 +13,13 @@ const ArrayOfUsers = createSlice({
 
       window.localStorage.setItem("myUsers", JSON.stringify(state.data));
     },
+    myUsersWithNewPass: (state, action) => {
+      state.data = action.payload;
+
+      window.localStorage.setItem("myUsers", JSON.stringify(state.data));
+    },
   },
 });
 
 export default ArrayOfUsers.reducer;
-export const { myUsers } = ArrayOfUsers.actions;
+export const { myUsers , myUsersWithNewPass } = ArrayOfUsers.actions;

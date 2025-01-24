@@ -16,6 +16,12 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { CiLogin } from "react-icons/ci";
+import { FaRegUser } from "react-icons/fa";
+import { RiShoppingBag3Line } from "react-icons/ri";
+import { MdOutlineCancel } from "react-icons/md";
+import { FaRegStar } from "react-icons/fa";
+import { TbLogout2 } from "react-icons/tb";
+import { RiUserAddLine } from "react-icons/ri";
 
 
 const Search = styled("div")(({ theme }) => ({
@@ -59,10 +65,13 @@ export default function MenuAppBar() {
     { id: 3, name: "About", path: "/about" },
     { id: 4, name: "Sign Up", path: "/register" },
   ];
+  const [show1, setShow1] = useState(false);
+  const [show2, setShow2] = useState(false);
   const [turn, setTurn] = useState(false);
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
+        className="appBar"
         position="relative"
         sx={{ backgroundColor: "transparent", color: "black" }}
       >
@@ -140,6 +149,47 @@ export default function MenuAppBar() {
                   <ShoppingCartOutlinedIcon sx={{ color: "black" }} />
                 </Link>
               </IconButton>
+              {localStorage.getItem("selectedUser") ? (
+                <IconButton className="relative" aria-label="cart">
+                  <FaRegUser
+                    onClick={() => (show1 ? setShow1(false) : setShow1(true))}
+                    className="size-8 p-1 border-4 border-mainColor rounded-full bg-mainColor text-white"
+                  />
+                  {show1 && (
+                    <div className="absolute rounded-md p-3 pl-5 text-base -left-52 top-12 w-[250px] h-[300px] z-50 bg-[#1e1e1e5d] backdrop-blur-[15px] text-white">
+                      <Link
+                        className="flex mt-3 mb-8 gap-4 justify-start items-center"
+                        to="/MyAccount"
+                      >
+                        <FaRegUser className="size-5" />
+                        <p>Manage My Account</p>
+                      </Link>
+                      <div className="flex mb-8 gap-4 justify-start items-center">
+                        <RiShoppingBag3Line className="size-5" />
+                        <p>My Order</p>
+                      </div>
+                      <div className="flex mb-8 gap-4 justify-start items-center">
+                        <MdOutlineCancel className="size-5" />
+                        <p>My Cancellations</p>
+                      </div>
+                      <div className="flex mb-8 gap-4 justify-start items-center">
+                        <FaRegStar className="size-5" />
+                        <p>My Reviews</p>
+                      </div>
+                      <button
+                        onClick={() => {
+                          localStorage.removeItem("selectedUser");
+                          window.location.reload();
+                        }}
+                        className="flex mb-8 gap-4 justify-start items-center"
+                      >
+                        <TbLogout2 className="size-5" />
+                        <p>Logout</p>
+                      </button>
+                    </div>
+                  )}
+                </IconButton>
+              ) : null}
             </Typography>
           </Toolbar>
 
@@ -181,9 +231,24 @@ export default function MenuAppBar() {
               </Link>
             </IconButton>
 
-            <IconButton aria-label="menu">
+            <IconButton
+              onClick={() => (show2 ? setShow2(false) : setShow2(true))}
+              aria-label="menu"
+            >
               <MenuIcon />
             </IconButton>
+            {show2 && (
+              <div className="absolute rounded-md p-5 pl-5 text-base right-0 -top-28 w-[150px] h-[120px] z-50 bg-[#1e1e1e5d] backdrop-blur-[15px] text-white">
+                <Link to='/logIn' className="flex mb-5 gap-4 items-center">
+                  <CiLogin className="size-7 text-white" />
+                  <p>login</p>
+                </Link>
+                <Link to='/register' className="flex gap-4 items-center">
+                  <RiUserAddLine className="size-7 text-white" />
+                  <p>Sign Up</p>
+                </Link>
+              </div>
+            )}
           </Typography>
         </div>
       </AppBar>
