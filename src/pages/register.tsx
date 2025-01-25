@@ -16,7 +16,14 @@ export default function Register() {
   const usersData: any = useSelector((state: any) => state.ArrayOfUsers.data);
 
   const dispatch = useDispatch();
-  const [user, setUser] = useState({ name: "", phone: "", password: "",cart:[] });
+  const [user, setUser] = useState({
+    name: "",
+    phone: "",
+    password: "",
+    cart: [],
+    favorite: [],
+    favoriteIDs: [],
+  });
   const [error, setError] = useState(false);
 
   const filteredPhone =
@@ -36,7 +43,6 @@ export default function Register() {
       navigate("/logIn");
     }
   }
-
 
   return (
     <div className="register my-20 items-center flex w-full justify-between">

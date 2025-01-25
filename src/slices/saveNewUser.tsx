@@ -18,8 +18,19 @@ const ArrayOfUsers = createSlice({
 
       window.localStorage.setItem("myUsers", JSON.stringify(state.data));
     },
+    myFavoriteIDs: (state, action) => {
+      state.data = action.payload;
+
+      window.localStorage.setItem("myUsers", JSON.stringify(state.data));
+    },
+    addToCartAction: (state, action) => {
+      state.data = action.payload;
+
+      window.localStorage.setItem("myUsers", JSON.stringify(state.data));
+    },
   },
 });
 
 export default ArrayOfUsers.reducer;
-export const { myUsers , myUsersWithNewPass } = ArrayOfUsers.actions;
+export const { myUsers, myUsersWithNewPass, myFavoriteIDs, addToCartAction } =
+  ArrayOfUsers.actions;

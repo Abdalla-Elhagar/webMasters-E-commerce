@@ -22,6 +22,7 @@ import { MdOutlineCancel } from "react-icons/md";
 import { FaRegStar } from "react-icons/fa";
 import { TbLogout2 } from "react-icons/tb";
 import { RiUserAddLine } from "react-icons/ri";
+import { useSelector } from "react-redux";
 
 
 const Search = styled("div")(({ theme }) => ({
@@ -65,6 +66,7 @@ export default function MenuAppBar() {
     { id: 3, name: "About", path: "/about" },
     { id: 4, name: "Sign Up", path: "/register" },
   ];
+  const user = useSelector((state: any) => state.SelectedUser.selectedData);
   const [show1, setShow1] = useState(false);
   const [show2, setShow2] = useState(false);
   const [turn, setTurn] = useState(false);
@@ -139,15 +141,17 @@ export default function MenuAppBar() {
                 </SearchIconWrapper>
               </Search>
 
-              <IconButton sx={{ ml: "15px" }} aria-label="favorit">
+              <IconButton sx={{ ml: "15px",position: "relative" }} aria-label="favorit">
                 <Link to="/favorite">
                   <FavoriteBorderIcon sx={{ color: "black" }} />
                 </Link>
+                {user.favorite.length > 0 && <div className=" size-4 rounded-full top-3 left-[20px] text-xs text-white absolute bg-mainColor">{user.favorite.length}</div>}
               </IconButton>
               <IconButton aria-label="cart">
                 <Link to="/cart">
-                  <ShoppingCartOutlinedIcon sx={{ color: "black" }} />
+                  <ShoppingCartOutlinedIcon sx={{ color: "black", position:"relative" }} />
                 </Link>
+                {user.cart.length > 0 && <div className=" size-4 rounded-full top-3 left-[20px] text-xs text-white absolute bg-mainColor">{user.cart.length}</div>}
               </IconButton>
               {localStorage.getItem("selectedUser") ? (
                 <IconButton className="relative" aria-label="cart">

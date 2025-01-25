@@ -29,7 +29,7 @@ export default function Profile() {
         ...user,
         password: changePassword.newPass,
       });
-      dispach(myUsersWithNewPass(usersWithOutSelectedUser))
+      dispach(myUsersWithNewPass(usersWithOutSelectedUser));
     } else {
       setError(true);
     }
@@ -38,7 +38,7 @@ export default function Profile() {
   return (
     <section className="profile">
       <div className="container">
-        <div className="my-20 max-sm:text-xs flex justify-between text-black/20">
+        <div className="mt-20 mb-10 max-sm:text-xs flex justify-between text-black/20">
           <div>
             Home / <span className="text-black">My Account</span>
           </div>
@@ -47,7 +47,7 @@ export default function Profile() {
           </div>
         </div>
         <div className="content mb-40 max-md:grid-cols-2 grid grid-cols-3">
-          <div className="col-span-1 max-md:col-span-2 mb-10 text-black/30">
+          <div className="col-span-1 pt-10 max-md:col-span-2 mb-10 text-black/30">
             <div>
               <h3 className="text-black text-lg font-semibold">
                 Manage My Account
@@ -67,7 +67,7 @@ export default function Profile() {
               <h3 className="text-black text-lg font-semibold">My Orders</h3>
             </div>
           </div>
-          <div className="shadow max-sm:p-5 p-10 grid col-span-2 grid-cols-2">
+          <div className="shadow border max-sm:p-5 p-10 grid col-span-2 grid-cols-2">
             <h2 className="text-xl ml-5 mb-5 col-span-2 font-semibold text-mainColor ">
               Edit Your Profile
             </h2>

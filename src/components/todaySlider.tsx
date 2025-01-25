@@ -13,13 +13,124 @@ import "swiper/css";
 import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
 import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { product1 } from "../slices/productData";
+import { useState } from "react";
+import { sUser } from "../slices/selectedUser";
+import { myFavoriteIDs , addToCartAction } from "../slices/saveNewUser";
+import { useEffect } from "react";
 
 export default function TodaySlider() {
-  const dispach = useDispatch();
+  const dispatch = useDispatch();
   function sendDataToProductPage(myProduct: any) {
-    dispach(product1(myProduct));
+    dispatch(product1(myProduct));
+  }
+  const myUsers = useSelector((state: any) => state.ArrayOfUsers.data);
+  const user = useSelector((state: any) => state.SelectedUser.selectedData);
+  const usersWithOutSelectedUser = myUsers.filter(
+    (Fuser: any) => Fuser.phone != user.phone
+  );
+
+  const [favoritesState, setFavoritesState] = useState(() => {
+    const storedFavorites = localStorage.getItem("selectedUser");
+    return storedFavorites
+      ? JSON.parse(storedFavorites)
+      : {
+          name: "",
+          phone: "",
+          password: "",
+          cart: [],
+          favorite: [],
+          favoriteIDs: [],
+        };
+  });
+
+  useEffect(() => {
+    localStorage.setItem("selectedUser", JSON.stringify(favoritesState));
+  }, [favoritesState]);
+
+  function addToFavorite(myProduct: any, id: any) {
+    setFavoritesState((prev: any) => {
+      const isProductInFavorites = prev.favorite.some(
+        (product: any) => product.id === myProduct.id
+      );
+
+      const updatedProducts = isProductInFavorites
+        ? prev.favorite.filter((product: any) => product.id !== myProduct.id)
+        : [...prev.favorite, myProduct];
+
+      const updatedIDs = isProductInFavorites
+        ? prev.favoriteIDs.filter((clickedId: string) => clickedId !== id)
+        : [...prev.favoriteIDs, id];
+
+      const updatedUser = {
+        ...user,
+        favorite: updatedProducts,
+        favoriteIDs: updatedIDs,
+      };
+
+      const updatedUsersArray = [...usersWithOutSelectedUser, updatedUser];
+      dispatch(sUser(updatedUser));
+      dispatch(myFavoriteIDs(updatedUsersArray));
+
+      return {
+        name: user.name,
+        phone: user.phone,
+        password: user.password,
+        cart: user.cart,
+        favorite: updatedProducts,
+        favoriteIDs: updatedIDs,
+      };
+    });
+  }
+  const [addToCartState, setAddToCartState] = useState(() => {
+    const storedFavorites = localStorage.getItem("selectedUser");
+    return storedFavorites
+      ? JSON.parse(storedFavorites)
+      : {
+          name: "",
+          phone: "",
+          password: "",
+          cart: [],
+          favorite: [],
+          favoriteIDs: [],
+        };
+  });
+  useEffect(() => {
+    localStorage.setItem("selectedUser", JSON.stringify(addToCartState));
+  }, [addToCartState]);
+
+  function addToCart(myProduct:any) {
+    setAddToCartState((prev: any) => {
+      prev.cart = Array.isArray(prev.cart) ? prev.cart : [];
+      const isProductInCart:any = prev.cart.some(
+        (product: any) => product.id === myProduct.id
+      );
+
+      const updatedProducts:any = isProductInCart
+        ? prev.cart
+        : [...prev.cart, myProduct];
+
+      
+
+      const updatedUser:any = {
+        ...user,
+        cart: updatedProducts,
+      };
+
+      const updatedUsersArray:any = [...usersWithOutSelectedUser, updatedUser];
+      dispatch(sUser(updatedUser));
+      dispatch(addToCartAction(updatedUsersArray));
+
+      return {
+        name: user.name,
+        phone: user.phone,
+        password: user.password,
+        cart: updatedProducts,
+        favorite: user.favorite,
+        favoriteIDs: user.favoriteIDs,
+      };
+    });
   }
   return (
     <div className="relative">
@@ -58,16 +169,29 @@ export default function TodaySlider() {
         }}
         modules={[Navigation, Autoplay]}
       >
-        {Products.map((product) => (
+        {Products.map((product: any) => (
           <SwiperSlide key={product.id}>
             <Card
               key={product.id}
               className="group mx-auto"
               sx={{ maxWidth: 320 }}
             >
-              <div className="image w-full h-[300px] relative bg-[#F5F5F5] overflow-hidden rounded-md">
-                <button className="absolute hover:text-mainColor text-center rounded-full w-9 h-9 transition-all duration-300 p-[3px] right-5 top-5 bg-[#eee]">
-                  <FavoriteBorderIcon />
+              <div
+                className={`image w-full h-[300px] relative bg-[#F5F5F5] overflow-hidden rounded-md`}
+              >
+                <button
+                  onClick={() => {
+                    addToFavorite(product, product.id);
+                  }}
+                  className={`absolute ${
+                    user.favoriteIDs?.includes(product.id) ? "bg-mainColor" : ""
+                  } hover:text-mainColor text-center rounded-full w-9 h-9 transition-all duration-300 p-[3px] right-5 top-5 bg-[#eee]`}
+                >
+                  <FavoriteBorderIcon
+                    className={`${
+                      user.favoriteIDs?.includes(product.id) ? "text-white" : ""
+                    }`}
+                  />
                 </button>
                 <Link
                   onClick={() => sendDataToProductPage(product)}
@@ -82,7 +206,7 @@ export default function TodaySlider() {
                   </div>
                 ) : null}
 
-                <button className="addToCart absolute text-white bg-black w-full h-12 transition-all duration-300 -bottom-12 group-hover:bottom-0 left-0">
+                <button onClick={()=>addToCart(product)} className="addToCart absolute text-white bg-black w-full h-12 transition-all duration-300 -bottom-12 group-hover:bottom-0 left-0">
                   Add To Cart
                 </button>
                 <img
