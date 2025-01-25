@@ -141,7 +141,6 @@ const dispatch = useDispatch();
     (e: any) => e.sales > 1500 && e.rate > 3
   );
   const first4Products = bestProducts.slice(0, 4);
-  const dispach = useDispatch();
   
   return (
     <section className="ProductData">
