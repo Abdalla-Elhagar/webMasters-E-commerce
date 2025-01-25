@@ -18,7 +18,7 @@ export default function BestSelling() {
   const [time, setTime] = useState(
     1000 * 60 * 60 * 24 * 3 + 1000 * 60 * 60 * 23 + 1000 * 60 * 19 + 1000 * 56
   );
-  const [running, setRunning] = useState(true);
+  const [running,_] = useState(true);
 
   useEffect(() => {
     let timer: any;
