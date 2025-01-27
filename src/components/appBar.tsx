@@ -5,8 +5,6 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import "./appBar.css";
 import SearchIcon from "@mui/icons-material/Search";
-import { styled, alpha } from "@mui/material/styles";
-import InputBase from "@mui/material/InputBase";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import HomeIcon from "@mui/icons-material/Home";
@@ -23,42 +21,11 @@ import { FaRegStar } from "react-icons/fa";
 import { TbLogout2 } from "react-icons/tb";
 import { RiUserAddLine } from "react-icons/ri";
 import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { sendSearch } from "../slices/sendData";
 
-
-const Search = styled("div")(({ theme }) => ({
-  position: "relative",
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
-  },
-  marginLeft: 0,
-  width: "100%",
-  [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing(1),
-    width: "auto",
-  },
-}));
-
-const SearchIconWrapper = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: "100%",
-  position: "absolute",
-  pointerEvents: "none",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  right: 0,
-}));
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "inherit",
-  width: "100%",
-  "& .MuiInputBase-input": {
-    padding: theme.spacing(1, 1, 1, 1),
-    paddingRight: `calc(1em + ${theme.spacing(4)})`,
-  },
-}));
 export default function MenuAppBar() {
+  const dispatch = useDispatch();
   const [activePage, setActivePage] = useState("/");
   const pages = [
     { id: 1, name: "Home", path: "/" },
@@ -66,10 +33,14 @@ export default function MenuAppBar() {
     { id: 3, name: "About", path: "/about" },
     { id: 4, name: "Sign Up", path: "/register" },
   ];
+  const [search, setSearch] = useState("");
   const user = useSelector((state: any) => state.SelectedUser.selectedData);
   const [show1, setShow1] = useState(false);
   const [show2, setShow2] = useState(false);
   const [turn, setTurn] = useState(false);
+  function handleSearch() {
+    dispatch(sendSearch(search));
+  }
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
@@ -86,11 +57,17 @@ export default function MenuAppBar() {
               <input
                 type="text"
                 onClick={(e) => e.stopPropagation()}
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
                 className="top-28 w-5/6 left-1/2 z-50 -translate-x-1/2 text-white bg-transparent border-white border-2 py-2 px-4 rounded-full focus:outline-none absolute"
               />
-              <button className="text-white absolute top-[120px] right-16">
+              <Link
+                to="/searched"
+                onClick={handleSearch}
+                className="text-white absolute top-[120px] right-16"
+              >
                 <SearchIcon />
-              </button>
+              </Link>
             </div>
           )}
           <Toolbar className="relative flex justify-between items-center">
@@ -130,28 +107,51 @@ export default function MenuAppBar() {
                 </IconButton>
               </Typography>
 
-              <Search className="searchInput flex">
-                <StyledInputBase
-                  className="searchInput bg-grayColor rounded-[4px] w-[153px]"
+              <div className="search relative  max-sm:hidden">
+                <input
+                  className="bg-[#F5F5F5] py-1 pl-2 pr-5 placeholder:text-sm rounded-md focus:outline-none"
                   placeholder="What are you looking for?"
-                  inputProps={{ "aria-label": "search" }}
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  type="text"
                 />
-                <SearchIconWrapper>
-                  <SearchIcon />
-                </SearchIconWrapper>
-              </Search>
+                <Link to="/searched" onClick={handleSearch}>
+                  <SearchIcon
+                    sx={{
+                      fontSize: "20px",
+                      position: "absolute",
+                      right: "5px",
+                      top: "50%",
+                      transform: "translateY(-50%)",
+                    }}
+                  />
+                </Link>
+              </div>
 
-              <IconButton sx={{ ml: "15px",position: "relative" }} aria-label="favorit">
+              <IconButton
+                sx={{ ml: "15px", position: "relative" }}
+                aria-label="favorit"
+              >
                 <Link to="/favorite">
                   <FavoriteBorderIcon sx={{ color: "black" }} />
                 </Link>
-                {user.favorite.length > 0 && <div className=" size-4 rounded-full top-3 left-[20px] text-xs text-white absolute bg-mainColor">{user.favorite.length}</div>}
+                {user.favorite.length > 0 && (
+                  <div className=" size-4 rounded-full top-3 left-[20px] text-xs text-white absolute bg-mainColor">
+                    {user.favorite.length}
+                  </div>
+                )}
               </IconButton>
               <IconButton aria-label="cart">
                 <Link to="/cart">
-                  <ShoppingCartOutlinedIcon sx={{ color: "black", position:"relative" }} />
+                  <ShoppingCartOutlinedIcon
+                    sx={{ color: "black", position: "relative" }}
+                  />
                 </Link>
-                {user.cart.length > 0 && <div className=" size-4 rounded-full top-3 left-[20px] text-xs text-white absolute bg-mainColor">{user.cart.length}</div>}
+                {user.cart.length > 0 && (
+                  <div className=" size-4 rounded-full top-3 left-[20px] text-xs text-white absolute bg-mainColor">
+                    {user.cart.length}
+                  </div>
+                )}
               </IconButton>
               {localStorage.getItem("selectedUser") ? (
                 <IconButton className="relative" aria-label="cart">
@@ -164,6 +164,7 @@ export default function MenuAppBar() {
                       <Link
                         className="flex mt-3 mb-8 gap-4 justify-start items-center"
                         to="/MyAccount"
+                        onClick={() => setShow1(false)}
                       >
                         <FaRegUser className="size-5" />
                         <p>Manage My Account</p>
@@ -243,11 +244,19 @@ export default function MenuAppBar() {
             </IconButton>
             {show2 && (
               <div className="absolute rounded-md p-5 pl-5 text-base right-0 -top-28 w-[150px] h-[120px] z-50 bg-[#1e1e1e5d] backdrop-blur-[15px] text-white">
-                <Link to='/logIn' className="flex mb-5 gap-4 items-center">
+                <Link
+                  onClick={() => setShow2(false)}
+                  to="/logIn"
+                  className="flex mb-5 gap-4 items-center"
+                >
                   <CiLogin className="size-7 text-white" />
                   <p>login</p>
                 </Link>
-                <Link to='/register' className="flex gap-4 items-center">
+                <Link
+                  onClick={() => setShow2(false)}
+                  to="/register"
+                  className="flex gap-4 items-center"
+                >
                   <RiUserAddLine className="size-7 text-white" />
                   <p>Sign Up</p>
                 </Link>

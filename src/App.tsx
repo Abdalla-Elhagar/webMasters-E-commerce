@@ -20,6 +20,7 @@ import Footer from "./components/footer";
 import Profile from "./pages/myProfile";
 import ProductData from "./pages/productData";
 import CheckOut from "./pages/checkOut";
+import SearchPage from "./pages/searchedPage";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
         <Route path="/bestSelling" element={<BestSellingPage />} />
         <Route path="/productData" element={<ProductData />} />
         <Route path="/checkOut" element={<CheckOut />} />
+        <Route path="/searched" element={<SearchPage />} />
       </Routes>
       <Footer />
     </div>
