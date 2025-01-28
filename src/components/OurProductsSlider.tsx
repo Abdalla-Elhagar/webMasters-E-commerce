@@ -18,15 +18,13 @@ import { sUser } from "../slices/selectedUser";
 import { addToCartAction, myFavoriteIDs } from "../slices/saveNewUser";
 import { useDispatch, useSelector } from "react-redux";
 import { product1 } from "../slices/productData";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-
-
 export default function OurProductsSlider() {
-const dispatch = useDispatch();
+  const dispatch = useDispatch();
   function sendDataToProductPage(myProduct: any) {
     dispatch(product1(myProduct));
   }
@@ -36,7 +34,7 @@ const dispatch = useDispatch();
     (Fuser: any) => Fuser.phone != user.phone
   );
 
-  const [favoritesState, setFavoritesState] = useState(() => {
+  const [, setFavoritesState] = useState(() => {
     const storedFavorites = localStorage.getItem("selectedUser");
     return storedFavorites
       ? JSON.parse(storedFavorites)
@@ -50,93 +48,85 @@ const dispatch = useDispatch();
         };
   });
 
-  useEffect(() => {
-    localStorage.setItem("selectedUser", JSON.stringify(favoritesState));
-  }, [favoritesState]);
-
   function addToFavorite(myProduct: any, id: any) {
-      const storedUser = localStorage.getItem("selectedUser");
-      if (!storedUser) {
-        toast.error("Please log in to add products to favorites!");
-        return;
-      }
-    
-      setFavoritesState((prev: any) => {
-        const isProductInFavorites = prev.favorite.some(
-          (product: any) => product.id === myProduct.id
-        );
-    
-        const updatedProducts = isProductInFavorites
-          ? prev.favorite.filter((product: any) => product.id !== myProduct.id)
-          : [...prev.favorite, myProduct];
-    
-        const updatedIDs = isProductInFavorites
-          ? prev.favoriteIDs.filter((clickedId: string) => clickedId !== id)
-          : [...prev.favoriteIDs, id];
-    
-        const updatedUser = {
-          ...user,
-          favorite: updatedProducts,
-          favoriteIDs: updatedIDs,
-        };
-    
-        const updatedUsersArray = [...usersWithOutSelectedUser, updatedUser];
-        dispatch(sUser(updatedUser));
-        dispatch(myFavoriteIDs(updatedUsersArray));
-        if (isProductInFavorites) {
-          toast.info("Product removed from favorites!");
-        } else {
-          toast.success("Product added to favorites!");
-        }
-        return {
-          name: user.name,
-          phone: user.phone,
-          password: user.password,
-          cart: user.cart,
-          favorite: updatedProducts,
-          favoriteIDs: updatedIDs,
-        };
-      });
+    const storedUser = localStorage.getItem("selectedUser");
+    if (!storedUser) {
+      toast.error("Please log in to add products to favorites!");
+      return;
     }
-    const [addToCartState, setAddToCartState] = useState(() => {
-      const storedFavorites = localStorage.getItem("selectedUser");
-      return storedFavorites
-        ? JSON.parse(storedFavorites)
-        : {
-            name: "",
-            phone: "",
-            password: "",
-            cart: [],
-            favorite: [],
-            favoriteIDs: [],
-          };
+
+    setFavoritesState((prev: any) => {
+      const isProductInFavorites = prev.favorite.some(
+        (product: any) => product.id === myProduct.id
+      );
+
+      const updatedProducts = isProductInFavorites
+        ? prev.favorite.filter((product: any) => product.id !== myProduct.id)
+        : [...prev.favorite, myProduct];
+
+      const updatedIDs = isProductInFavorites
+        ? prev.favoriteIDs.filter((clickedId: string) => clickedId !== id)
+        : [...prev.favoriteIDs, id];
+
+      const updatedUser = {
+        ...user,
+        favorite: updatedProducts,
+        favoriteIDs: updatedIDs,
+      };
+
+      const updatedUsersArray = [...usersWithOutSelectedUser, updatedUser];
+      dispatch(sUser(updatedUser));
+      dispatch(myFavoriteIDs(updatedUsersArray));
+      if (isProductInFavorites) {
+        toast.info("Product removed from favorites!");
+      } else {
+        toast.success("Product added to favorites!");
+      }
+      return {
+        name: user.name,
+        phone: user.phone,
+        password: user.password,
+        cart: user.cart,
+        favorite: updatedProducts,
+        favoriteIDs: updatedIDs,
+      };
     });
-    useEffect(() => {
-      localStorage.setItem("selectedUser", JSON.stringify(addToCartState));
-    }, [addToCartState]);
-  
-    
+  }
+  const [, setAddToCartState] = useState(() => {
+    const storedFavorites = localStorage.getItem("selectedUser");
+    return storedFavorites
+      ? JSON.parse(storedFavorites)
+      : {
+          name: "",
+          phone: "",
+          password: "",
+          cart: [],
+          favorite: [],
+          favoriteIDs: [],
+        };
+  });
+
   function addToCart(myProduct: any) {
     const storedUser = localStorage.getItem("selectedUser");
-      if (!storedUser) {
-        toast.error("Please log in to add products to the cart!");
-        return;
-      }
+    if (!storedUser) {
+      toast.error("Please log in to add products to the cart!");
+      return;
+    }
     setAddToCartState((prev: any) => {
       prev.cart = Array.isArray(prev.cart) ? prev.cart : [];
       const isProductInCart: any = prev.cart.some(
         (product: any) => product.id === myProduct.id
       );
-  
+
       const updatedProducts: any = isProductInCart
         ? prev.cart
         : [...prev.cart, myProduct];
-  
+
       const updatedUser: any = {
         ...user,
         cart: updatedProducts,
       };
-  
+
       const updatedUsersArray: any = [...usersWithOutSelectedUser, updatedUser];
       dispatch(sUser(updatedUser));
       dispatch(addToCartAction(updatedUsersArray));
@@ -230,7 +220,10 @@ const dispatch = useDispatch();
                   </div>
                 ) : null}
 
-                <button onClick={()=>addToCart(product)} className="addToCart absolute text-white bg-black w-full h-12 transition-all duration-300 -bottom-12 group-hover:bottom-0 left-0">
+                <button
+                  onClick={() => addToCart(product)}
+                  className="addToCart absolute text-white bg-black w-full h-12 transition-all duration-300 -bottom-12 group-hover:bottom-0 left-0"
+                >
                   Add To Cart
                 </button>
                 <img
@@ -243,8 +236,12 @@ const dispatch = useDispatch();
               <CardContent>
                 <Typography
                   gutterBottom
-                  
-                  sx={{fontSize: "25px" , height: "48px", paddingY: "10px", overflow: "hidden" }}
+                  sx={{
+                    fontSize: "25px",
+                    height: "48px",
+                    paddingY: "10px",
+                    overflow: "hidden",
+                  }}
                   component="div"
                 >
                   {product.title}

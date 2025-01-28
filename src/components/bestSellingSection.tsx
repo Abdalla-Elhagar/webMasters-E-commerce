@@ -50,7 +50,7 @@ export default function BestSelling() {
     (Fuser: any) => Fuser.phone != user.phone
   );
 
-  const [favoritesState, setFavoritesState] = useState(() => {
+  const [, setFavoritesState] = useState(() => {
     const storedFavorites = localStorage.getItem("selectedUser");
     return storedFavorites
       ? JSON.parse(storedFavorites)
@@ -64,10 +64,7 @@ export default function BestSelling() {
         };
   });
 
-  useEffect(() => {
-    localStorage.setItem("selectedUser", JSON.stringify(favoritesState));
-  }, [favoritesState]);
-
+  
   function addToFavorite(myProduct: any, id: any) {
       const storedUser = localStorage.getItem("selectedUser");
       if (!storedUser) {
@@ -112,7 +109,7 @@ export default function BestSelling() {
         };
       });
     }
-    const [addToCartState, setAddToCartState] = useState(() => {
+    const [, setAddToCartState] = useState(() => {
       const storedFavorites = localStorage.getItem("selectedUser");
       return storedFavorites
         ? JSON.parse(storedFavorites)
@@ -125,10 +122,7 @@ export default function BestSelling() {
             favoriteIDs: [],
           };
     });
-    useEffect(() => {
-      localStorage.setItem("selectedUser", JSON.stringify(addToCartState));
-    }, [addToCartState]);
-  
+    
     
   function addToCart(myProduct: any) {
     const storedUser = localStorage.getItem("selectedUser");

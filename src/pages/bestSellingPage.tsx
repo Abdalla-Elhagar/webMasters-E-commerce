@@ -9,7 +9,7 @@ import { sUser } from "../slices/selectedUser";
 import { addToCartAction, myFavoriteIDs } from "../slices/saveNewUser";
 import { useDispatch, useSelector } from "react-redux";
 import { product1 } from "../slices/productData";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -45,9 +45,6 @@ const dispatch = useDispatch();
         };
   });
 
-  useEffect(() => {
-    localStorage.setItem("selectedUser", JSON.stringify(favoritesState));
-  }, [favoritesState]);
 
   function addToFavorite(myProduct: any, id: any) {
       const storedUser = localStorage.getItem("selectedUser");
@@ -104,12 +101,7 @@ const dispatch = useDispatch();
             cart: [],
             favorite: [],
             favoriteIDs: [],
-          };
-    });
-    useEffect(() => {
-      localStorage.setItem("selectedUser", JSON.stringify(addToCartState));
-    }, [addToCartState]);
-  
+          };});
     
   function addToCart(myProduct: any) {
     const storedUser = localStorage.getItem("selectedUser");

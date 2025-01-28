@@ -18,7 +18,6 @@ import { product1 } from "../slices/productData";
 import { useState } from "react";
 import { sUser } from "../slices/selectedUser";
 import { myFavoriteIDs , addToCartAction } from "../slices/saveNewUser";
-import { useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -95,7 +94,7 @@ export default function TodaySlider() {
       };
     });
   }
-  const [addToCartState, setAddToCartState] = useState(() => {
+  const [, setAddToCartState] = useState(() => {
     const storedFavorites = localStorage.getItem("selectedUser");
     return storedFavorites
       ? JSON.parse(storedFavorites)
@@ -108,10 +107,6 @@ export default function TodaySlider() {
           favoriteIDs: [],
         };
   });
-  useEffect(() => {
-    localStorage.setItem("selectedUser", JSON.stringify(addToCartState));
-  }, [addToCartState]);
-
   
 function addToCart(myProduct: any) {
   const storedUser = localStorage.getItem("selectedUser");

@@ -9,7 +9,7 @@ import { sUser } from "../slices/selectedUser";
 import { addToCartAction, myFavoriteIDs } from "../slices/saveNewUser";
 import { useDispatch, useSelector } from "react-redux";
 import { product1 } from "../slices/productData";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -31,7 +31,7 @@ export default function TV() {
     (Fuser: any) => Fuser.phone != user.phone
   );
 
-  const [favoritesState, setFavoritesState] = useState(() => {
+  const [, setFavoritesState] = useState(() => {
     const storedFavorites = localStorage.getItem("selectedUser");
     return storedFavorites
       ? JSON.parse(storedFavorites)
@@ -42,12 +42,7 @@ export default function TV() {
           cart: [],
           favorite: [],
           favoriteIDs: [],
-        };
-  });
-
-  useEffect(() => {
-    localStorage.setItem("selectedUser", JSON.stringify(favoritesState));
-  }, [favoritesState]);
+        };});
 
   function addToFavorite(myProduct: any, id: any) {
       const storedUser = localStorage.getItem("selectedUser");
@@ -93,7 +88,7 @@ export default function TV() {
         };
       });
     }
-    const [addToCartState, setAddToCartState] = useState(() => {
+    const [, setAddToCartState] = useState(() => {
       const storedFavorites = localStorage.getItem("selectedUser");
       return storedFavorites
         ? JSON.parse(storedFavorites)
@@ -104,13 +99,8 @@ export default function TV() {
             cart: [],
             favorite: [],
             favoriteIDs: [],
-          };
-    });
-    useEffect(() => {
-      localStorage.setItem("selectedUser", JSON.stringify(addToCartState));
-    }, [addToCartState]);
-  
-    
+          };});
+
   function addToCart(myProduct: any) {
     const storedUser = localStorage.getItem("selectedUser");
       if (!storedUser) {
