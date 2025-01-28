@@ -31,7 +31,7 @@ const dispatch = useDispatch();
     (Fuser: any) => Fuser.phone != user.phone
   );
 
-  const [favoritesState, setFavoritesState] = useState(() => {
+  const [, setFavoritesState] = useState(() => {
     const storedFavorites = localStorage.getItem("selectedUser");
     return storedFavorites
       ? JSON.parse(storedFavorites)
@@ -90,7 +90,7 @@ const dispatch = useDispatch();
         };
       });
     }
-    const [addToCartState, setAddToCartState] = useState(() => {
+    const [, setAddToCartState] = useState(() => {
       const storedFavorites = localStorage.getItem("selectedUser");
       return storedFavorites
         ? JSON.parse(storedFavorites)

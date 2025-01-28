@@ -12,6 +12,7 @@ import { RiLinkedinLine } from "react-icons/ri";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
+// @ts-ignore
 import "swiper/css/pagination";
 import "./about.css";
 import AirportShuttleOutlinedIcon from "@mui/icons-material/AirportShuttleOutlined";

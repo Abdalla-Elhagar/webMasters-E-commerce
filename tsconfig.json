@@ -6,7 +6,10 @@
   ], 
   "compilerOptions": {
     "typeRoots": ["node_modules/@types", "node_modules/swiper/types"],
-    "types": ["swiper"]
+    "types": ["swiper"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   }
 }
 

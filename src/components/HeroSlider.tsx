@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import EastIcon from "@mui/icons-material/East";
 import "swiper/css";
+// @ts-ignore
 import "swiper/css/pagination";
 
 import "./HeroSlider.css";

@@ -2,6 +2,7 @@ import { SwiperSlide, Swiper } from "swiper/react";
 import { Grid, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+// @ts-ignore
 import "swiper/css/grid";
 import { UpdatedProducts as Products } from "../data/products";
 import Card from "@mui/material/Card";
