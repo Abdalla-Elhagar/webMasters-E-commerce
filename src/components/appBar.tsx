@@ -135,7 +135,7 @@ export default function MenuAppBar() {
                 <Link to="/favorite">
                   <FavoriteBorderIcon sx={{ color: "black" }} />
                 </Link>
-                {user.favorite.length > 0 && (
+                {user.favorit != undefined && user.favorite.length > 0 && (
                   <div className=" size-4 rounded-full top-3 left-[20px] text-xs text-white absolute bg-mainColor">
                     {user.favorite.length}
                   </div>
@@ -147,14 +147,14 @@ export default function MenuAppBar() {
                     sx={{ color: "black", position: "relative" }}
                   />
                 </Link>
-                {user.cart.length > 0 && (
+                {user.cart != undefined && user.cart.length > 0 && (
                   <div className=" size-4 rounded-full top-3 left-[20px] text-xs text-white absolute bg-mainColor">
                     {user.cart.length}
                   </div>
                 )}
               </IconButton>
               {localStorage.getItem("selectedUser") ? (
-                <IconButton className="relative" aria-label="cart">
+                <div className="relative" aria-label="cart">
                   <FaRegUser
                     onClick={() => (show1 ? setShow1(false) : setShow1(true))}
                     className="size-8 p-1 border-4 border-mainColor rounded-full bg-mainColor text-white"
@@ -193,12 +193,12 @@ export default function MenuAppBar() {
                       </button>
                     </div>
                   )}
-                </IconButton>
+                </div>
               ) : null}
             </Typography>
           </Toolbar>
 
-          <Typography className="bg-white z-50 max-sm:rounded-none hidden max-lg:flex justify-between px-5 py-2 rounded-lg max-sm:w-full max-sm:left-0 max-sm:translate-x-0 w-1/2 shadow-lg shadow-slate-600 fixed bottom-[-5px] border left-1/2 translate-x-[-50%]">
+          <Typography component="div" className="bg-white z-50 max-sm:rounded-none hidden max-lg:flex justify-between px-5 py-2 rounded-lg max-sm:w-full max-sm:left-0 max-sm:translate-x-0 w-1/2 shadow-lg shadow-slate-600 fixed bottom-[-5px] border left-1/2 translate-x-[-50%]">
             <IconButton
               onClick={() => setActivePage("/")}
               className={`RPageButton ${activePage === "/" ? "active" : ""}`}

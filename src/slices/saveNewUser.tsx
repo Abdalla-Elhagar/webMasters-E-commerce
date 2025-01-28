@@ -6,7 +6,7 @@ const LocalUser: any = localStorage.getItem("myUsers")
 
 const ArrayOfUsers = createSlice({
   name: "ArrayOfUsers",
-  initialState: { data: JSON.parse(LocalUser) },
+  initialState: { data: localStorage.getItem("myUsers")?JSON.parse(LocalUser):[] },
   reducers: {
     myUsers: (state, action) => {
       state.data.push(action.payload);

@@ -7,7 +7,7 @@ const selected: any = localStorage.getItem("selectedUser")
 const SelectedUser = createSlice({
   
   name: "SelectedUser",
-  initialState: { selectedData: JSON.parse(selected) },
+  initialState: { selectedData: localStorage.getItem("selectedUser")?JSON.parse(selected):[] },
   reducers: {
     sUser: (state, action) => {
       state.selectedData = action.payload;
