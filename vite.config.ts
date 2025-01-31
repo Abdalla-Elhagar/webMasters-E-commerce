@@ -3,10 +3,9 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  optimizeDeps: {
-    include: ['swiper'],
-  },
+  base: "/webMasters-E-commerce/",
   build: {
+    outDir: "dist",
     chunkSizeWarningLimit: 5000, 
     rollupOptions: {
       output: {
