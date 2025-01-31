@@ -184,7 +184,7 @@ export default function OurProductsSlider() {
         }}
         modules={[Navigation, Grid]}
       >
-        {Products.map((product) => (
+        {Products.slice(0, 20).map((product) => (
           <SwiperSlide key={product.id}>
             <Card
               key={product.id}

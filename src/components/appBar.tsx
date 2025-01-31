@@ -162,22 +162,22 @@ export default function MenuAppBar() {
                   {show1 && (
                     <div className="absolute rounded-md p-3 pl-5 text-base -left-52 top-12 w-[250px] h-[300px] z-50 bg-[#1e1e1e5d] backdrop-blur-[15px] text-white">
                       <Link
-                        className="flex mt-3 mb-8 gap-4 justify-start items-center"
+                        className="w-full hover:ml-2 cursor-pointer transition-all duration-300 flex mt-3 mb-8 gap-4 justify-start items-center"
                         to="/MyAccount"
                         onClick={() => setShow1(false)}
                       >
                         <FaRegUser className="size-5" />
                         <p>Manage My Account</p>
                       </Link>
-                      <div className="flex mb-8 gap-4 justify-start items-center">
+                      <div className="w-full hover:ml-2 cursor-pointer transition-all duration-300 flex mb-8 gap-4 justify-start items-center">
                         <RiShoppingBag3Line className="size-5" />
                         <p>My Order</p>
                       </div>
-                      <div className="flex mb-8 gap-4 justify-start items-center">
+                      <div className="w-full hover:ml-2 cursor-pointer transition-all duration-300 flex mb-8 gap-4 justify-start items-center">
                         <MdOutlineCancel className="size-5" />
                         <p>My Cancellations</p>
                       </div>
-                      <div className="flex mb-8 gap-4 justify-start items-center">
+                      <div className="w-full hover:ml-2 cursor-pointer transition-all duration-300 flex mb-8 gap-4 justify-start items-center">
                         <FaRegStar className="size-5" />
                         <p>My Reviews</p>
                       </div>
@@ -186,7 +186,7 @@ export default function MenuAppBar() {
                           localStorage.removeItem("selectedUser");
                           window.location.reload();
                         }}
-                        className="flex mb-8 gap-4 justify-start items-center"
+                        className="w-full hover:ml-2 cursor-pointer transition-all duration-300 flex mb-8 gap-4 justify-start items-center"
                       >
                         <TbLogout2 className="size-5" />
                         <p>Logout</p>
@@ -198,56 +198,81 @@ export default function MenuAppBar() {
             </Typography>
           </Toolbar>
 
-          <Typography component="div" className="bg-white z-50 max-sm:rounded-none hidden max-lg:flex justify-between px-5 py-2 rounded-lg max-sm:w-full max-sm:left-0 max-sm:translate-x-0 w-1/2 shadow-lg shadow-slate-600 fixed bottom-[-5px] border left-1/2 translate-x-[-50%]">
+          <Typography
+            component="div"
+            className="bg-white z-50 max-sm:rounded-none hidden max-lg:flex justify-between px-5 py-2 rounded-lg max-sm:w-full max-sm:left-0 max-sm:translate-x-0 w-1/2 shadow-lg shadow-slate-600 fixed bottom-[-5px] border left-1/2 translate-x-[-50%]"
+          >
             <IconButton
-              onClick={() => setActivePage("/")}
-              className={`size-14 RPageButton ${activePage === "/" ? "active" : ""}`}
+              onClick={() => {
+                setActivePage("/");
+                setShow2(false);
+              }}
+              className={`size-14 RPageButton ${
+                activePage === "/" ? "active" : ""
+              }`}
               key="1"
               aria-label="home"
             >
-              <Link to="/">
+              <Link className="size-full" to="/">
                 <HomeIcon />
               </Link>
             </IconButton>
 
             <IconButton
-              onClick={() => setActivePage("/concat")}
+              onClick={() => {
+                setActivePage("/concat");
+                setShow2(false);
+              }}
               className={`size-14 RPageButton ${
                 activePage === "/concat" ? "active" : ""
               }`}
               key="2"
               aria-label="concat"
             >
-              <Link className="w-full"  to="/concat">
+              <Link className="size-full" to="/concat">
                 <LocalPhoneIcon />
               </Link>
             </IconButton>
 
             <IconButton
-              onClick={() => setActivePage("/about")}
+              onClick={() => {
+                setActivePage("/about");
+                setShow2(false);
+              }}
               className={`size-14 RPageButton ${
                 activePage === "/about" ? "active" : ""
               }`}
               key="3"
               aria-label="About"
             >
-              <Link className="w-full"  to="/about">
+              <Link className="size-full" to="/about">
                 <InfoIcon />
               </Link>
             </IconButton>
 
             <IconButton
-              onClick={() => (show2 ? setShow2(false) : setShow2(true))}
+              className={`size-14 RPageButton ${
+                activePage === "/register" || activePage === "/logIn"
+                  ? "active"
+                  : ""
+              }`}
+              onClick={() => {
+                show2 ? setShow2(false) : setShow2(true);
+                setActivePage("/register");
+              }}
               aria-label="menu"
             >
               <MenuIcon />
             </IconButton>
             {show2 && (
-              <div className="absolute rounded-md p-5 pl-5 text-base right-0 -top-28 w-[150px] h-[120px] z-50 bg-[#1e1e1e5d] backdrop-blur-[15px] text-white">
+              <div
+                className={`absolute rounded-md p-5 pl-5 text-base right-0 -top-28 w-[150px] h-[120px] z-50 bg-[#1e1e1e5d] backdrop-blur-[15px] text-white`}
+                key="4"
+              >
                 <Link
                   onClick={() => setShow2(false)}
                   to="/logIn"
-                  className="flex w-full mb-5 gap-4 items-center"
+                  className="flex hover:ml-1 duration-300 transition-all w-full mb-5 gap-4 items-center"
                 >
                   <CiLogin className="size-7 text-white" />
                   <p>login</p>
@@ -255,7 +280,7 @@ export default function MenuAppBar() {
                 <Link
                   onClick={() => setShow2(false)}
                   to="/register"
-                  className="flex w-full gap-4 items-center"
+                  className="flex hover:ml-1 duration-300 transition-all w-full gap-4 items-center"
                 >
                   <RiUserAddLine className="size-7 text-white" />
                   <p>Sign Up</p>

@@ -71,7 +71,6 @@ export default function Categories() {
           className="mb-10 mx-auto"
           slidesPerView={1}
           spaceBetween={10}
-          loop={true}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,

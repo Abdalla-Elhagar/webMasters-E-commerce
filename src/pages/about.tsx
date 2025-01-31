@@ -128,7 +128,6 @@ export default function About() {
           }}
           pagination={{ clickable: true }}
           autoplay={{ delay: 2000 }}
-          loop={true}
           modules={[Pagination, Autoplay]}
           className="mySwiper my-20"
         >

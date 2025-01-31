@@ -160,7 +160,6 @@ function addToCart(myProduct: any) {
         className="mt-10 mx-auto"
         slidesPerView={1}
         spaceBetween={10}
-        loop={true}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
@@ -185,7 +184,7 @@ function addToCart(myProduct: any) {
         }}
         modules={[Navigation, Autoplay]}
       >
-        {Products.map((product: any) => (
+        {Products.slice(0, 15).map((product: any) => (
           <SwiperSlide key={product.id}>
             <Card
               key={product.id}
