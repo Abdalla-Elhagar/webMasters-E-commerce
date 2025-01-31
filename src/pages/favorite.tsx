@@ -14,7 +14,7 @@ import { updateFavorites } from "../slices/selectedUser";
 import { sUser } from "../slices/selectedUser";
 import { addToCartAction, myFavoriteIDs } from "../slices/saveNewUser";
 import { useState } from "react";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 
@@ -172,7 +172,6 @@ export default function Favorite() {
   
   return (
     <section className=" my-20 relative">
-      <ToastContainer />
       <div className="container">
         <div className="JustForYou">
           <div className="titleAndViewAll flex mt-6 justify-between gap-5 max-sm:text-center w-full flex-wrap">

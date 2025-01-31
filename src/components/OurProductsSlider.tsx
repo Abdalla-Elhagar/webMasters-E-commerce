@@ -21,7 +21,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { product1 } from "../slices/productData";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function OurProductsSlider() {
@@ -55,44 +55,47 @@ export default function OurProductsSlider() {
       toast.error("Please log in to add products to favorites!");
       return;
     }
-
+  
     setFavoritesState((prev: any) => {
       const isProductInFavorites = prev.favorite.some(
         (product: any) => product.id === myProduct.id
       );
-
+  
       const updatedProducts = isProductInFavorites
         ? prev.favorite.filter((product: any) => product.id !== myProduct.id)
         : [...prev.favorite, myProduct];
-
+  
       const updatedIDs = isProductInFavorites
         ? prev.favoriteIDs.filter((clickedId: string) => clickedId !== id)
         : [...prev.favoriteIDs, id];
-
-      const updatedUser = {
-        ...user,
-        favorite: updatedProducts,
-        favoriteIDs: updatedIDs,
-      };
-
-      const updatedUsersArray = [...usersWithOutSelectedUser, updatedUser];
-      dispatch(sUser(updatedUser));
-      dispatch(myFavoriteIDs(updatedUsersArray));
-      if (isProductInFavorites) {
-        toast.info("Product removed from favorites!");
-      } else {
-        toast.success("Product added to favorites!");
-      }
+  
       return {
-        name: user.name,
-        phone: user.phone,
-        password: user.password,
-        cart: user.cart,
+        ...prev,
         favorite: updatedProducts,
         favoriteIDs: updatedIDs,
       };
     });
+  
+    const updatedUser = {
+      ...user,
+      favorite: user.favoriteIDs.includes(id)
+        ? user.favorite.filter((product: any) => product.id !== myProduct.id)
+        : [...user.favorite, myProduct],
+      favoriteIDs: user.favoriteIDs.includes(id)
+        ? user.favoriteIDs.filter((clickedId: string) => clickedId !== id)
+        : [...user.favoriteIDs, id],
+    };
+  
+    dispatch(sUser(updatedUser));
+    dispatch(myFavoriteIDs([...usersWithOutSelectedUser, updatedUser]));
+  
+    if (user.favoriteIDs.includes(id)) {
+      toast.info("Product removed from favorites!");
+    } else {
+      toast.success("Product added to favorites!");
+    }
   }
+  
   const [, setAddToCartState] = useState(() => {
     const storedFavorites = localStorage.getItem("selectedUser");
     return storedFavorites
@@ -113,43 +116,40 @@ export default function OurProductsSlider() {
       toast.error("Please log in to add products to the cart!");
       return;
     }
+  
     setAddToCartState((prev: any) => {
-      prev.cart = Array.isArray(prev.cart) ? prev.cart : [];
-      const isProductInCart: any = prev.cart.some(
-        (product: any) => product.id === myProduct.id
-      );
-
-      const updatedProducts: any = isProductInCart
+      const isProductInCart = prev.cart.some((product: any) => product.id === myProduct.id);
+  
+      const updatedCart = isProductInCart
         ? prev.cart
         : [...prev.cart, myProduct];
-
-      const updatedUser: any = {
-        ...user,
-        cart: updatedProducts,
-      };
-
-      const updatedUsersArray: any = [...usersWithOutSelectedUser, updatedUser];
-      dispatch(sUser(updatedUser));
-      dispatch(addToCartAction(updatedUsersArray));
-      if (isProductInCart) {
-        toast.info("Product is already in the cart!");
-      } else {
-        toast.success("Product added to the cart!");
-      }
+  
       return {
-        name: user.name,
-        phone: user.phone,
-        password: user.password,
-        cart: updatedProducts,
-        favorite: user.favorite,
-        favoriteIDs: user.favoriteIDs,
+        ...prev,
+        cart: updatedCart,
       };
     });
+  
+    const updatedUser = {
+      ...user,
+      cart: user.cart.some((product: any) => product.id === myProduct.id)
+        ? (user.cart)
+        : [...user.cart, myProduct],
+    };
+  
+    dispatch(sUser(updatedUser));
+    dispatch(addToCartAction([...usersWithOutSelectedUser, updatedUser]));
+  
+    if (user.cart.some((product: any) => product.id === myProduct.id)) {
+      toast.info("Product removed from the cart!");
+    } else {
+      toast.success("Product added to the cart!");
+    }
   }
+  
 
   return (
     <div className="relative">
-      <ToastContainer />
       <div className="custom-prev -top-[100px] max-lg:-top-[40px] absolute">
         <WestOutlinedIcon />
       </div>

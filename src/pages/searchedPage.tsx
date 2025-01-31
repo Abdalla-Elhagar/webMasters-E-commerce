@@ -1,5 +1,5 @@
 
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { UpdatedProducts as Products } from "../data/products";
 import Card from "@mui/material/Card";
@@ -144,7 +144,6 @@ const dispatch = useDispatch();
   }
   return (
     <div className="container w-full relative">
-      <ToastContainer />
       <h3 className="text-3xl font-semibold max-sm:text-center mt-10">
         {searchedName}
       </h3>

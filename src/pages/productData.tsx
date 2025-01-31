@@ -15,7 +15,7 @@ import { addToCartAction, myFavoriteIDs } from "../slices/saveNewUser";
 import { useDispatch, useSelector } from "react-redux";
 import { product1 } from "../slices/productData";
 import { useState } from "react";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 
@@ -151,7 +151,6 @@ const dispatch = useDispatch();
   
   return (
     <section className="ProductData relative">
-      <ToastContainer />
       <div className="container">
         <div className="my-20 text-black/20 gap-2 flex">
           <p>Account </p>

@@ -13,7 +13,7 @@ import { sUser } from "../slices/selectedUser";
 import { addToCartAction, myFavoriteIDs } from "../slices/saveNewUser";
 import { useDispatch, useSelector } from "react-redux";
 import { product1 } from "../slices/productData";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 
@@ -165,7 +165,6 @@ export default function BestSelling() {
   }
   return (
     <section className="BestSelling my-20 relative">
-      <ToastContainer />
       <div className="container">
         <SectionHeader title="This Month" />
         <div className="titleAndViewAll flex mt-6 justify-between gap-5 max-sm:text-center w-full flex-wrap">

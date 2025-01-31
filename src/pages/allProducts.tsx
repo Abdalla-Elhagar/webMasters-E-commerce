@@ -11,7 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { product1 } from "../slices/productData";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 
@@ -141,7 +141,6 @@ const dispatch = useDispatch();
   }
   return (
     <div className="container w-full relative">
-      <ToastContainer />
       <h3 className="text-3xl font-semibold max-sm:text-center mt-10">
         All Products
       </h3>

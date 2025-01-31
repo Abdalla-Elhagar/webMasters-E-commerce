@@ -17,11 +17,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { product1 } from "../slices/productData";
 import { useState } from "react";
 import { sUser } from "../slices/selectedUser";
-import { myFavoriteIDs , addToCartAction } from "../slices/saveNewUser";
-import { toast, ToastContainer } from "react-toastify";
+import { myFavoriteIDs, addToCartAction } from "../slices/saveNewUser";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-
 
 export default function TodaySlider() {
   const dispatch = useDispatch();
@@ -48,34 +46,32 @@ export default function TodaySlider() {
         };
   });
 
- 
-
   function addToFavorite(myProduct: any, id: any) {
     const storedUser = localStorage.getItem("selectedUser");
     if (!storedUser) {
-      toast.error("Please log in to add products to favorites!");
+      toast.error("Please log in to add products to favorites!",);
       return;
     }
-  
+
     setFavoritesState((prev: any) => {
       const isProductInFavorites = prev.favorite.some(
         (product: any) => product.id === myProduct.id
       );
-  
+
       const updatedProducts = isProductInFavorites
         ? prev.favorite.filter((product: any) => product.id !== myProduct.id)
         : [...prev.favorite, myProduct];
-  
+
       const updatedIDs = isProductInFavorites
         ? prev.favoriteIDs.filter((clickedId: string) => clickedId !== id)
         : [...prev.favoriteIDs, id];
-  
+
       const updatedUser = {
         ...user,
         favorite: updatedProducts,
         favoriteIDs: updatedIDs,
       };
-  
+
       const updatedUsersArray = [...usersWithOutSelectedUser, updatedUser];
       dispatch(sUser(updatedUser));
       dispatch(myFavoriteIDs(updatedUsersArray));
@@ -107,49 +103,49 @@ export default function TodaySlider() {
           favoriteIDs: [],
         };
   });
-  
-function addToCart(myProduct: any) {
-  const storedUser = localStorage.getItem("selectedUser");
+
+  function addToCart(myProduct: any) {
+    const storedUser = localStorage.getItem("selectedUser");
     if (!storedUser) {
       toast.error("Please log in to add products to the cart!");
       return;
     }
-  setAddToCartState((prev: any) => {
-    prev.cart = Array.isArray(prev.cart) ? prev.cart : [];
-    const isProductInCart: any = prev.cart.some(
-      (product: any) => product.id === myProduct.id
-    );
+    setAddToCartState((prev: any) => {
+      prev.cart = Array.isArray(prev.cart) ? prev.cart : [];
+      const isProductInCart: any = prev.cart.some(
+        (product: any) => product.id === myProduct.id
+      );
 
-    const updatedProducts: any = isProductInCart
-      ? prev.cart
-      : [...prev.cart, myProduct];
+      const updatedProducts: any = isProductInCart
+        ? prev.cart
+        : [...prev.cart, myProduct];
 
-    const updatedUser: any = {
-      ...user,
-      cart: updatedProducts,
-    };
+      const updatedUser: any = {
+        ...user,
+        cart: updatedProducts,
+      };
 
-    const updatedUsersArray: any = [...usersWithOutSelectedUser, updatedUser];
-    dispatch(sUser(updatedUser));
-    dispatch(addToCartAction(updatedUsersArray));
-    if (isProductInCart) {
-      toast.info("Product is already in the cart!");
-    } else {
-      toast.success("Product added to the cart!");
-    }
-    return {
-      name: user.name,
-      phone: user.phone,
-      password: user.password,
-      cart: updatedProducts,
-      favorite: user.favorite,
-      favoriteIDs: user.favoriteIDs,
-    };
-  });
-}
+      const updatedUsersArray: any = [...usersWithOutSelectedUser, updatedUser];
+      dispatch(sUser(updatedUser));
+      dispatch(addToCartAction(updatedUsersArray));
+      if (isProductInCart) {
+        toast.info("Product is already in the cart!");
+      } else {
+        toast.success("Product added to the cart!");
+      }
+      return {
+        name: user.name,
+        phone: user.phone,
+        password: user.password,
+        cart: updatedProducts,
+        favorite: user.favorite,
+        favoriteIDs: user.favoriteIDs,
+      };
+    });
+  }
   return (
     <div className="relative">
-      <ToastContainer />
+      
       <div className="custom-prev -top-[100px] max-lg:-top-[40px] absolute">
         <WestOutlinedIcon />
       </div>
@@ -221,7 +217,10 @@ function addToCart(myProduct: any) {
                   </div>
                 ) : null}
 
-                <button onClick={()=>addToCart(product)} className="addToCart absolute text-white bg-black w-full h-12 transition-all duration-300 -bottom-12 group-hover:bottom-0 left-0">
+                <button
+                  onClick={() => addToCart(product)}
+                  className="addToCart absolute text-white bg-black w-full h-12 transition-all duration-300 -bottom-12 group-hover:bottom-0 left-0"
+                >
                   Add To Cart
                 </button>
                 <img
@@ -234,8 +233,12 @@ function addToCart(myProduct: any) {
               <CardContent>
                 <Typography
                   gutterBottom
-                  
-                  sx={{fontSize: "25px" , height: "48px", paddingY: "10px", overflow: "hidden" }}
+                  sx={{
+                    fontSize: "25px",
+                    height: "48px",
+                    paddingY: "10px",
+                    overflow: "hidden",
+                  }}
                   component="div"
                 >
                   {product.title}
@@ -281,6 +284,7 @@ function addToCart(myProduct: any) {
           </SwiperSlide>
         ))}
       </Swiper>
+
     </div>
   );
 }

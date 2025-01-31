@@ -21,10 +21,12 @@ import Profile from "./pages/myProfile";
 import ProductData from "./pages/productData";
 import CheckOut from "./pages/checkOut";
 import SearchPage from "./pages/searchedPage";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
     <div className=" overflow-hidden">
+      <ToastContainer autoClose={1000} />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
