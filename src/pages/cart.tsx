@@ -74,6 +74,8 @@ export default function Cart() {
     alert("Cart updated successfully!");
   };
 
+  
+
   return (
     <div className="cart">
       <div className="container">

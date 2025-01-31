@@ -135,7 +135,7 @@ export default function MenuAppBar() {
                 <Link to="/favorite">
                   <FavoriteBorderIcon sx={{ color: "black" }} />
                 </Link>
-                {user.favorit != undefined && user.favorite.length > 0 && (
+                {user.favorite != undefined && user.favorite.length > 0 && (
                   <div className=" size-4 rounded-full top-3 left-[20px] text-xs text-white absolute bg-mainColor">
                     {user.favorite.length}
                   </div>
@@ -201,7 +201,7 @@ export default function MenuAppBar() {
           <Typography component="div" className="bg-white z-50 max-sm:rounded-none hidden max-lg:flex justify-between px-5 py-2 rounded-lg max-sm:w-full max-sm:left-0 max-sm:translate-x-0 w-1/2 shadow-lg shadow-slate-600 fixed bottom-[-5px] border left-1/2 translate-x-[-50%]">
             <IconButton
               onClick={() => setActivePage("/")}
-              className={`RPageButton ${activePage === "/" ? "active" : ""}`}
+              className={`size-14 RPageButton ${activePage === "/" ? "active" : ""}`}
               key="1"
               aria-label="home"
             >
@@ -212,26 +212,26 @@ export default function MenuAppBar() {
 
             <IconButton
               onClick={() => setActivePage("/concat")}
-              className={`RPageButton ${
+              className={`size-14 RPageButton ${
                 activePage === "/concat" ? "active" : ""
               }`}
               key="2"
               aria-label="concat"
             >
-              <Link to="/concat">
+              <Link className="w-full"  to="/concat">
                 <LocalPhoneIcon />
               </Link>
             </IconButton>
 
             <IconButton
               onClick={() => setActivePage("/about")}
-              className={`RPageButton ${
+              className={`size-14 RPageButton ${
                 activePage === "/about" ? "active" : ""
               }`}
               key="3"
               aria-label="About"
             >
-              <Link to="/about">
+              <Link className="w-full"  to="/about">
                 <InfoIcon />
               </Link>
             </IconButton>
@@ -247,7 +247,7 @@ export default function MenuAppBar() {
                 <Link
                   onClick={() => setShow2(false)}
                   to="/logIn"
-                  className="flex mb-5 gap-4 items-center"
+                  className="flex w-full mb-5 gap-4 items-center"
                 >
                   <CiLogin className="size-7 text-white" />
                   <p>login</p>
@@ -255,7 +255,7 @@ export default function MenuAppBar() {
                 <Link
                   onClick={() => setShow2(false)}
                   to="/register"
-                  className="flex gap-4 items-center"
+                  className="flex w-full gap-4 items-center"
                 >
                   <RiUserAddLine className="size-7 text-white" />
                   <p>Sign Up</p>

@@ -30,6 +30,7 @@ export default function Profile() {
         password: changePassword.newPass,
       });
       dispach(myUsersWithNewPass(usersWithOutSelectedUser));
+      window.location.reload();
     } else {
       setError(true);
     }
@@ -104,7 +105,7 @@ export default function Profile() {
               />
               {error && changePassword.currentPass != user.password ? (
                 <p className="text-sm text-red-500">
-                  phone or password has been error
+                  the curent password has been error
                 </p>
               ) : null}
               <input

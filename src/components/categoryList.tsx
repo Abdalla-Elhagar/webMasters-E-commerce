@@ -13,33 +13,33 @@ export default function CategoreList() {
         aria-labelledby="nested-list-subheader"
       >
         <ListItemButton>
-          <Link to="/phones">
+          <Link className="w-full" to="/phones">
             <ListItemText primary="Phones" />
           </Link>
         </ListItemButton>
 
         <ListItemButton>
-          <Link to="/audio">
+          <Link className="w-full"  to="/audio">
             <ListItemText primary="Audio" />
           </Link>
         </ListItemButton>
         <ListItemButton>
-          <Link to="/TV">
+          <Link className="w-full"  to="/TV">
             <ListItemText primary="TV" />
           </Link>
         </ListItemButton>
         <ListItemButton>
-          <Link to="/Gaming">
+          <Link className="w-full"  to="/Gaming">
             <ListItemText primary="Gaming" />
           </Link>
         </ListItemButton>
         <ListItemButton>
-          <Link to="/appliances">
+          <Link className="w-full"  to="/appliances">
             <ListItemText primary="Appliances" />
           </Link>
         </ListItemButton>
         <ListItemButton>
-          <Link to="/laptops">
+          <Link className="w-full"  to="/laptops">
             <ListItemText primary="Laptops" />
           </Link>
         </ListItemButton>

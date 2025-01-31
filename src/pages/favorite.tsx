@@ -169,6 +169,7 @@ export default function Favorite() {
       };
     });
   }
+  
   return (
     <section className=" my-20 relative">
       <ToastContainer />
@@ -205,7 +206,7 @@ export default function Favorite() {
                     </div>
                   ) : null}
 
-                  <button className="addToCart absolute text-white bg-black w-full h-12 transition-all duration-300 bottom-0 left-0">
+                  <button onClick={()=>addToCart(product)} className="addToCart absolute text-white bg-black w-full h-12 transition-all duration-300 bottom-0 left-0">
                     Add To Cart
                   </button>
                   <img
