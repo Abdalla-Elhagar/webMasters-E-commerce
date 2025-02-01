@@ -13,7 +13,7 @@ export default function LogIn() {
   const usersData: any = useSelector((state: any) => state.ArrayOfUsers.data);
   function logIn() {
     const loginUser = usersData.filter(
-      (e: any) => e.phone == user.phone || e.password == user.password
+      (e: any) => e.phone === user.phone && e.password === user.password
     );
     if (loginUser.length > 0) {
       setError(false);

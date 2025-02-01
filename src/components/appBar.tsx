@@ -64,7 +64,7 @@ export default function MenuAppBar() {
               <Link
                 to="/searched"
                 onClick={handleSearch}
-                className="text-white absolute top-[120px] right-16"
+                className="text-white z-50 absolute top-[120px] right-16"
               >
                 <SearchIcon />
               </Link>
